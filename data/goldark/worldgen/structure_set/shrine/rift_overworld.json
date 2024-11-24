@@ -1,0 +1,22 @@
+{
+    "structures": [
+        {
+            "structure": "goldark:shrine/rift_overworld",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "salt": 211224,
+        "frequency": 0.5,
+        "locate_offset": [
+            4,
+            3,
+            4
+        ],
+        "type": "concentric_rings",
+        "distance": 8,
+        "count": 128,
+        "preferred_biomes": "#stronghold_biased_to",
+        "spread": 3
+    }
+}

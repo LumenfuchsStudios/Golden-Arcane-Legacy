@@ -1,14 +1,19 @@
-## # AydenTFoxx @ September 12th, 2024
+## # AydenTFoxx @ September 12th - 23rd, 2024
 
-# * Runs every registered spell to check if the player is currently using it.
+# * A collection of all Golden Arcane spells. When ran, it tests for any match for the player's cast spell.
 
-# ? Run by: Player [scores: { goldark.using_spell: 1.. }]
+# ? Run by: Player [scores: { goldark.use_spell: 1.. }]
 
 
-execute if items entity @s weapon.mainhand paper[minecraft:custom_data={ goldark.charm_id: "smelt" }] run function goldark:spells/charms/smelt
+execute if predicate goldark:spells/charms/abyss_warp run function goldark:spells/charms/abyss_warp
+execute if predicate goldark:spells/charms/evoker_fangs run function goldark:spells/charms/evoker_fangs
+execute if predicate goldark:spells/charms/lightning_bolt run function goldark:spells/charms/lightning_bolt
+execute if predicate goldark:spells/charms/smelt run function goldark:spells/charms/smelt
 
-execute if items entity @s weapon.mainhand paper[minecraft:custom_data={ goldark.spell_id: "weather_clear" }] run function goldark:spells/weather/clear/init
-execute if items entity @s weapon.mainhand paper[minecraft:custom_data={ goldark.spell_id: "weather_rain" }] run function goldark:spells/weather/rain/init
-execute if items entity @s weapon.mainhand paper[minecraft:custom_data={ goldark.spell_id: "weather_thunder" }] run function goldark:spells/weather/thunder/init
+execute if predicate goldark:spells/weather/clear run function goldark:spells/weather/init { weather: "clear" }
+execute if predicate goldark:spells/weather/rain run function goldark:spells/weather/init { weather: "rain" }
+execute if predicate goldark:spells/weather/thunder run function goldark:spells/weather/init { weather: "thunder" }
 
-scoreboard players reset @s[scores={ goldark.using_spell=1.. }] goldark.using_spell
+execute if predicate goldark:spells/dimensional_rift run function goldark:spells/base/start { spell_id: "dimensional_rift", spell_path: "dimensional_rift" }
+
+scoreboard players reset @s[scores={ goldark.use_spell=1.. }] goldark.use_spell

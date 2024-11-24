@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "result": {
+        "id": "knowledge_book",
+        "components": {
+            "enchantment_glint_override": true,
+            "item_name": "{ \"translate\": \"goldark.spells.weather.clear\", \"italic\": false }",
+            "lore": [
+                "{ \"translate\": \"goldark.spells.weather.clear.lore\", \"color\": \"blue\" }"
+            ],
+            "rarity": "rare",
+            "recipes": [
+                "goldark:spells/weather/clear/trigger"
+            ]
+        }
+    },
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "paper"
+        },
+        {
+            "item": "bucket"
+        },
+        {
+            "tag": "coals"
+        }
+    ]
+}

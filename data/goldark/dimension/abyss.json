@@ -1,0 +1,11 @@
+{
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "goldark:abyssal_wastes"
+        },
+        "settings": "goldark:abyss"
+    },
+    "type": "goldark:abyss"
+}

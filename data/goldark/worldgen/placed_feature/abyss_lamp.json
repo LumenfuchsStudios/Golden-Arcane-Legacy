@@ -1,0 +1,10 @@
+{
+    "feature": "goldark:abyss_lamp",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 10,
+            "y_spread": 4
+        }
+    ]
+}

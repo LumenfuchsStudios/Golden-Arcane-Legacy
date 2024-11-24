@@ -1,0 +1,40 @@
+{
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [
+                {
+                    "block": "air",
+                    "height": 8
+                },
+                {
+                    "block": "chiseled_quartz_block",
+                    "height": 1
+                },
+                {
+                    "block": "quartz_bricks",
+                    "height": 3
+                },
+                {
+                    "block": "white_wool",
+                    "height": 47
+                },
+                {
+                    "block": "dirt",
+                    "height": 4
+                },
+                {
+                    "block": "grass_block",
+                    "height": 1
+                }
+            ],
+            "biome": "meadow",
+            "structure_overrides": [
+                "goldark:shrine/rift_heavens"
+            ],
+            "features": true,
+            "lakes": true
+        }
+    },
+    "type": "goldark:heavens"
+}

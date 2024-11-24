@@ -1,8 +1,12 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:spectral_arrow",
-            "nbt": "{ Enchantments: [ { id: vanishing_curse, lvl: 1 } ] }"
+            "id": "minecraft:skeleton_skull",
+            "components": {
+                "enchantments": {
+                    "vanishing_curse": 1
+                }
+            }
         },
         "title": {
             "translate": "advancement.goldark.garrow.defeated_garrow_vulnerable.title",
