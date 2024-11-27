@@ -1,0 +1,60 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "infested": {
+                        "amplifier": 0
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "hunger": {
+                        "amplifier": 0
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "slowness": {
+                        "amplifier": 0
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "weakness": {
+                        "amplifier": 0
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "unluck": {
+                        "amplifier": 0
+                    }
+                }
+            }
+        }
+    ]
+}

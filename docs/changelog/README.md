@@ -9,7 +9,7 @@ Indev:
     * [v0.1.0](./v0.1.0.md) - "Creation"
     * [v0.2.0](./v0.2.0.md) - "Rebirth"
         * [v0.2.1](./v0.2.1.md) - "Hotfix: Spell-casting"
-    * [v0.3.0](./v0.1.0.md) - "Expansion"
+    * [v0.3.0](./v0.1.0.md) - "Rewrite"
 
 ## Planned Updates
 

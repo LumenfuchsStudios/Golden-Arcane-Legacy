@@ -1,0 +1,53 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "targeted_entity": {
+                            "type": "player"
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type": "#undead"
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type": "#raiders"
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "wolf"
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "player"
+                }
+            }
+        }
+    ]
+}

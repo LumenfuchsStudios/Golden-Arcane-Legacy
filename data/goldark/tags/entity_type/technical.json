@@ -1,0 +1,22 @@
+{
+    "values": [
+        "area_effect_cloud",
+        "armor_stand",
+        "block_display",
+        "item_display",
+        "text_display",
+        "experience_orb",
+        "falling_block",
+        "item",
+        "item_frame",
+        "glow_item_frame",
+        "ominous_item_spawner",
+        "leash_knot",
+        "marker",
+        "interaction",
+        "painting",
+        "end_crystal",
+        "evoker_fangs",
+        "tnt"
+    ]
+}

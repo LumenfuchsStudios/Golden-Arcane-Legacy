@@ -1,0 +1,10 @@
+{
+    "condition": "inverted",
+    "term": {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type": "#goldark:non_mob"
+        }
+    }
+}
