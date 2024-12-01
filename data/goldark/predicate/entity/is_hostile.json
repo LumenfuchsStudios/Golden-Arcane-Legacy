@@ -9,6 +9,15 @@
                     "entity": "this",
                     "predicate": {
                         "targeted_entity": {
+                            "type": "#goldark:player_allies"
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "targeted_entity": {
                             "type": "player"
                         }
                     }
@@ -19,13 +28,6 @@
                     "predicate": {
                         "type": "#undead"
                     }
-                },
-                {
-                    "condition": "entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "type": "#raiders"
-                    }
                 }
             ]
         },
@@ -35,17 +37,7 @@
                 "condition": "entity_properties",
                 "entity": "this",
                 "predicate": {
-                    "type": "wolf"
-                }
-            }
-        },
-        {
-            "condition": "inverted",
-            "term": {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "type": "player"
+                    "type": "#goldark:player_allies"
                 }
             }
         }

@@ -2,6 +2,8 @@
     "values": [
         "#goldark:boats",
         "#goldark:minecarts",
-        "#goldark:technical"
+        "#goldark:technical",
+        "ender_dragon",
+        "wither"
     ]
 }
