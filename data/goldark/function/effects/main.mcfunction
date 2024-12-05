@@ -1,7 +1,7 @@
 ## * Module Manager: EFFECT
 ## * Manages code related to custom Golden Arcane effects.
 ## * 
-## * Last modified: November 29th, 2024 (AydenTFoxx)
+## * Last modified: December 3rd, 2024 (AydenTFoxx)
 
 
 ## # BUFFS
@@ -11,19 +11,23 @@
 
 ## # DEBUFFS
 
-# ... Inferno?
-
 ## Holy Sickness
+
 # Run effect
-execute as @a[scores={ goldark.effect_timer.holy_sickness=1.. }] at @s run function goldark:effects/holy_sickness/tick
-
-# Reduce duration (if not active)
-execute as @a[scores={ goldark.effect_timer.holy_sickness=1.. }, tag=!goldark.holy_sickness.active] run scoreboard players remove @s goldark.effect_timer.holy_sickness 1
-execute as @a[scores={ goldark.effect_timer.holy_sickness=1200.. }, tag=!goldark.holy_sickness.active] run scoreboard players remove @s goldark.effect_timer.holy_sickness 10
-
-# Remove effect on player death
-execute as @a[scores={ goldark.effect_timer.holy_sickness=1.. }, nbt={ Health: 0.0f }] run scoreboard players set @s goldark.effect_timer.holy_sickness 0
+execute as @e[type=!#goldark:magic_immune, scores={ goldark.effect_timer.holy_sickness=1.. }] at @s run function goldark:effects/holy_sickness/tick
 
 # Reset scores
-execute as @a[scores={ goldark.effect_timer.holy_sickness=0 }, tag=!goldark.holy_sickness.active] run scoreboard players reset @s goldark.dummy
-execute as @a[scores={ goldark.effect_timer.holy_sickness=0 }, tag=!goldark.holy_sickness.active] run scoreboard players reset @s goldark.effect_timer.holy_sickness
+execute as @e[scores={ goldark.effect_timer.holy_sickness=..0 }, tag=!goldark.holy_sickness.active] run scoreboard players reset @s goldark.dummy
+execute as @e[type=!#goldark:magic_immune, scores={ goldark.effect_timer.holy_sickness=..0 }, tag=!goldark.holy_sickness.active] run scoreboard players reset @s goldark.effect_timer.holy_sickness
+
+# Remove effect (player death)
+execute as @a[scores={ goldark.effect_timer.holy_sickness=1.. }, nbt={ Health: 0.0f }] run scoreboard players set @s goldark.effect_timer.holy_sickness 0
+
+# Revoke effect (Judgement)
+execute as @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active_judgement] at @s unless entity @n[type=#goldark:technical, tag=goldark.dummy_spell.judgement, distance=..3] run tag @s remove goldark.holy_sickness.active
+execute as @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active_judgement] at @s unless entity @n[type=#goldark:technical, tag=goldark.dummy_spell.judgement, distance=..3] run tag @s remove goldark.holy_sickness.active_judgement
+
+
+## Inferno
+
+# Soon! TM
