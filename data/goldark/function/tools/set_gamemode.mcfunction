@@ -1,3 +1,7 @@
+## * Sets the player's gamemode and saves its previous state.
+## * 
+## * Last modified: December 1st, 2024 (AydenTFoxx)
+
 ## ? MACRO Arguments:
 #? gamemode: The gamemode to be toggled to.
 

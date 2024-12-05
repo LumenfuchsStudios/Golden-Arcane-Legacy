@@ -1,6 +1,6 @@
 ## * Runs Werewoof-unique code & behaviors.
 ## * 
-## * Last modified: November 30th, 2024 (AydenTFoxx)
+## * Last modified: December 4th, 2024 (AydenTFoxx)
 
 
 ## PERKS
@@ -19,4 +19,4 @@ execute if predicate goldark:player_input/sprint if predicate goldark:player_inp
         run function goldark:paths/werewoof/morph/transform
 
 # Update Wolf form
-execute if entity @s[tag=goldark.path_transformed] run function goldark:paths/werewoof/morph/update
+execute if entity @s[tag=goldark.path_transformed, tag=!goldark.dummy_morph.werewoof] run function goldark:paths/werewoof/morph/update

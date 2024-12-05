@@ -1,7 +1,7 @@
 ## * Runs the Wolf morph's behavior from transformed Werewooves.
 ## * The Wolf is hostile to all but bosses and other Woofs. It *can* be moved, but good luck there.
 ## * 
-## * Last modified: December 1st, 2024 (AydenTFoxx)
+## * Last modified: December 4th, 2024 (AydenTFoxx)
 
 
 ## # BEHAVIOR
@@ -30,24 +30,29 @@ execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s u
 ## Input (Player)
 
 # Move & turn (kinda)
-execute if entity @s[predicate=goldark:player_input/forward] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s if block ^ ^ ^1 #goldark:walkable run tp @s ^ ^ ^1 facing ^ ^ ^8
+#execute if entity @s[predicate=goldark:player_input/forward] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s run function goldark:paths/werewoof/morph/move_forward
+execute if entity @s[predicate=goldark:player_input/forward] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s if predicate goldark:entity/is_on_ground run tp @s ^ ^ ^1 facing ^ ^ ^8
 
-execute if entity @s[predicate=goldark:player_input/left] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s run tp @s ~ ~ ~ facing ^4 ^ ^4
-execute if entity @s[predicate=goldark:player_input/right] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s run tp @s ~ ~ ~ facing ^-4 ^ ^4
+execute if entity @s[predicate=goldark:player_input/left] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s if predicate goldark:entity/is_on_ground run tp @s ~ ~ ~ facing ^4 ^ ^4
+execute if entity @s[predicate=goldark:player_input/right] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s if predicate goldark:entity/is_on_ground run tp @s ~ ~ ~ facing ^-4 ^ ^4
 
 # Jump
-execute if entity @s[predicate=goldark:player_input/jump] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s[nbt={ OnGround: 1b }] if block ~ ~1 ~ #goldark:breathable run tp @s ~ ~1 ~
+execute if entity @s[predicate=goldark:player_input/jump] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1] at @s if predicate goldark:entity/is_on_ground if block ~ ~1 ~ #goldark:breathable run tp @s ~ ~1 ~
 
 # Revert transformation
-execute if entity @s[predicate=goldark:player_input/sneak] run tag @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..3] add goldark.temp.dummy_morph_remove
-execute if entity @s[predicate=goldark:player_input/sneak] run data merge entity @n[type=wolf, tag=goldark.temp.dummy_morph_remove, distance=..3] { Silent: 1b, Health: 0, DeathTime: 20s }
+execute if entity @s[predicate=goldark:player_input/sneak] run function goldark:paths/werewoof/morph/revert
 execute if entity @s[predicate=goldark:player_input/sneak] run tp @s ~ ~0.5 ~
 
 
-## Other (Mob)
+## Other
 
-# Teleport to Wolf
+# Teleport to Wolf (Mob)
 execute if entity @s[type=!player] run tp @s @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..2]
+
+# Display Wolf's health (Player)
+execute if entity @s[type=player] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..2] store result score @s goldark.used_item.egg run data get entity @s Health
+
+title @s[type=player] actionbar [{ "text": "Wolf's health: ", "color": "gray" }, { "score": { "name": "@n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..2]", "objective": "goldark.used_item.egg" }, "color": "red" }]
 
 
 ## # ON END

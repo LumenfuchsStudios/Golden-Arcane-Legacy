@@ -9,9 +9,15 @@
         "blast_furnace",
         "compass",
         "crafter",
+        "crossbow",
         "detector_rail",
         "flint_and_steel",
         "hopper",
-        "rail"
+        "lantern",
+        "soul_lantern",
+        "rail",
+        "shield",
+        "stonecutter",
+        "tripwire_hook"
     ]
 }

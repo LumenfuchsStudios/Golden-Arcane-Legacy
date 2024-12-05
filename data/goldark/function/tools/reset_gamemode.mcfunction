@@ -1,3 +1,8 @@
+## * Resets the player's gamemode to its previously stored state.
+## * 
+## * Last modified: December 1st, 2024 (AydenTFoxx)
+
+
 ## RESET
 
 # Restore gamemode

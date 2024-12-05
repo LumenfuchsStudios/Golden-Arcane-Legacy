@@ -1,7 +1,7 @@
 {
     "values": [
         "#goldark:breathable",
-        "dirt_path",
-        "#stairs"
+        "#stairs",
+        "dirt_path"
     ]
 }
