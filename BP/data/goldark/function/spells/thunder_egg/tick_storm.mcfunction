@@ -33,14 +33,14 @@ execute if score @s[tag=!goldark.temp.switch_sounds] goldark.ability_clock match
 ## BEHAVIOR
 
 # Follow nearest entity
-execute at @n[type=!#goldark:magic_immune, distance=..32] facing entity @s eyes positioned ~ ~8 ~ run tp @s ^ ^ ^-0.1
+execute at @n[type=!#goldark:magic_immune, type=!chicken, distance=..32] facing entity @s eyes positioned ~ ~8 ~ run tp @s ^ ^ ^-0.1
 
 # Fall to the ground
-execute unless entity @n[type=!#goldark:magic_immune, distance=..32] if block ~ ~-8 ~ #goldark:walkable run tp @s ~ ~-0.1 ~
+execute unless entity @n[type=!#goldark:magic_immune, type=!chicken, distance=..32] if block ~ ~-8 ~ #goldark:walkable run tp @s ~ ~-0.1 ~
 
 # Apply effects on touch
-effect give @e[type=!#goldark:magic_immune, distance=..8, dy=4] blindness 4 1 false
-effect give @e[type=!#goldark:magic_immune, distance=..4, dy=2] instant_damage 1 0 false
+effect give @e[type=!#goldark:magic_immune, type=!chicken, distance=..8, dy=4] blindness 4 1 false
+effect give @e[type=!#goldark:magic_immune, type=!chicken, distance=..4, dy=2] instant_damage 1 0 false
 
 
 # Tick Clock
@@ -52,9 +52,9 @@ execute if score @s goldark.ability_clock matches 90..95 if predicate goldark:mi
 execute if score @s goldark.ability_clock matches 120..125 if predicate goldark:misc/random_25 run effect give @e[type=!#goldark:magic_immune, distance=6..14, limit=4, sort=random] levitation 3 5 true
 
 # Summon lightning
-execute if score @s goldark.ability_clock matches 1..10 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, limit=2, distance=..14] at @s run function goldark:spells/thunder_egg/summon_thunder
-execute if score @s goldark.ability_clock matches 60..70 if predicate goldark:misc/random_25 as @n[type=!#goldark:magic_immune, limit=2, distance=..14] at @s run function goldark:spells/thunder_egg/summon_thunder
-execute if score @s goldark.ability_clock matches 100..110 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, limit=2, distance=..14] at @s run function goldark:spells/thunder_egg/summon_thunder
+execute if score @s goldark.ability_clock matches 1..10 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, type=!chicken, limit=2, distance=..14] at @s run function goldark:spells/thunder_egg/summon_thunder
+execute if score @s goldark.ability_clock matches 60..70 if predicate goldark:misc/random_25 as @n[type=!#goldark:magic_immune, type=!chicken, limit=2, distance=..14] at @s run function goldark:spells/thunder_egg/summon_thunder
+execute if score @s goldark.ability_clock matches 100..110 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, type=!chicken, limit=2, distance=..14] at @s run function goldark:spells/thunder_egg/summon_thunder
 
 # Reset Clock
 scoreboard players set @s[scores={ goldark.ability_clock=120 }] goldark.ability_clock 0

@@ -6,15 +6,10 @@
                 "enchantment_glint_override": true
             }
         },
-        "title": {
-            "text": "Golden Arcane",
-            "color": "yellow",
-            "italic": false
-        },
+        "title": "Golden Arcane",
         "description": "A world of magic lies within.",
         "frame": "task",
-        "background": "goldark:textures/gui/advancements/background/quartz_bricks.png",
-        "hidden": true,
+        "background": "minecraft:textures/block/quartz_bricks.png",
         "show_toast": false,
         "announce_to_chat": false
     },
