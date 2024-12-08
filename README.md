@@ -1,34 +1,27 @@
-# ![Golden Arcane - A world of magic within](/goldark_title_logo.png)
+# ![Title logo, a yellow Minecraft-style lettering which reads "Golden Arcane"](/logo_title.png)
 
-> This is a Java Edition port of the original *Minecraft: Bedrock Edition* addon "The Golden Arcane".  
-> As with the original, many features are yet to be added, while others are still being ported to the Java version as well.
+**Golden Arcane** is a *Minecraft: Java Edition* datapack exploring the concept of magic with a common motif: Gold.
 
-**Golden Arcane** is a *Minecraft: Java Edition* datapack focusing on simple yet useful mechanics around a same material: gold.  
-By drawing obscure magics from this often overlooked metal, players (and at times, even the world itself) may obtain abilities not otherwise attainable before -- or more often than not, find new ways to the same old.
+From ancient deities to reality-tearing rituals, forbidden knowledge and odd artifacts of olden times, the world is full of new magic everywhere for the keen-eyed to find. A good starting point would be a flowery garden, where one can craft their first guide into the wonders of Golden Arcane.
 
-Despite that, though, many other mundane materials may also serve on one's magical journey; Flowers, ores and gems, food and even ordinary blocks may be of relevance to a keen-eyed practicioner. Most "spells" are made with simplicity and ease of use in mind, offering an easy integration with vanilla gameplay.
+While perfectly fine on its own, this datapack is balanced around the idea of being an alternative way to magic, with skills and abilities which may feel somewhat overpowered against vanilla Minecraft. Nonetheless, all magic is built with a principle of *seek-it-first* in mind; No feature should ever impact your world in any meaningful way unless you (or another player) interact with it beforehand.
 
-While working fine on its own, this pack is generally designed with the idea of being a secondary magic path, rather than the only one. As such, overpowered mass-destruction spells are *mostly* not present here; For these, a larger magic mod would be better suited instead.
+## Magic that is Within
 
-## Features
+Golden Arcane's features are primarily focused around magic inherent to all living beings -- whether that be animals, plants, or even the player themselves. Magic is designed to be available everywhere, with ingredients being often replaceable with alternatives as the user sees fit.
 
-* [DEVEL] *Golden Arrow*, a boss-like entity with unique abilities and novelty loot.
-  * Summon with `/function garrow:instance/spawn` (subject to change)
-* [DEVEL] Spells! Currently only with two examples ("Weather: Clear/Rain/Thunder" and "Smelt")
-* Soon!
+## Magic to be Shared
 
-## Versioning
+Golden Arcane is made with Multiplayer compatibility in mind, so that multiple people can enjoy the datapack's ~~quirks~~ features in the same world.
 
-This project follows the `MAJOR.MINOR.PATCH` model; The closer to the left a number is, the more impactful that version's changes are.
+Furthermore, functions are *caller-agnostic*: That is, they'll work the same whether the user of magic is a player or otherwise.
 
-Whenever a new version is available, the following rule applies for updating existing saves:
+Mobs will react to spells, paths and custom effects in the same way a player would -- watch the tables turn when your Werewoof chicken turns into a tanky Wolf with a taste for human flesh.
 
-* `PATCH` updates (`0.0.x`) are least likely to break existing saves, and may be downloaded safely.
-* `MINOR` updates (`0.x.0`) *should* work in older saves, but may still introduce some changes which may alter how one plays the game; A backup is advised before updating your world's datapack.
-* `MAJOR` updates (`x.0.0`) introduce breaking changes which are often incompatible with older saves. When updating to those, always have a backup your world beforehand, as corruption and data loss are possible and even likely to occur.
+## Magic that is Alive
 
-The datapack's current version is: `0.2.1` (indev); Its target Minecraft version is `1.21.1`.
+Werewooves transform on Full Moons. Chickens lay eggs charged with the fury of the skies. Some Storms might even descent and actively go after entities to consume in heavenly flames. The world reacts to the player and to itself, if only it be allowed to do so.
 
-## Platform
+## Platforms
 
-**Golden Arcane** is the datapack for *Minecraft: Java Edition*. For the (legacy) *Bedrock Edition* addon, see [here](https://github.com/Ayden-Foxx/TheGoldenArcane-BE).
+*Golden Arcane* is primarily available on GitHub. Other sites are planned as soon as it reaches v1.0.0, i.e. its first release version.

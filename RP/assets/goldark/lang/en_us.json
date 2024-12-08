@@ -1,0 +1,63 @@
+{
+
+    "advancement.goldark.root.title": "Golden Arcane",
+    "advancement.goldark.root.description": "A journey of magic and wonders begins",
+    
+    "advancement.goldark.garrow.defeated_garrow.title": "Fallen Deceit",
+    "advancement.goldark.garrow.defeated_garrow.description": "Summon and defeat Golden Arrow",
+    "advancement.goldark.garrow.defeated_garrow_vulnerable.title": "Tactical Strikeout",
+    "advancement.goldark.garrow.defeated_garrow_vulnerable.description": "Defeat Golden Arrow in a vulnerability state",
+
+    "death.attack.goldark.unstable_rift.message": "%s was removed from reality",
+
+    "entity.goldark.dimensional_rift": "Dimensional Rift",
+
+    "goldark.spells.fail.concurrency": "This spell cannot be cast while another is running.",
+    "goldark.spells.fail.dimension": "This spell does not work in this dimension.",
+    "goldark.spells.fail.will": "Your Will is not strong enough to cast this spell.",
+
+    "goldark.spells.fail.item_overload": "You have too many items in your offhand.",
+    "goldark.spells.fail.destination_blocked": "The Rift's target position is obstructed.",
+    "goldark.spells.fail.dimension_overflow": "This Rift is already at its limit.",
+
+    "goldark.spells.dimensional_rift": "Dimensional Rift",
+    "goldark.spells.dimensional_rift.lore.1": "Tears an inter-dimensional Rift in space-time.",
+    "goldark.spells.dimensional_rift.lore.2": "Use a Reality Threader to interact with the Rift.",
+    "goldark.spells.dimensional_rift.on_use": "+ Dimensional Rift +",
+
+    "goldark.spells.weather.clear": "Weather: Clear",
+    "goldark.spells.weather.clear.lore": "Clears any gloomy weather upon the world.",
+    "goldark.spells.weather.clear.on_use": "- Weather: Clear -",
+
+    "goldark.spells.weather.rain": "Weather: Rain",
+    "goldark.spells.weather.rain.lore": "Calls upon rainfall unto the land.",
+    "goldark.spells.weather.rain.on_use": "- Weather: Rain -",
+
+    "goldark.spells.weather.thunder": "Weather: Thunderstorm",
+    "goldark.spells.weather.thunder.lore": "Conjures powerful storms into the skies.",
+    "goldark.spells.weather.thunder.on_use": "- Weather: Thunderstorm -",
+
+    "goldark.spells.charms.abyss_warp": "Charm: Abyss Warp",
+    "goldark.spells.charms.abyss_warp.lore": "Offers a one-way to the ABYSS Dimensional Layer.",
+    "goldark.spells.charms.abyss_warp.on_use": "~ Charm: Abyss Warp ~",
+
+    "goldark.spells.charms.evoker_fangs": "Charm: Evoker Fangs",
+    "goldark.spells.charms.evoker_fangs.lore": "Summons deadly fangs in your general vicinity.",
+    "goldark.spells.charms.evoker_fangs.on_use": "~ Charm: Evoker Fangs ~",
+
+    "goldark.spells.charms.lightning_bolt": "Charm: Lightning Bolt",
+    "goldark.spells.charms.lightning_bolt.lore": "Conjures a bolt of divine smite upon thy foes.",
+    "goldark.spells.charms.lightning_bolt.on_use": "~ Charm: Lightning Bolt ~",
+
+    "goldark.spells.charms.smelt": "Charm: Smelt",
+    "goldark.spells.charms.smelt.lore.1": "Smelts any items in your offhand.",
+    "goldark.spells.charms.smelt.lore.2": "Up to 16 items can be smelt at once.",
+    "goldark.spells.charms.smelt.on_use": "~ Charm: Smelt ~",
+
+    "goldark.tools.rift_threader": "Rift Threader",
+    "goldark.tools.rift_threader.lore.1": "Conjures and manages Dimensional Rifts, inter-dimensional tears in space-time.",
+    "goldark.tools.rift_threader.lore.2": "Uses items in offhand to alter the Rift's behavior.",
+    "goldark.tools.rift_threader.connect": "Connected to: [ %s ]",
+    "goldark.tools.rift_threader.set_dimension": "{ Selected dimension:§b %s §r}"
+
+}

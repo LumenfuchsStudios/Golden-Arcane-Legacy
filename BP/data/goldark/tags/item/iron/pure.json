@@ -1,0 +1,24 @@
+{
+    "values": [
+        "#goldark:iron/heavy",
+        "iron_bars",
+        "iron_boots",
+        "iron_chestplate",
+        "iron_door",
+        "iron_helmet",
+        "iron_horse_armor",
+        "iron_ingot",
+        "iron_leggings",
+        "iron_nugget",
+        "iron_ore",
+        "iron_trapdoor",
+        "raw_iron",
+        "raw_iron_block",
+        "deepslate_iron_ore",
+        "bucket",
+        "cauldron",
+        "chain",
+        "heavy_weighted_pressure_plate",
+        "minecart"
+    ]
+}

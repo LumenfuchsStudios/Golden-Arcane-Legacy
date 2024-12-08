@@ -1,0 +1,36 @@
+{
+    "condition": "inverted",
+    "term": {
+        "condition": "any_of",
+        "terms": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "#goldark:boats"
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "#goldark:minecarts"
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "#goldark:projectile"
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "#goldark:technical"
+                }
+            }
+        ]
+    }
+}
