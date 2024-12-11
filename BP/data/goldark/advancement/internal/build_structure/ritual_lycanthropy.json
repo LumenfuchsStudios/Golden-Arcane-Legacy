@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "reference",
+                        "name": "goldark:ritual/lycanthropy"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:rituals/lycanthropy/init"
+    }
+}

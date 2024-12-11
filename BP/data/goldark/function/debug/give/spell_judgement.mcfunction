@@ -1,7 +1,7 @@
-## * Gives the caller a Holy Sickness Token (in-game: "Divine Magic: Judgement").
+## * Gives the caller a Judgement spell Item (in-game: "Divine Magic: Judgement").
 ## * Please make sure to be immune to Holy Sickness before attempting to use this.
 ## * 
-## * Last modified: December 4th, 2024 (AydenTFoxx)
+## * Last modified: December 7th, 2024 (AydenTFoxx)
 
 
 give @s gold_nugget[ \
@@ -17,5 +17,5 @@ give @s gold_nugget[ \
                     { type: "play_sound", sound: "minecraft:block.note_block.chime" } \
                 ] \
             }, \
-            custom_data={ "goldark.holy_sickness.token": true } \
+            custom_data={ "goldark.spells.judgement": true } \
         ]

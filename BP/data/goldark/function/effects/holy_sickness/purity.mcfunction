@@ -1,6 +1,10 @@
 ## * PURITY: Thy actions have been seen and rewarded. No more burny Iron for ya.
 ## * 
-## * Last modified: December 4th, 2024 (AydenTFoxx)
+## * Last modified: December 9th, 2024 (AydenTFoxx)
+
+
+# Grant Holy Sickness immunity
+tag @s add goldark.perks.holy_immune
 
 
 # Remove olden effects
@@ -22,12 +26,22 @@ tellraw @s { "text": "| The Gods take notice of your endurance...", "color": "go
 tellraw @s [{ "text": "[+] You are now immune to ", "color": "aqua" }, { "text": "Holy Sickness", "color": "yellow", "bold": true }]
 
 
-# Give Holy Sickness token
+# Give Holy Sickness spell
 give @s gold_nugget[ \
-    enchantment_glint_override=true, \
-    custom_name="[{ \"text\": \"Divine Magic: \", \"color\": \"yellow\" }, { \"text\": \"Judgement\", \"color\": \"aqua\" }]", \
-    lore=[ "{ \"text\": \"Conjures an aura of divine smite.\", \"color\": \"blue\" }" ], \
-    consumable={ animation: "bow", consume_seconds: 1.6, has_consume_particles: false, sound: "block.conduit.ambient.short", on_consume_effects: [ { type: "play_sound", sound: "minecraft:block.note_block.chime" } ] }, custom_data={ "goldark.holy_sickness.token": true } ] 12
+            enchantment_glint_override=true, \
+            custom_name="[{ \"text\": \"Divine Magic: \", \"color\": \"yellow\", \"italic\": false }, { \"text\": \"Judgement\", \"color\": \"aqua\" }]", \
+            lore=[ "{ \"text\": \"Conjures an aura of divine smite.\", \"color\": \"gray\", \"italic\": false }" ], \
+            consumable={ \
+                animation: "bow", \
+                consume_seconds: 1.6, \
+                has_consume_particles: false, \
+                sound: "block.conduit.ambient.short", \
+                on_consume_effects: [ \
+                    { type: "play_sound", sound: "minecraft:block.note_block.chime" } \
+                ] \
+            }, \
+            custom_data={ "goldark.spells.judgement": true } \
+        ] 12
 
 # Remove Holy Sickness
 scoreboard players set @s goldark.effect_timer.holy_sickness 0
@@ -38,6 +52,3 @@ tag @s remove goldark.holy_sickness.pure_block
 tag @s remove goldark.holy_sickness.pure
 
 tag @s remove goldark.holy_sickness.based
-
-# Grant Holy Sickness immunity
-tag @s add goldark.perks.holy_immune

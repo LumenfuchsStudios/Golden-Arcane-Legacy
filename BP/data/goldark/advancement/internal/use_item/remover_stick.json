@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "default": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_direct": true
+                    }
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "debug_stick",
+                            "components": {
+                                "custom_data": {
+                                    "goldark.items.remover_stick": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:spells/remover_stick",
+        "experience": 1
+    }
+}

@@ -20,7 +20,7 @@
                 "{ \"text\": \"Conjures an aura of divine smite.\", \"color\": \"gray\", \"italic\": false }"
             ],
             "custom_data": {
-                "goldark.holy_sickness.token": true
+                "goldark.spells.judgement": true
             },
             "consumable": {
                 "animation": "bow",

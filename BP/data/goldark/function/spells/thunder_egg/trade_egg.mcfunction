@@ -1,11 +1,11 @@
 ## * Grants the player a Thunder/ous Egg when said Egg is laid by a Chicken.
 ## * Technically also works by dropping it on the chicken.
 ## * 
-## * Last modified: December 5th, 2024
+## * Last modified: December 11th, 2024
 
 
 # Revoke trigger
-advancement revoke @s only goldark:chicken_laid_egg
+advancement revoke @s only goldark:internal/chicken_laid_egg
 
 # Ignore if no chicken around -- or if RNG roll fails
 execute unless entity @n[type=chicken, distance=..2] \

@@ -1,7 +1,7 @@
 ## * Transforms a Werewoof player into a Wolf form.
 ## * The player is invulnerable for as long as the Wolf remains alive.
 ## * 
-## * Last modified: December 4th, 2024 (AydenTFoxx)
+## * Last modified: December 10th, 2024 (AydenTFoxx)
 
 
 # Enable Spectator Mode (or "Spectator" for non-Players)
@@ -16,11 +16,17 @@ execute if entity @s[type=!player] run team join GoldArk_Morph @s
 summon wolf ~ ~ ~ { \
     Age: 99999, AngerTime: 100, PersistenceRequired: 1b, Tags: [ "goldark.dummy_morph.werewoof", "goldark.paths.werewoof", "goldark.path_transformed" ], \
     active_effects: [ { id: regeneration, amplifier: 1, duration: -1, show_particles: false }, { id: resistance, amplifier: 1, duration: -1, show_particles: false } ], \
-    attributes: [ {id: "armor", base: 8.0f}, {id: "armor_toughness", base: 2.0f}, {id: "attack_damage", base: 8.0f}, {id: "attack_knockback", base: 1.0f}, {id: "knockback_resistance", base: 0.5f}, {id: "max_health", base: 20.0f}, {id: "movement_speed", base: 0.4f}, {id: "scale", base: 1.5f} ] }
+    attributes: [ { id: "minecraft:armor", base: 8.0d}, {id: "minecraft:armor_toughness", base: 2.0d}, {id: "minecraft:attack_damage", base: 8.0d}, {id: "minecraft:attack_knockback", base: 1.0d}, {id: "minecraft:knockback_resistance", base: 0.5d}, {id: "minecraft:movement_speed", base: 0.4d}, {id: "minecraft:scale", base: 1.5d} ] }
 
-# The Wolf inherits the user's health and active effects
-data modify entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] Health set from entity @s[type=player] Health
+# Inherit user's health, rotation and active effects
+attribute @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] max_health base set 20.0
+execute store result entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] Health float 1.0 run data get entity @s Health
+
+data modify entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] Rotation set from entity @s Rotation
 data modify entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] active_effects append from entity @s active_effects
+
+# Inherit immunity, if any
+execute if entity @s[tag=goldark.perks.holy_immune] run tag @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] add goldark.perks.holy_immune
 
 
 # Spectate Wolf (Player)
@@ -33,3 +39,7 @@ playsound item.armor.equip_leather player @a[distance=..8] ~ ~ ~ 0.8 0.7
 
 # Add tag
 tag @s add goldark.path_transformed
+
+# Set cooldown (Player)
+scoreboard players set @s[type=player, gamemode=!creative] goldark.ability_timer 250
+scoreboard players set @s[type=player, gamemode=!creative] goldark.ability_timer 25

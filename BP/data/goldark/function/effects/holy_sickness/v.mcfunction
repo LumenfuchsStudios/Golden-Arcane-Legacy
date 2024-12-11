@@ -32,7 +32,7 @@ execute if score @s goldark.effect_timer.holy_sickness matches 3200..4200 run pl
 execute if score @s goldark.effect_timer.holy_sickness matches 3200..4200 run particle dust{ color: 9442838, scale: 0.5 } ~ ~1 ~ .3 .3 .3 1 10
 
 execute if score @s goldark.effect_timer.holy_sickness matches 3200..4200 run effect give @s slowness 90 2 false
-execute if score @s goldark.effect_timer.holy_sickness matches 3200..4200 run damage @s 4 magic
+execute if score @s goldark.effect_timer.holy_sickness matches 3200..4200 as @e[distance=..2] run damage @s 4 magic
 
 
 # The end and beyond

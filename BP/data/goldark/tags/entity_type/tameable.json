@@ -1,7 +1,9 @@
 {
     "values": [
         "cat",
+        "wolf",
         "horse",
-        "wolf"
+        "donkey",
+        "mule"
     ]
 }

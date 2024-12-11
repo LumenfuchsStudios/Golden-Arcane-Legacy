@@ -8,7 +8,7 @@ execute if score @s goldark.effect_timer.holy_sickness matches 2500..2550 run pl
 
 playsound entity.ghast.ambient player @s[scores={ goldark.effect_timer.holy_sickness=2100..2120 }] ~ ~ ~ 0.8 0.3
 playsound entity.ghast.ambient player @s[scores={ goldark.effect_timer.holy_sickness=2200..2220 }] ~ ~ ~ 0.8 0.4
-playsound entity.ghast.shoot player @s[scores={ goldark.effect_timer.holy_sickness=2300..2320 }] ~ ~ ~ 0.8 0.5
+playsound entity.ghast.scream player @s[scores={ goldark.effect_timer.holy_sickness=2300..2320 }] ~ ~ ~ 0.8 0.8
 
 playsound block.note_block.bass player @s[scores={ goldark.effect_timer.holy_sickness=..2500 }] ~ ~ ~ 0.8 0.3
 
