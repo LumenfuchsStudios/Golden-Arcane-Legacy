@@ -1,6 +1,8 @@
-# Golden Arcane
-
 ![Title logo, a yellow Minecraft-style lettering which reads "Golden Arcane"](/logo_title.png)
+
+---
+
+# Golden Arcane
 
 **Golden Arcane** is a *Minecraft: Java Edition* datapack exploring the concept of magic with a common motif: Gold.
 
@@ -18,6 +20,6 @@ To update an existing world's datapack, delete the `Golden-Arcane` folder at `da
 
 To-Do! In the meantime, you can run `/function goldark:spells/codex` in-game for a Written Book featuring all capabilities of the datapack. Sorry for the inconvenience!
 
-# License
+## License
 
 Golden Arcane is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
