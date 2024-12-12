@@ -1,7 +1,5 @@
 ![Title logo, a yellow Minecraft-style lettering which reads "Golden Arcane"](/logo_title.png)
 
----
-
 # Golden Arcane
 
 **Golden Arcane** is a *Minecraft: Java Edition* datapack exploring the concept of magic with a common motif: Gold.
@@ -22,4 +20,4 @@ To-Do! In the meantime, you can run `/function goldark:spells/codex` in-game for
 
 ## License
 
-Golden Arcane is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+Golden Arcane is licensed under the [GNU GPL-v3.0 License](https://choosealicense.com/licenses/gpl-3.0/).
