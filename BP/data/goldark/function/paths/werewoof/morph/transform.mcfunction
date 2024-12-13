@@ -23,7 +23,7 @@ attribute @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] max_health
 execute store result entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] Health float 1.0 run data get entity @s Health
 
 data modify entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] Rotation set from entity @s Rotation
-data modify entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] active_effects append from entity @s active_effects
+data modify entity @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] active_effects set from entity @s active_effects
 
 # Inherit immunity, if any
 execute if entity @s[tag=goldark.perks.holy_immune] run tag @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=0] add goldark.perks.holy_immune

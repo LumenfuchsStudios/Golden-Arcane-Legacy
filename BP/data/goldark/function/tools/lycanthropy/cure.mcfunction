@@ -13,8 +13,13 @@ playsound entity.zombie_villager.converted neutral @a[distance=..16] ~ ~ ~ 1 0.8
 effect give @s weakness 12 0 false
 effect give @s glowing 7 0 false
 
+
 # Revoke Werewoof advancements
 advancement revoke @s[type=player] from goldark:paths/werewoof/root
+
+# Remove Werewoof perk
+function goldark:perks/werewoof
+
 
 # Remove tag, no longer a woof
 tag @s remove goldark.paths.werewoof
