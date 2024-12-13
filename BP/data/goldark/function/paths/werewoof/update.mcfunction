@@ -19,7 +19,7 @@ execute if score @s goldark.effect_timer.holy_sickness matches 100.. \
 execute unless entity @s[tag=goldark.perks.holy_immune] run function goldark:paths/werewoof/sickness
 
 # Transform into Wolf
-execute if predicate goldark:player_input/sprint if predicate goldark:player_input/backward \
+execute if predicate goldark:player_input/sprint if predicate goldark:player_input/backward if predicate goldark:entity/is_on_ground \
         unless entity @s[tag=goldark.path_transformed] unless score @s goldark.health_check matches ..3 \
         unless score @s goldark.effect_timer.holy_sickness matches 1.. unless score @s goldark.ability_timer matches 1.. \
         run function goldark:paths/werewoof/morph/transform
