@@ -1,6 +1,6 @@
 ## * Creates scoreboards and value holders for usage by Golden Arcane's features.
 ## *
-## * Last modified: November 25th, 2024 (AydenTFoxx)
+## * Last modified: December 5th, 2024 (AydenTFoxx)
 
 
 ### OBJECTIVE DECLARATION
@@ -27,6 +27,14 @@ scoreboard objectives add goldark.ability_clock dummy { "text": "Ability Clock",
 scoreboard objectives add goldark.ability_timer dummy { "text": "Ability Timer", "color": "aqua" }
 
 
+## Death Count (goldark)
+# Stores the amount of times a player has died. Used for removing effects on death.
+scoreboard objectives add goldark.death_count deathCount { "text": "Death Count", "color": "dark_gray" }
+
+## Health Check (goldark)
+# Stores an Entity's health. Used with Dummy to evaluate actions based on current/lost health.
+scoreboard objectives add goldark.health_check health { "text": "Health", "color": "red" }
+
 ## Used Item: Egg (goldark)
 # Triggers whenever an Egg is thrown; Used for triggering Thunder Egg's mechanic.
 scoreboard objectives add goldark.used_item.egg minecraft.used:egg { "text": "Used: Egg", "color": "gray" }
@@ -39,6 +47,10 @@ team modify GoldArk_Morph collisionRule never
 
 
 ### VALUE INITIALIZATION
+
+# Set modulo value for Moon phase calculus
+scoreboard players set #goldark_moon_check goldark.dummy 8
+
 
 ## Settings:
 
@@ -53,5 +65,5 @@ execute store result score $goldark_diff_reload goldark.dummy run difficulty
 execute unless score $goldark_diff goldark.dummy matches 4 store result score $goldark_diff goldark.dummy run difficulty
 execute if score $goldark_diff goldark.dummy matches 4 unless score $goldark_diff_reload goldark.dummy matches 3 store result score $goldark_diff goldark.dummy run difficulty
 
-# Set Storm Clouds limit to default
+# Set Storm Cloud limit to default
 execute unless score #goldark_storm_cloud_limit goldark.dummy matches 1.. run scoreboard players set #goldark_storm_cloud_limit goldark.dummy 2

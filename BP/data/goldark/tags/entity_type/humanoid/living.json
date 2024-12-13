@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#illager",
+        "villager",
+        "wandering_trader",
+        "witch",
+        "piglin",
+        "piglin_brute",
+        "player"
+    ]
+}

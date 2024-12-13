@@ -1,6 +1,6 @@
 ## * LEVEL II: The First Signs
 ## * 
-## * Last modified: December 3rd, 2024 (AydenTFoxx)
+## * Last modified: December 13th, 2024 (AydenTFoxx)
 
 
 # Display audiovisual feedback
@@ -13,11 +13,12 @@ execute if score @s goldark.effect_timer.holy_sickness matches ..1200 if score @
 
 scoreboard players reset @s[scores={ goldark.dummy=40..1200 }] goldark.dummy
 
+
 # Apply effects
 effect give @s slowness 10 0
 effect give @s weakness 10 0
 
-effect give @s[tag=goldark.holy_sickness.active] nausea 5 0 true
+effect give @s[tag=goldark.holy_sickness.active, tag=!goldark.holy_sickness.active_sunlight] nausea 5 0 true
 effect give @s[tag=goldark.holy_sickness.active] mining_fatigue 8 0 true
 
 # Display warning text
