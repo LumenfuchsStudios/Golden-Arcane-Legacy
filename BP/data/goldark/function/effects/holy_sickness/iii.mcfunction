@@ -1,13 +1,13 @@
 ## * LEVEL III: Shit Got BAD
 ## * 
-## * Last modified: December 4th, 2024 (AydenTFoxx)
+## * Last modified: December 13th, 2024 (AydenTFoxx)
 
 
 # Display audiovisual feedback
 playsound entity.blaze.ambient player @s[scores={ goldark.effect_timer.holy_sickness=..1200 }] ~ ~ ~ 0.8 0.5
-playsound entity.blaze.ambient player @s[scores={ goldark.effect_timer.holy_sickness=1450..1500 }] ~ ~ ~ 0.8 0.5
-playsound entity.blaze.ambient player @s[scores={ goldark.effect_timer.holy_sickness=1650..1700 }] ~ ~ ~ 0.8 0.5
-playsound entity.blaze.ambient player @s[scores={ goldark.effect_timer.holy_sickness=1850..1900 }] ~ ~ ~ 0.8 0.5
+playsound entity.blaze.ambient player @s[scores={ goldark.effect_timer.holy_sickness=1450..1500 }] ~ ~ ~ 0.6 0.5
+playsound entity.blaze.ambient player @s[scores={ goldark.effect_timer.holy_sickness=1650..1700 }] ~ ~ ~ 0.6 0.5
+playsound entity.blaze.ambient player @s[scores={ goldark.effect_timer.holy_sickness=1850..1900 }] ~ ~ ~ 0.6 0.5
 
 particle small_flame ~ ~0.5 ~ .15 .3 .15 0.05 2
 

@@ -1,0 +1,1 @@
+fill ~8 ~-5 ~8 ~-8 ~-1 ~-8 dirt replace #air

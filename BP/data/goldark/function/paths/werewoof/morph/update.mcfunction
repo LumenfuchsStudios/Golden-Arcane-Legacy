@@ -1,7 +1,7 @@
 ## * Runs the Wolf morph's behavior from transformed Werewooves.
 ## * The Wolf is hostile to all but bosses and other Woofs. It *can* be moved, but good luck there.
 ## * 
-## * Last modified: December 10th, 2024 (AydenTFoxx)
+## * Last modified: December 13th, 2024 (AydenTFoxx)
 
 
 ## # BEHAVIOR
@@ -22,9 +22,10 @@ execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] \
         as @e[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..1.5] \
         run damage @s 4 mob_attack by @n[type=wolf, tag=goldark.dummy_morph.werewoof]
 
-
 # Raise from ground
-execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s unless block ~ ~0.5 ~ #goldark:breathable run tp @s ~ ~1 ~
+execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s \
+        unless block ~ ~0.5 ~ #goldark:breathable if block ~ ~1 ~ #goldark:breathable \
+        run tp @s ~ ~1 ~
 
 
 ## Input (Player)

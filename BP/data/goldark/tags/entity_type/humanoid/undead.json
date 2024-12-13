@@ -1,0 +1,13 @@
+{
+    "values": [
+        "skeleton",
+        "stray",
+        "bogged",
+        "wither_skeleton",
+        "zombie",
+        "zombie_villager",
+        "zombified_piglin",
+        "drowned",
+        "husk"
+    ]
+}

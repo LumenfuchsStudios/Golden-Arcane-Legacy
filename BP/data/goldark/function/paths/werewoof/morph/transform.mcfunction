@@ -1,7 +1,7 @@
 ## * Transforms a Werewoof player into a Wolf form.
 ## * The player is invulnerable for as long as the Wolf remains alive.
 ## * 
-## * Last modified: December 10th, 2024 (AydenTFoxx)
+## * Last modified: December 13th, 2024 (AydenTFoxx)
 
 
 # Enable Spectator Mode (or "Spectator" for non-Players)
@@ -40,6 +40,6 @@ playsound item.armor.equip_leather player @a[distance=..8] ~ ~ ~ 0.8 0.7
 # Add tag
 tag @s add goldark.path_transformed
 
-# Set cooldown (Player)
-scoreboard players set @s[type=player, gamemode=!creative] goldark.ability_timer 250
-scoreboard players set @s[type=player, gamemode=!creative] goldark.ability_timer 25
+# Add cooldown (Player)
+scoreboard players add @s[type=player, gamemode=!creative] goldark.ability_timer 250
+scoreboard players add @s[type=player, gamemode=!creative] goldark.ability_timer 25

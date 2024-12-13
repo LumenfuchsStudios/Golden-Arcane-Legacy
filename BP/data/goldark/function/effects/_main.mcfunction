@@ -1,7 +1,7 @@
 ## * Module Manager: EFFECT
 ## * Manages code related to custom Golden Arcane effects.
 ## * 
-## * Last modified: December 7th, 2024 (AydenTFoxx)
+## * Last modified: December 13th, 2024 (AydenTFoxx)
 
 
 ## # BUFFS
@@ -25,10 +25,6 @@ execute as @e[type=!#goldark:magic_immune, scores={ goldark.effect_timer.holy_si
 # Reset scores
 execute as @e[scores={ goldark.effect_timer.holy_sickness=..0 }, tag=!goldark.holy_sickness.active] run scoreboard players reset @s goldark.dummy
 execute as @e[type=!#goldark:magic_immune, scores={ goldark.effect_timer.holy_sickness=..0 }, tag=!goldark.holy_sickness.active] run scoreboard players reset @s goldark.effect_timer.holy_sickness
-
-# Revoke effect (Judgement)
-execute as @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active_judgement] at @s unless entity @n[type=#goldark:technical, tag=goldark.dummy_spell.judgement, distance=..3] run tag @s remove goldark.holy_sickness.active
-execute as @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active_judgement] at @s unless entity @n[type=#goldark:technical, tag=goldark.dummy_spell.judgement, distance=..3] run tag @s remove goldark.holy_sickness.active_judgement
 
 
 ## Inferno
