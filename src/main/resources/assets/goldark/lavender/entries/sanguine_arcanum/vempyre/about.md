@@ -129,18 +129,14 @@ of {gold}Holy Numbness{} and {gray}Purity{} can aid you.
 The former will remove all harm from sunlight; The latter,
 any and every effect of Vampirism entirely. Its enhanced
 version can actually cleanse Vampirism entirely, making
-you fully human again.{}
+you fully human again.
 
 ;;;;;
 
-**# "I'm still having issues."**
+**# "It's too powerful."**
 
-{dark_gray}You might've found a bug. If you can't find
-it [here](https://github.com/LumenfuchsStudios/GoldenArcane/issues),
-please select "New Issue", then "Bug Report", and detail
-as much as you can of what is going wrong. At times,
-messing with dark arcane arts can be finicky, and
-errors are bound to occur. Hopefully, however, things
-should reliably work properly in the future, as we
-learn to master such powerful forces of nature and
-how to use them to achieve our will.{}
+- Perhaps. If you are the Vempyre, a potion with Purity II
+will completely cure Vampirism when drunk. Otherwise, try
+convincing the other player to choose another path, say,
+Lycanthropy, for example.
+- 
