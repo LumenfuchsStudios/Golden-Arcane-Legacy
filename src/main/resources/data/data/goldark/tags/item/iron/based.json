@@ -1,0 +1,28 @@
+{
+    "values": [
+        "#iron_ores",
+        "iron_axe",
+        "iron_hoe",
+        "iron_pickaxe",
+        "iron_shovel",
+        "iron_sword",
+        "activator_rail",
+        "blast_furnace",
+        "compass",
+        "crafter",
+        "crossbow",
+        "detector_rail",
+        "flint_and_steel",
+        "hopper",
+        "lantern",
+        "soul_lantern",
+        "rail",
+        "shield",
+        "stonecutter",
+        "tripwire_hook",
+        "chainmail_boots",
+        "chainmail_chestplate",
+        "chainmail_helmet",
+        "chainmail_leggings"
+    ]
+}

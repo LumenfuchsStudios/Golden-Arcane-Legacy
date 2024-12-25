@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "quartz",
+                        "predicates": {
+                            "custom_data": {
+                                "goldark.items.soul_link": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:spells/soul_link/tools/display_uses"
+    }
+}

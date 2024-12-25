@@ -1,0 +1,12 @@
+{
+    "values": [
+        "#goldark:breathable",
+        "#slabs",
+        "#stairs",
+        "#fences",
+        "#fence_gates",
+        "#doors",
+        "dirt_path",
+        "iron_bars"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "goldark",
+	"version": "${version}",
+	"name": "Golden Arcane",
+	"description": "Common magics and features around Gold and its variants.",
+	"authors": [
+		"AydenTFoxx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL-v3.0",
+	"icon": "assets/goldark/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lumenfuchsstudios.golden_arcane.GoldenArcane"
+		],
+		"client": [
+			"lumenfuchsstudios.golden_arcane.GoldenArcaneClient"
+		],
+		"fabric-datagen": [
+			"lumenfuchsstudios.golden_arcane.GoldenArcaneDataGenerator"
+		]
+	},
+	"mixins": [
+		"goldark.mixins.json",
+		{
+			"config": "goldark.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"paginatedadvancements": "*"
+	}
+}

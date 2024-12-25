@@ -1,0 +1,21 @@
+{
+    "values": [
+        "iron_axe",
+        "iron_hoe",
+        "iron_pickaxe",
+        "iron_shovel",
+        "iron_sword",
+        "iron_boots",
+        "iron_chestplate",
+        "iron_helmet",
+        "iron_leggings",
+        "chainmail_boots",
+        "chainmail_chestplate",
+        "chainmail_helmet",
+        "chainmail_leggings",
+        "flint_and_steel",
+        "shield",
+        "crossbow",
+        "shears"
+    ]
+}

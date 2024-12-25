@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "goldark:bloodlust": {
+                        "amplifier": 0,
+                        "duration": {
+                            "min": 20
+                        }
+                    },
+                    "unluck": {
+                        "ambient": true,
+                        "duration": 1
+                    }
+                },
+                "player": {
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:paths/vempyre/take_blood/drink_vial"
+    }
+}

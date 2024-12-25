@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "id": "redstone"
+        },
+        "title": {
+            "text": "The Vempyre"
+        },
+        "description": "A lust for blood and a taste for fashion",
+        "frame": "task",
+        "background": "minecraft:textures/block/nether_bricks.png",
+        "announce_to_chat": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "entity_killed_player",
+            "conditions": {
+                "killing_blow": {
+                    "is_direct": true
+                },
+                "player": {
+                    "effects": {
+                        "goldark:bloodlust": {
+                            "amplifier": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:tools/vampirism/convert"
+    }
+}

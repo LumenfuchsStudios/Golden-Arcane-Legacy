@@ -1,0 +1,27 @@
+{
+    "values": [
+        "#all_signs",
+        "#banners",
+        "#candles",
+        "#cave_vines",
+        "#crops",
+        "#flower_pots",
+        "#flowers",
+        "#leaves",
+        "#pressure_plates",
+        "#rails",
+        "#replaceable",
+        "#wool_carpets",
+        "#beds",
+        "#buttons",
+        "lever",
+        "torch",
+        "wall_torch",
+        "soul_torch",
+        "soul_wall_torch",
+        "redstone_torch",
+        "redstone_wire",
+        "repeater",
+        "comparator"
+    ]
+}

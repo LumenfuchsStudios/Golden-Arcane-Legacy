@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "used_totem",
+            "conditions": {
+                "player": {
+                    "effects": {
+                        "goldark:bloodlust": {
+                            "amplifier": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:tools/vampirism/convert"
+    }
+}

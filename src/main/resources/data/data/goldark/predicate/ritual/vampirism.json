@@ -1,0 +1,671 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:skulls"
+                },
+                "can_see_sky": true
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "glowstone"
+                }
+            },
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetX": 1,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetX": 1,
+            "offsetY": -1,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetY": -1,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetX": -1,
+            "offsetY": -1,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetX": -1,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetX": -1,
+            "offsetY": -1,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetY": -1,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetX": 1,
+            "offsetY": -1,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "glowstone"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "glowstone"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "glowstone"
+                }
+            },
+            "offsetY": -1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "glowstone"
+                }
+            },
+            "offsetY": -1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetX": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetX": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetZ": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetZ": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "soul_lantern"
+                }
+            },
+            "offsetX": 3,
+            "offsetY": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "soul_lantern"
+                }
+            },
+            "offsetX": -3,
+            "offsetY": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "soul_lantern"
+                }
+            },
+            "offsetZ": 3,
+            "offsetY": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "soul_lantern"
+                }
+            },
+            "offsetZ": -3,
+            "offsetY": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "gold_block"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "gold_block"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "gold_block"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "gold_block"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 1,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 1,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -1,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -1,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -1,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 1,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                },
+                "can_see_sky": true
+            },
+            "offsetX": 2,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                },
+                "can_see_sky": true
+            },
+            "offsetX": -2,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                },
+                "can_see_sky": true
+            },
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                },
+                "can_see_sky": true
+            },
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 3,
+            "offsetZ": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 2,
+            "offsetZ": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 1,
+            "offsetZ": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -1,
+            "offsetZ": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -2,
+            "offsetZ": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -3,
+            "offsetZ": 3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -3,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -3,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -3,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -3,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -3,
+            "offsetZ": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -2,
+            "offsetZ": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": -1,
+            "offsetZ": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 1,
+            "offsetZ": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 2,
+            "offsetZ": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 3,
+            "offsetZ": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 3,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 3,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 3,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_wire"
+                }
+            },
+            "offsetX": 3,
+            "offsetZ": 2
+        }
+    ]
+}

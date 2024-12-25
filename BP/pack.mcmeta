@@ -1,7 +1,0 @@
-{
-    "pack": {
-        "pack_format": 61,
-        "description": "§eCharms and magics of the Golden Light.",
-        "supported_formats": [ 57, 61 ]
-    }
-}

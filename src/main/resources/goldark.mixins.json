@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "lumenfuchsstudios.golden_arcane.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

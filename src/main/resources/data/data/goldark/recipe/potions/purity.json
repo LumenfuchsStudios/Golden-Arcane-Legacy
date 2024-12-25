@@ -1,0 +1,38 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "potion",
+        [ "golden_apple", "golden_carrot", "glistering_melon_slice" ],
+        "wither_rose",
+        "milk_bucket",
+        "#goldark:magic_catalyst"
+    ],
+    "result": {
+        "id": "potion",
+        "components": {
+            "lore": [ "{ \"text\": \"- Negates Arcane abilities.\", \"color\": \"red\", \"italic\": false }", "{ \"text\": \"* If drunk, removes one's Arcane Path.\", \"color\": \"gray\", \"italic\": false }" ],
+            "rarity": "rare",
+            "potion_contents": {
+                "custom_color": 16185295,
+                "custom_name": "purity",
+                "custom_effects": [
+                    {
+                        "id": "goldark:purity",
+                        "ambient": true,
+                        "amplifier": 0,
+                        "duration": 600
+                    },
+                    {
+                        "id": "luck",
+                        "ambient": true,
+                        "amplifier": 0,
+                        "duration": 1
+                    }
+                ]
+            },
+            "use_cooldown": {
+                "seconds": 5
+            }
+        }
+    }
+}
