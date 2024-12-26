@@ -4,8 +4,7 @@
         "color": "blue"
     },
     "exclusive_set": "#exclusive_set/armor",
-    "supported_items": "#enchantable/durability",
-    "primary_items": "#goldark:iron/equipment",
+    "supported_items": "#goldark:iron/equipment",
     "weight": 2,
     "max_level": 1,
     "min_cost": {
@@ -25,7 +24,7 @@
             {
                 "effect": {
                     "type": "multiply",
-                    "factor": 0.2
+                    "factor": 1.2
                 }
             }
         ],

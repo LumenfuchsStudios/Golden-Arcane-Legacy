@@ -7,15 +7,18 @@
 
 
 give @s potion[ \
-        rarity="uncommon", \
+        custom_data={ goldark.potions.purity: true }, \
+        lore=[ '{ "text": "* \\"A sip is final.\\"", "color": "red", "italic": false }' ], \
+        rarity="rare", \
         potion_contents={ \
             custom_color: 16185295, \
             custom_name: "purity", \
             custom_effects: [ \
                 { \
                     id: "goldark:purity", \
+                    amplifier: 4, \
                     ambient: true, \
-                    duration: 600 \
+                    duration: 240 \
                 }, \
                 { \
                     id: "luck", \
@@ -26,5 +29,5 @@ give @s potion[ \
                 } \
             ] \
         }, \
-        use_cooldown={ seconds: 6 } \
+        use_cooldown={ seconds: 12 } \
     ]

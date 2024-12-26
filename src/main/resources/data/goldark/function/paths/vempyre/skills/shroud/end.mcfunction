@@ -11,7 +11,7 @@ effect clear @s invisibility
 effect clear @s strength
 
 # Reset attribute
-attribute @s knockback_resistance base set 0.0
+attribute @s knockback_resistance modifier remove goldark:vempyre/shroud_knockback
 
 
 # Display audiovisual feedback

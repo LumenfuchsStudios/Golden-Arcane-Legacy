@@ -2,10 +2,7 @@
     "description": {
         "text": "Iron Aspect"
     },
-    "exclusive_set": [
-        "goldark:vempyric",
-        "fire_aspect"
-    ],
+    "exclusive_set": "#exclusive_set/damage",
     "supported_items": "#enchantable/durability",
     "weight": 5,
     "max_level": 2,

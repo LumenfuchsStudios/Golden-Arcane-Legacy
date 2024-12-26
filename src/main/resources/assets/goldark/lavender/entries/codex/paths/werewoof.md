@@ -39,7 +39,7 @@ Worse fates could be given, though...
 
 > (Triggered by placing the Soul Lantern on your feet)
 
-- **Must be done on a Full Moon.**
+**Must be performed on a Full Moon.**
 
 ;;;;;
 

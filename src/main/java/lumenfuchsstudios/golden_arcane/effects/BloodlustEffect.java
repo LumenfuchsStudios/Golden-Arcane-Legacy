@@ -20,7 +20,7 @@ public class BloodlustEffect extends StatusEffect {
 	public void onApplied(LivingEntity entity, int amplifier) {
 		// If entity is non-Vempyre, inflict harm instead of healing
 		if (!entity.getCommandTags().contains("goldark.paths.vempyre")) {
-			entity.clientDamage(null);
+			entity.clientDamage(entity.getDamageSources().drown());
 
 			if (entity instanceof PlayerEntity) {
 				entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 220));

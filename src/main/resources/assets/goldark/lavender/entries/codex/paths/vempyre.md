@@ -30,10 +30,12 @@ may somewhat help, it is but a brief relief.
 Becoming one is surprisingly simple, but costly;
 One must lose themselves to be reborn a Vempyre again.
 
-> If such fate is truly seeked, one must
-> perish while under the same urge for
-> blood as a Vempyre, only to be reborn
-> as an Undead seeker of life instead.
+> To lock thy fate as a leech of life,
+> perish while under an unnatural urge
+> for the taste of blood itself.
+
+> The binding is permanent, and hard to be rid of;
+> Please be sure of your choices before proceeding.
 
 ;;;;;
 

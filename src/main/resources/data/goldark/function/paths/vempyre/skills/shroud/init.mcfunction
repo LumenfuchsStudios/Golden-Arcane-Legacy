@@ -19,7 +19,7 @@ effect give @s invisibility infinite 0 true
 effect give @s strength infinite 2 true
 
 # Add attribute
-attribute @s knockback_resistance base set 0.8
+attribute @s knockback_resistance modifier add goldark:vempyre/shroud_knockback 0.8 add_value
 
 
 # Display audiovisual feedback

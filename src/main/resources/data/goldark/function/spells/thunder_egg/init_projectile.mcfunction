@@ -10,7 +10,7 @@ execute at @n[type=egg, distance=..3] facing entity @s eyes run summon marker ^ 
 tag @n[type=egg, distance=..3] add goldark.dummy_magic.thunder_egg
 
 # Tag Dummy as stronger Eg
-execute if score @s goldark.used_item.egg matches 3 run tag @n[type=#goldark:technical, tag=goldark.dummy_magic.thunder_egg, distance=..3] add goldark.dummy_magic.thunder_egg_strong
+execute if score @s goldark.used_item.egg matches 3.. run tag @n[type=#goldark:technical, tag=goldark.dummy_magic.thunder_egg, distance=..3] add goldark.dummy_magic.thunder_egg_strong
 
 
 # Display audiovisual feedback

@@ -34,7 +34,7 @@ public class ModItems {
 					"blood",
 					new StatusEffectInstance(
 							Registries.STATUS_EFFECT.getEntry(GoldenArcane.BLOODLUST_EFFECT),
-							800,
+							400,
 							0),
 					new StatusEffectInstance(
 							StatusEffects.UNLUCK,
@@ -50,7 +50,7 @@ public class ModItems {
 					"blood",
 					new StatusEffectInstance(
 							Registries.STATUS_EFFECT.getEntry(GoldenArcane.BLOODLUST_EFFECT),
-							400,
+							200,
 							1),
 					new StatusEffectInstance(
 							StatusEffects.UNLUCK,
@@ -67,7 +67,7 @@ public class ModItems {
 					"purity",
 					new StatusEffectInstance(
 							Registries.STATUS_EFFECT.getEntry(GoldenArcane.PURITY_EFFECT),
-							1200,
+							800,
 							0,
 							true,
 							true),
@@ -85,8 +85,26 @@ public class ModItems {
 					"purity",
 					new StatusEffectInstance(
 							Registries.STATUS_EFFECT.getEntry(GoldenArcane.PURITY_EFFECT),
-							3600,
+							2400,
 							0,
+							true,
+							true),
+					new StatusEffectInstance(
+							StatusEffects.LUCK,
+							1,
+							0,
+							true,
+							false)));
+
+	public static final Potion STRONG_PURITY_POTION = Registry.register(
+			Registries.POTION,
+			Identifier.of(GoldenArcane.MOD_ID, "strong_purity"),
+			new Potion(
+					"purity",
+					new StatusEffectInstance(
+							Registries.STATUS_EFFECT.getEntry(GoldenArcane.PURITY_EFFECT),
+							200,
+							1,
 							true,
 							true),
 					new StatusEffectInstance(
@@ -99,6 +117,7 @@ public class ModItems {
 	/// / / / / / / ///
 
 	public static void initialize() {
+		// Vial of Blood
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(
 					// Input potion.
@@ -109,6 +128,7 @@ public class ModItems {
 					Registries.POTION.getEntry(BLOOD_VIAL));
 		});
 
+		// Vial of Blood (Strong)
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(
 					// Input potion.
@@ -119,6 +139,7 @@ public class ModItems {
 					Registries.POTION.getEntry(STRONG_BLOOD_VIAL));
 		});
 
+		// Potion of Purity (Long)
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(
 					// Input potion.
@@ -127,6 +148,17 @@ public class ModItems {
 					Items.REDSTONE,
 					// Output potion.
 					Registries.POTION.getEntry(LONG_PURITY_POTION));
+		});
+
+		// Potion of Purity (Strong)
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(
+					// Input potion.
+					Registries.POTION.getEntry(PURITY_POTION),
+					// Ingredient
+					Items.GLOWSTONE_DUST,
+					// Output potion.
+					Registries.POTION.getEntry(STRONG_PURITY_POTION));
 		});
 	}
 }

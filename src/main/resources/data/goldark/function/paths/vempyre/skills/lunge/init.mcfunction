@@ -20,7 +20,8 @@ effect give @a[distance=..12] darkness 4 0 true
 
 
 # Add attribute
-attribute @s movement_efficiency base set 2.0
+attribute @s movement_efficiency modifier add goldark:vempyre/lunge_movement 2.0 add_multiplied_base
+attribute @s step_height modifier add goldark:vempyre/lunge_step 2.0 add_multiplied_total
 
 
 # Display audiovisual feedback

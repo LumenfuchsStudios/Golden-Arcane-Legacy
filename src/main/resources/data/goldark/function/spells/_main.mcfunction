@@ -22,7 +22,7 @@ scoreboard players reset @a[scores={ goldark.used_item.egg=1.. }, tag=!goldark.t
 
 # Transform thrown egg
 execute as @a[scores={ goldark.used_item.egg=1 }, tag=goldark.temp.held_thunder_egg] run scoreboard players add @s goldark.used_item.egg 1
-execute as @a[scores={ goldark.used_item.egg=1 }, tag=goldark.temp.held_thunder_egg_strong] run scoreboard players add @s goldark.used_item.egg 2
+execute as @a[scores={ goldark.used_item.egg=1.. }, tag=goldark.temp.held_thunder_egg_strong] run scoreboard players add @s goldark.used_item.egg 2
 
 execute as @a[scores={ goldark.used_item.egg=1.. }] at @s if loaded ~ ~ ~ positioned ~ ~1 ~ run function goldark:spells/thunder_egg/init_projectile
 

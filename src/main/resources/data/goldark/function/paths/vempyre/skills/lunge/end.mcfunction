@@ -11,7 +11,8 @@ particle cloud ~ ~1 ~ .1 .2 .1 0.1 10
 effect give @s slowness 2 0
 
 # Reset attribute
-attribute @s movement_efficiency base set 0.0
+attribute @s movement_efficiency modifier remove goldark:vempyre/lunge_movement
+attribute @s step_height modifier remove goldark:vempyre/lunge_step
 
 
 # Remove tag

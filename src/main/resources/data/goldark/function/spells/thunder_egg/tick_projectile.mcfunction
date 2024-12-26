@@ -1,6 +1,8 @@
 ## * Displays a particle trail and summons a thunderous event upon colliding with the floor.
 ## * 
-## * Last modified: December 3rd, 2024 (AydenTFoxx)
+## * Last modified: December 25th, 2024 (AydenTFoxx)
+
+# Happy Holidays! owo
 
 
 ## Any
@@ -8,7 +10,7 @@
 # Teleport to Egg
 execute at @n[type=egg, tag=goldark.dummy_magic.thunder_egg, distance=..3] facing entity @p eyes run tp @s ^ ^ ^-2
 execute unless entity @n[type=egg, tag=goldark.dummy_magic.thunder_egg, distance=..3] \
-        at @n[type=egg, distance=..8] facing entity @p eyes run tp @s ^ ^ ^-2
+        at @n[type=egg, tag=goldark.dummy_magic.thunder_egg, distance=..8] facing entity @p eyes run tp @s ^ ^ ^-2
 
 # Display trail particle
 particle electric_spark ~ ~ ~ .05 .05 .05 0.1 5
@@ -19,7 +21,7 @@ particle electric_spark ~ ~ ~ .05 .05 .05 0.1 5
 # Detect nearby Storms
 execute if entity @s[tag=goldark.dummy_magic.thunder_egg_strong] \
         store result score @s goldark.dummy \
-        if entity @e[type=#goldark:technical, tag=goldark.dummy_spell.thunder_egg, distance=..64]
+        if entity @e[type=#goldark:technical, tag=goldark.dummy_spell.thunder_egg, distance=..128]
 
 # Summon Storm
 execute if entity @s[tag=goldark.dummy_magic.thunder_egg_strong] \

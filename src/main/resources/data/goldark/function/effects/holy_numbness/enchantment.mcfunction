@@ -10,7 +10,7 @@ execute unless score @s goldark.effect_timer.holy_sickness matches 1.. \
         if entity @s[tag=goldark.effects.purity] run return fail
 
 # Ignore if player already has a stronger Holy Protection
-execute if score @s goldark.effect_timer.holy_numbness matches 1.. run return fail
+execute if score @s goldark.effect_timer.holy_numbness matches 20.. run return fail
 
 
 # Grant effect

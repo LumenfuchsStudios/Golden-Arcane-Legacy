@@ -2,14 +2,16 @@
     "type": "crafting_shapeless",
     "ingredients": [
         "potion",
-        [ "golden_apple", "golden_carrot", "glistering_melon_slice" ],
+        [ "enchanted_golden_apple", "nether_star" ],
+        "wither_rose",
         "milk_bucket",
         "#goldark:magic_catalyst"
     ],
     "result": {
         "id": "potion",
         "components": {
-            "rarity": "uncommon",
+            "lore": [ "{ \"text\": \"* A sip is final.\", \"color\": \"red\", \"italic\": false }" ],
+            "rarity": "rare",
             "potion_contents": {
                 "custom_color": 16185295,
                 "custom_name": "purity",
@@ -18,7 +20,7 @@
                         "id": "goldark:purity",
                         "ambient": true,
                         "amplifier": 0,
-                        "duration": 600
+                        "duration": 20
                     },
                     {
                         "id": "luck",
@@ -29,7 +31,7 @@
                 ]
             },
             "use_cooldown": {
-                "seconds": 8
+                "seconds": 12
             }
         }
     }
