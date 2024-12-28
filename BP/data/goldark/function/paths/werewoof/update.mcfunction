@@ -1,6 +1,6 @@
 ## * Runs Werewoof-unique code & behaviors.
 ## * 
-## * Last modified: December 11th, 2024 (AydenTFoxx)
+## * Last modified: December 17th, 2024 (AydenTFoxx)
 
 
 ## PERKS
@@ -30,9 +30,9 @@ execute if entity @s[type=!player] if score #goldark_moon_phase goldark.dummy ma
         unless score @s goldark.effect_timer.holy_sickness matches 1.. \
         run function goldark:paths/werewoof/morph/transform
 
-# De-transform from Wolf (After Full Moon, non-player)
-execute if entity @s[type=!player] if score #goldark_moon_phase goldark.dummy matches 1 if score #goldark_time_day goldark.dummy matches 23010 \
-        if entity @s[tag=goldark.path_transformed] \
+# De-transform from Wolf (Sunrise, non-player)
+execute if score #goldark_time_day goldark.dummy matches 0 \
+        if entity @s[type=!player, tag=goldark.path_transformed] \
         run function goldark:paths/werewoof/morph/revert
 
 # Reduce cooldown (Player)

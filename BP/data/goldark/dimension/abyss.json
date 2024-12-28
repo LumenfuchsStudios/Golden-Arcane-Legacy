@@ -1,0 +1,186 @@
+{
+    "type": "goldark:abyss",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "goldark:abyss"
+        },
+        "settings": {
+            "name": "minecraft:end",
+            "default_block": {
+                "Name": "black_concrete"
+            },
+            "default_fluid": {
+                "Name": "water"
+            },
+            "aquifers_enabled": false,
+            "ore_veins_enabled": true,
+            "disable_mob_generation": true,
+            "legacy_random_source": false,
+            "sea_level": -12,
+            "noise": {
+                "height": 256,
+                "min_y": -64,
+                "size_horizontal": 2,
+                "size_vertical": 1
+            },
+            "noise_router": {
+                "initial_density_without_jaggedness": "overworld_amplified/factor",
+                "barrier": {
+                    "type": "shift",
+                    "argument": "aquifer_barrier"
+                },
+                "continents": "zero",
+                "depth": "zero",
+                "erosion": "zero",
+                "fluid_level_floodedness": {
+                    "type": "shift",
+                    "argument": "aquifer_fluid_level_floodedness"
+                },
+                "fluid_level_spread": {
+                    "type": "shift",
+                    "argument": "aquifer_fluid_level_spread"
+                },
+                "lava": {
+                    "type": "shifted_noise",
+                    "noise": "aquifer_lava",
+                    "shift_x": "shift_x",
+                    "shift_y": "y",
+                    "shift_z": "shift_z",
+                    "xz_scale": 1.0,
+                    "y_scale": 2.0
+                },
+                "ridges": "overworld/ridges",
+                "temperature": {
+                    "type": "cache_2d",
+                    "argument": {
+                        "type": "minecraft:end_islands"
+                    }
+                },
+                "vegetation": {
+                    "type": "shift",
+                    "argument": "vegetation"
+                },
+                "vein_gap": {
+                    "type": "shift",
+                    "argument": "ore_gap"
+                },
+                "vein_ridged": {
+                    "type": "mul",
+                    "argument1": {
+                        "type": "shift",
+                        "argument": "ore_vein_a"
+                    },
+                    "argument2": {
+                        "type": "shift",
+                        "argument": "ore_vein_a"
+                    }
+                },
+                "vein_toggle": {
+                    "type": "shift",
+                    "argument": "ore_veininess"
+                },
+                "final_density": "overworld/factor"
+            },
+            "spawn_target": [],
+            "surface_rule": {
+                "type": "sequence",
+                "sequence": [
+                    {
+                        "type": "condition",
+                        "if_true": {
+                            "type": "minecraft:steep"
+                        },
+                        "then_run": {
+                            "type": "block",
+                            "result_state": {
+                                "Name": "cracked_polished_blackstone_bricks"
+                            }
+                        }
+                    },
+                    {
+                        "type": "condition",
+                        "if_true": {
+                            "type": "not",
+                            "invert": {
+                                "type": "vertical_gradient",
+                                "false_at_and_above": {
+                                    "below_top": 3
+                                },
+                                "true_at_and_below": {
+                                    "below_top": 7
+                                },
+                                "random_name": "minecraft:touch_grass"
+                            }
+                        },
+                        "then_run": {
+                            "type": "sequence",
+                            "sequence": [
+                                {
+                                    "type": "condition",
+                                    "if_true": {
+                                        "type": "above_preliminary_surface"
+                                    },
+                                    "then_run": {
+                                        "type": "block",
+                                        "result_state": {
+                                            "Name": "grass_block"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "block",
+                                    "result_state": {
+                                        "Name": "dirt"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "condition",
+                        "if_true": {
+                            "type": "not",
+                            "invert": {
+                                "type": "vertical_gradient",
+                                "false_at_and_above": {
+                                    "absolute": 120
+                                },
+                                "true_at_and_below": {
+                                    "absolute": 64
+                                },
+                                "random_name": "minecraft:cave_noise"
+                            }
+                        },
+                        "then_run": {
+                            "type": "block",
+                            "result_state": {
+                                "Name": "blackstone"
+                            }
+                        }
+                    },
+                    {
+                        "type": "condition",
+                        "if_true": {
+                            "type": "vertical_gradient",
+                            "false_at_and_above": {
+                                "absolute": -32
+                            },
+                            "true_at_and_below": {
+                                "absolute": -60
+                            },
+                            "random_name": "minecraft:onion"
+                        },
+                        "then_run": {
+                            "type": "block",
+                            "result_state": {
+                                "Name": "obsidian"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "type": "crafting_transmute",
+    "input": "potion",
+    "material": [ "dragon_breath", "gold_block" ],
+    "result": "lingering_potion"
+}

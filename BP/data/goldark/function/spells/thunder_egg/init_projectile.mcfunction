@@ -10,12 +10,12 @@ execute at @n[type=egg, distance=..3] facing entity @s eyes run summon marker ^ 
 tag @n[type=egg, distance=..3] add goldark.dummy_magic.thunder_egg
 
 # Tag Dummy as stronger Eg
-execute if score @s goldark.used_item.egg matches 3 run tag @n[type=#goldark:technical, tag=goldark.dummy_magic.thunder_egg, distance=..3] add goldark.dummy_magic.thunder_egg_strong
+execute if score @s goldark.used_item.egg matches 3.. run tag @n[type=#goldark:technical, tag=goldark.dummy_magic.thunder_egg, distance=..3] add goldark.dummy_magic.thunder_egg_strong
 
 
 # Display audiovisual feedback
 playsound block.candle.extinguish player @s ~ ~ ~ 0.8 0.8
-particle white_smoke ~ ~0.5 ~ .1 .2 .1 0.1 12
+particle white_smoke ~ ~0.5 ~ .1 .2 .1 0.05 8
 
 # Reset trigger
 scoreboard players reset @s goldark.used_item.egg

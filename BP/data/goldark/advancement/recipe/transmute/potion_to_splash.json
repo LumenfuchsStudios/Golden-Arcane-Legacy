@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "splash_modifier": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "potion"
+                    },
+                    {
+                        "items": [
+                            "gunpowder"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:transmute/potion_to_splash"
+        ]
+    }
+}

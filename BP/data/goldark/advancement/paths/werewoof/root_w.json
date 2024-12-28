@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "id": "bone"
+        },
+        "title": {
+            "text": "The Werewoof"
+        },
+        "description": "Half Were, half woof, full-time goober",
+        "frame": "task",
+        "background": "minecraft:textures/block/light_gray_wool.png",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "slept_in_bed",
+            "conditions": {
+                "player": {
+                    "nbt": "{ Tags: [ goldark.paths.werewoof ] }"
+                }
+            }
+        }
+    }
+}

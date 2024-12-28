@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": "gold_block",
+        "A": "golden_apple",
+        "q": "quartz"
+    },
+    "pattern": [
+        "qGq",
+        "GAG",
+        "qGq"
+    ],
+    "result": {
+        "id": "enchanted_golden_apple"
+    },
+    "category": "misc",
+    "group": "enchanted_golden_apple"
+}

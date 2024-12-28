@@ -1,0 +1,129 @@
+{
+    "has_precipitation": true,
+    "temperature": 0.3,
+    "downfall": 2.0,
+    "effects": {
+        "fog_color": 12422138,
+        "sky_color": 9064124,
+        "water_color": 4001602,
+        "water_fog_color": 3612744,
+        "foliage_color": 3682912,
+        "grass_color": 5000828,
+        "particle": {
+            "options": {
+                "type": "ash"
+            },
+            "probability": 0.02
+        },
+        "ambient_sound": "ambient.soul_sand_valley.loop",
+        "mood_sound": {
+            "sound": "ambient.soul_sand_valley.mood",
+            "tick_delay": 4000,
+            "block_search_extent": 6,
+            "offset": 2
+        },
+        "additions_sound": {
+            "sound": "ambient.soul_sand_valley.additions",
+            "tick_chance": 0.001
+        },
+        "music": [
+            {
+                "weight": 10,
+                "data": {
+                    "sound": "music.end",
+                    "min_delay": 1200,
+                    "max_delay": 8000,
+                    "replace_current_music": false
+                }
+            },
+            {
+                "weight": 1,
+                "data": {
+                    "sound": "music.nether.nether_wastes",
+                    "min_delay": 1200,
+                    "max_delay": 8000,
+                    "replace_current_music": false
+                }
+            }
+        ]
+    },
+    "carvers": [
+        "goldark:abyss_cave",
+        "goldark:abyss_cave_extra",
+        "goldark:abyss_ridge"
+    ],
+    "features": [
+        [
+            "end_island_decorated"
+        ],
+        [
+            "lake_lava_underground"
+        ],
+        [
+            "amethyst_geode"
+        ],
+        [
+            "fossil_lower",
+            "fossil_upper"
+        ],
+        [
+            "lush_caves_vegetation",
+            "lush_caves_ceiling_vegetation",
+            "lush_caves_clay"
+        ],
+        [
+            "ore_ancient_debris_large"
+        ],
+        [
+            "ore_diamond_buried",
+            "ore_gold_extra",
+            "ore_gold_lower"
+        ],
+        [
+            "spring_water",
+            "spring_lava"
+        ],
+        [],
+        [
+            "flower_forest_flowers",
+            "trees_flower_forest"
+        ]
+    ],
+    "creature_spawn_probability": 0.01,
+    "spawners": {
+        "monster": [
+            {
+                "type": "phantom",
+                "minCount": 1,
+                "maxCount": 1,
+                "weight": 1
+            },
+            {
+                "type": "vex",
+                "minCount": 1,
+                "maxCount": 2,
+                "weight": 10
+            },
+            {
+                "type": "illusioner",
+                "minCount": 1,
+                "maxCount": 1,
+                "weight": 5
+            }
+        ]
+    },
+    "spawn_costs": {
+        "phantom": {
+            "charge": 1,
+            "energy_budget": 1
+        },
+        "vex": {
+            "charge": 0.5,
+            "energy_budget": 3
+        },
+        "illusioner": {
+            "charge": 1,
+            "energy_budget": 2
+        }
+    }
+}

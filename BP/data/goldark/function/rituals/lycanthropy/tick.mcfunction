@@ -1,10 +1,13 @@
 ## * Executes the Ritual of Lycanthropy, forbidden magic of turning thyself into a Werewoof.
 ## * 
-## * Last modified: December 10th, 2024 (AydenTFoxx)
+## * Last modified: December 24th, 2024 (AydenTFoxx)
 
 
 # Remove self if Soul Lantern is broken
 execute unless block ~ ~ ~ soul_lantern run return run kill @s[type=#goldark:technical]
+
+# Remove self if day breaks
+execute if score #goldark_time_day goldark.dummy matches 23600.. run return run kill @s[type=#goldark:technical]
 
 
 # Tick timer
@@ -24,13 +27,13 @@ particle end_rod ~2 ~3 ~-2 0.1 0.1 0.1 0.01 1
 particle end_rod ~-2 ~3 ~2 0.1 0.1 0.1 0.01 1
 particle end_rod ~-2 ~3 ~-2 0.1 0.1 0.1 0.01 1
 
-particle large_smoke ~2 ~3 ~2 -0.5 -0.8 -0.5 0.1 1
-particle large_smoke ~2 ~3 ~-2 -0.5 -0.8 0.5 0.1 1
-particle large_smoke ~-2 ~3 ~2 0.5 -0.8 -0.5 0.1 1
-particle large_smoke ~-2 ~3 ~-2 0.5 -0.8 0.5 0.1 1
+particle large_smoke ~2 ~3 ~2 -0.5 -0.8 -0.5 0.08 1
+particle large_smoke ~2 ~3 ~-2 -0.5 -0.8 0.5 0.08 1
+particle large_smoke ~-2 ~3 ~2 0.5 -0.8 -0.5 0.08 1
+particle large_smoke ~-2 ~3 ~-2 0.5 -0.8 0.5 0.08 1
 
-particle smoke ^ ^ ^6 .01 .01 .01 0.05 10 force
-particle smoke ^ ^ ^-6 .01 .01 .01 0.05 10 force
+particle smoke ^ ^ ^6 .01 .01 .01 0.01 5 force
+particle smoke ^ ^ ^-6 .01 .01 .01 0.01 5 force
 
 # Play audio
 scoreboard players add @s goldark.dummy 1
@@ -43,16 +46,12 @@ scoreboard players reset @s[scores={ goldark.dummy=60.. }] goldark.dummy
 # Grant Darkness
 effect give @a[distance=..16] darkness 5 1 true
 
+# Apply effects to nearest target (or Soul Link, if any)
+execute unless entity @n[type=item, nbt={ Item: { components: { "minecraft:custom_data": { goldark.items.soul_link: true } } } }, distance=..8] \
+        run function goldark:rituals/lycanthropy/apply_effects_player
 
-# Apply effects to nearest player
-effect give @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] wither 2
-effect give @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] hunger 5
-effect give @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] nausea 5
-effect give @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] weakness 5
-
-# Display feedback
-execute at @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] run particle nautilus ~ ~1 ~ .1 .1 .1 0.1 2
-execute at @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] run particle portal ~ ~1 ~ .1 .1 .1 0.1 4
+execute as @n[type=item, nbt={ Item: { components: { "minecraft:custom_data": { goldark.items.soul_link: true } } } }, distance=..8] \
+        run function goldark:rituals/lycanthropy/apply_effects_macro with entity @s Item.components.minecraft:custom_data.goldark.soul_link
 
 
 # Display final particles

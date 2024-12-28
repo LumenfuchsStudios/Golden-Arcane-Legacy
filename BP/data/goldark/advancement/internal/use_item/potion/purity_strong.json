@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "darkness": {
+                        "amplifier": {
+                            "min": 1
+                        },
+                        "ambient": true,
+                        "duration": {
+                            "min": 20
+                        }
+                    },
+                    "glowing": {
+                        "amplifier": {
+                            "min": 1
+                        },
+                        "ambient": true,
+                        "duration": {
+                            "min": 20
+                        }
+                    },
+                    "luck": {
+                        "ambient": true,
+                        "duration": 1
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:effects/purity/purify"
+    }
+}

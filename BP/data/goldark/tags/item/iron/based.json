@@ -19,6 +19,10 @@
         "rail",
         "shield",
         "stonecutter",
-        "tripwire_hook"
+        "tripwire_hook",
+        "chainmail_boots",
+        "chainmail_chestplate",
+        "chainmail_helmet",
+        "chainmail_leggings"
     ]
 }

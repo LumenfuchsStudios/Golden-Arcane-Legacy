@@ -1,0 +1,14 @@
+{
+    "keys": {
+        "i": "minecraft:oak_fence",
+        "[": "minecraft:oak_fence[east=true]",
+        "]": "minecraft:oak_fence[west=true]",
+        "h": "minecraft:hay_block",
+        "p": "minecraft:carved_pumpkin"
+    },
+    "layers": [
+        [" i "],
+        ["[h]"],
+        [" p "]
+    ]
+}

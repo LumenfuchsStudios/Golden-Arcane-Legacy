@@ -4,7 +4,7 @@
 
 
 # Remove trigger
-advancement revoke @s only goldark:internal/use_item/potion_holy_numbness
+advancement revoke @s only goldark:internal/use_item/potion/holy_numbness
 
 # Display visual feedback
 particle end_rod ~ ~1 ~ .1 .1 .1 0.05 10

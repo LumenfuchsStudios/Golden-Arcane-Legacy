@@ -6,9 +6,16 @@
 ## * Last modified: December 8th, 2024 (AydenTFoxx)
 
 
+## ALWAYS RUN
+
 # Run always-tick functions (run every Minecraft tick)
 function #goldark:tick_always
 
+# Trigger reload hook
+execute as @a[scores={ goldark.reload=1.. }] run function goldark:debug/reload_trigger
+
+
+## GOLDARK CLOCK
 
 # Tick GoldArk Clock
 scoreboard players add #goldark_tick goldark.dummy 1

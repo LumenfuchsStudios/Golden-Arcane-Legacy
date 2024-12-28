@@ -9,20 +9,22 @@
 advancement revoke @s only goldark:internal/build_structure/ritual_lycanthropy
 
 
+# Ignore if player is too far away
+execute unless entity @s[distance=..1] run return fail
+
 # Require Lycanthropy Altar for ritual
-execute unless predicate goldark:ritual/lycanthropy run return fail
+execute unless predicate goldark:ritual/lycanthropy positioned ~ ~-1 ~ \
+        unless function goldark:rituals/lycanthropy/init run return fail
 
 # Require Full Moon night for ritual
-execute unless score #goldark_moon_phase goldark.dummy matches 0 \
-        unless score #goldark_time_day goldark.dummy matches 13000..23000 \
-        run return fail
+execute unless score #goldark_moon_phase goldark.dummy matches 0 run return fail
 
 
 # Convert Obsidian atop
-setblock ~2 ~1 ~2 crying_obsidian replace
-setblock ~2 ~1 ~-2 crying_obsidian replace
-setblock ~-2 ~1 ~2 crying_obsidian replace
-setblock ~-2 ~1 ~-2 crying_obsidian replace
+setblock ~2 ~1 ~2 crying_obsidian destroy
+setblock ~2 ~1 ~-2 crying_obsidian destroy
+setblock ~-2 ~1 ~2 crying_obsidian destroy
+setblock ~-2 ~1 ~-2 crying_obsidian destroy
 
 # Break catalyst
 setblock ~2 ~2 ~2 fire destroy
@@ -62,5 +64,3 @@ particle explosion_emitter ~ ~ ~ 1.0 1.0 1.0 1.0 1
 
 # Init Dummy
 execute align xyz run summon marker ~0.5 ~ ~0.5 { Tags: [ goldark.dummy_ritual.lycanthropy ] }
-
-scoreboard players set @n[type=marker, tag=goldark.dummy_ritual.lycanthropy, distance=..8] goldark.ability_timer 0

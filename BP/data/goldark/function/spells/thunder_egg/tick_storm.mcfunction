@@ -36,7 +36,7 @@ execute if score @s[tag=!goldark.temp.switch_sounds] goldark.ability_clock match
 execute at @n[type=!#goldark:magic_immune, type=!chicken, distance=..32] facing entity @s eyes positioned ~ ~8 ~ run tp @s ^ ^ ^-0.1
 
 # Fall to the ground
-execute unless entity @n[type=!#goldark:magic_immune, type=!chicken, distance=..32] if block ~ ~-8 ~ #goldark:walkable run tp @s ~ ~-0.1 ~
+execute unless entity @n[type=!#goldark:magic_immune, type=!chicken, distance=..32] if block ~ ~-8 ~ #goldark:breathable run tp @s ~ ~-0.1 ~
 
 # Apply effects on touch
 effect give @e[type=!#goldark:magic_immune, type=!chicken, distance=..8, dy=4] blindness 4 1 false

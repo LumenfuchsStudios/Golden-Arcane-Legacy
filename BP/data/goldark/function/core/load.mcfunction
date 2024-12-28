@@ -1,6 +1,6 @@
 ## * Creates scoreboards and value holders for usage by Golden Arcane's features.
 ## *
-## * Last modified: December 5th, 2024 (AydenTFoxx)
+## * Last modified: December 14th, 2024 (AydenTFoxx)
 
 
 ### OBJECTIVE DECLARATION
@@ -14,17 +14,27 @@ function goldark:core/load_effects
 # Used whenever a score is needed but does not warrant a new objective.
 scoreboard objectives add goldark.dummy dummy { "text": "Dummy", "color": "gold" }
 
+## Reload (any)
+# A trigger for reloading changes on the datapack; For usage in a development environment.
+scoreboard objectives add goldark.reload trigger
+
+
 ## Ambience Clock (goldark)
 # A periodic clock for passive/ambient effects in some locations, such as ABYSS' Darkness or Heavens' Regeneration.
 scoreboard objectives add goldark.ambient_clock dummy { "text": "Ambient Clock", "color": "dark_green" }
 
-## Ability Clock (goldark, garrow)
+## Ability Clock (goldark)
 # Adds a clock for running entities' abilities; Also doubles as a cooldown.
 scoreboard objectives add goldark.ability_clock dummy { "text": "Ability Clock", "color": "blue" }
 
-## Ability Timer (goldark, garrow)
+## Ability Timer (goldark)
 # Adds a timer for the duration of an entity's ability.
 scoreboard objectives add goldark.ability_timer dummy { "text": "Ability Timer", "color": "aqua" }
+
+## Globally Unique Identifier (goldark)
+# An ever-incrementing counter which is used to give an Entity a globally-unique identifier (GUID)
+# for precise target selection anywhere in the world.
+scoreboard objectives add goldark.guid dummy { "text": "GUID", "color": "#7070AF", "bold": true }
 
 
 ## Death Count (goldark)
@@ -42,14 +52,19 @@ scoreboard objectives add goldark.used_item.egg minecraft.used:egg { "text": "Us
 
 ## Team: GoldArk_Morph
 # Used by transformed entities to prevent collision with their morph.
-team add GoldArk_Morph { "text": "GoldArk Morph", "color": "dark_aqua" }
-team modify GoldArk_Morph collisionRule never
+team add goldark_morph { "text": "G.A. Morph", "color": "dark_aqua" }
+team modify goldark_morph collisionRule never
 
 
 ### VALUE INITIALIZATION
 
 # Set modulo value for Moon phase calculus
-scoreboard players set #goldark_moon_check goldark.dummy 8
+execute unless score #goldark_moon_check goldark.dummy matches 1.. \
+        run scoreboard players set #goldark_moon_check goldark.dummy 8
+
+# Set initial value for GUID generation
+execute unless score #goldark_guid goldark.guid matches 1.. \
+        run scoreboard players set #goldark_guid goldark.guid 1
 
 
 ## Settings:
@@ -57,6 +72,10 @@ scoreboard players set #goldark_moon_check goldark.dummy 8
 # Set GoldArk Tick Rate to default
 execute unless score #goldark_tick_rate goldark.dummy matches 1.. \
     run scoreboard players set #goldark_tick_rate goldark.dummy 2
+
+# Enable reload hook
+scoreboard players enable @a goldark.reload
+
 
 # Sets Golden Arcane's difficulty to the world's difficulty equivalent.
 # DARK Mode is regarded as Hard Mode-equivalent for this purpose.

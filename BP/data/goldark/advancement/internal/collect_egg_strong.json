@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "thrown_item_picked_up_by_player",
+            "conditions": {
+                "item": {
+                    "items": "egg",
+                    "predicates": {
+                        "custom_data": {
+                            "goldark.items.thunder_egg": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:spells/thunder_egg/trade_egg_strong"
+    }
+}

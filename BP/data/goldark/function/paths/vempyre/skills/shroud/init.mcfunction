@@ -15,11 +15,11 @@ tag @s add goldark.vempyre.skill_shroud
 effect give @s slowness infinite 1 true
 effect give @s resistance infinite 3 true
 
-effect give @s invisibility infinite 2 true
-effect give @s strength infinite 1 true
+effect give @s invisibility infinite 0 true
+effect give @s strength infinite 2 true
 
 # Add attribute
-attribute @s knockback_resistance base set 0.8
+attribute @s knockback_resistance modifier add goldark:vempyre/shroud_knockback 0.8 add_value
 
 
 # Display audiovisual feedback
@@ -29,4 +29,4 @@ particle large_smoke ~ ~1 ~ .2 .5 .2 0.1 20 force
 particle explosion ~ ~1 ~ .0 .0 .0 1.0 1
 
 # Display message
-title @s actionbar { "text": "[ SHROUD ]", "color": "#401010" }
+title @s actionbar { "text": "-{ SHROUD }-", "color": "#401010" }

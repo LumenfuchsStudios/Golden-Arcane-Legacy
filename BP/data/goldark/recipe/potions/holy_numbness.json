@@ -1,9 +1,9 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        "glass_bottle",
-        "#goldark:gold/based",
-        "#goldark:iron/pure",
+        "potion",
+        [ "golden_carrot", "glistering_melon_slice" ],
+        [ "iron_ingot", "iron_nugget", "raw_iron" ],
         "glowstone_dust"
     ],
     "result": {
@@ -12,23 +12,17 @@
             "custom_data": {
                 "goldark.potions.holy_numbness": true
             },
-            "custom_name": "{ \"text\": \"Holy Protection Potion\", \"italic\": false }",
-            "lore": [ "{ \"text\": \"* Protects against Holy ailments.\", \"color\": \"gray\", \"italic\": false }" ],
+            "lore": [ "{ \"text\": \"+Holy Numbness\", \"color\": \"blue\", \"italic\": false }" ],
             "rarity": "uncommon",
             "potion_contents": {
                 "custom_color": 8055035,
+                "custom_name": "holy_numbness",
                 "custom_effects": [
                     {
                         "id": "absorption",
                         "ambient": true,
                         "amplifier": 1,
-                        "duration": 1800,
-                        "hidden_effect": {
-                            "id": "regeneration",
-                            "duration": 120,
-                            "show_icon": false,
-                            "show_particles": false
-                        }
+                        "duration": 1800
                     }
                 ]
             }

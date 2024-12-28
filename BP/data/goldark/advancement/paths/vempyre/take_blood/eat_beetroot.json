@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "beetroot",
+                        "beetroot_soup"
+                    ]
+                },
+                "player": {
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        }
+    }
+}

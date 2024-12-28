@@ -1,0 +1,45 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "potion",
+        [ "golden_apple", "golden_carrot", "glistering_melon_slice" ],
+        "milk_bucket",
+        "#goldark:magic_catalyst"
+    ],
+    "result": {
+        "id": "potion",
+        "components": {
+            "custom_data": {
+                "goldark.potions.purity": true
+            },
+            "rarity": "uncommon",
+            "potion_contents": {
+                "custom_color": 16185295,
+                "custom_name": "purity",
+                "custom_effects": [
+                    {
+                        "id": "darkness",
+                        "ambient": true,
+                        "amplifier": 0,
+                        "duration": 600
+                    },
+                    {
+                        "id": "glowing",
+                        "ambient": true,
+                        "amplifier": 0,
+                        "duration": 600
+                    },
+                    {
+                        "id": "luck",
+                        "ambient": true,
+                        "amplifier": 0,
+                        "duration": 1
+                    }
+                ]
+            },
+            "use_cooldown": {
+                "seconds": 8
+            }
+        }
+    }
+}

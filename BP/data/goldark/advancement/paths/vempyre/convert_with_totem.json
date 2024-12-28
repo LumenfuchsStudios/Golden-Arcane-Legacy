@@ -1,0 +1,60 @@
+{
+    "criteria": {
+        "perish_with_totem": {
+            "trigger": "used_totem",
+            "conditions": {
+                "player": {
+                    "effects": {
+                        "darkness": {
+                            "amplifier": 1,
+                            "ambient": true,
+                            "duration": {
+                                "min": 20
+                            }
+                        },
+                        "unluck": {
+                            "amplifier": {
+                                "min": 1
+                            },
+                            "ambient": true
+                        }
+                    }
+                }
+            }
+        },
+        "killed_by_mob": {
+            "trigger": "entity_killed_player",
+            "conditions": {
+                "killing_blow": {
+                    "is_direct": true
+                },
+                "player": {
+                    "effects": {
+                        "darkness": {
+                            "amplifier": 1,
+                            "ambient": true,
+                            "duration": {
+                                "min": 20
+                            }
+                        },
+                        "unluck": {
+                            "amplifier": {
+                                "min": 1
+                            },
+                            "ambient": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "killed_by_mob",
+            "perish_with_totem"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark:tools/vampirism/convert"
+    }
+}

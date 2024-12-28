@@ -21,4 +21,7 @@ playsound block.enchantment_table.use player @s ~ ~ ~ 0.7 2
 particle crimson_spore ~ ~ ~ .1 .5 .1 0.1 12
 
 # Display message
-title @s actionbar { "text": "[ HEAL ]", "color": "red" }
+title @s actionbar { "text": "-( HEAL )-", "color": "red" }
+
+# Add tag (for displaying the blood meter)
+tag @s add goldark.temp.display_blood

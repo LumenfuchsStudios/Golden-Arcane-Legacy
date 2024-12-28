@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "#small_flowers",
+        "#small_flowers",
+        "#small_flowers",
+        "gold_nugget"
+    ],
+    "result": {
+        "id": "bone_meal",
+        "count": 2
+    }
+}

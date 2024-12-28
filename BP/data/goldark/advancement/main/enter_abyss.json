@@ -1,0 +1,24 @@
+{
+    "parent": "goldark:main/root",
+    "display": {
+        "icon": {
+            "id": "black_concrete"
+        },
+        "title": "A Step Below Hell",
+        "description": "Enter the ABYSS",
+        "frame": "goal",
+        "hidden": true
+    },
+    "criteria": {
+        "found_abyss": {
+            "trigger": "changed_dimension",
+            "conditions": {
+                "to": "goldark:abyss"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 12,
+        "function": "goldark:effects/holy_sickness/overlay"
+    }
+}

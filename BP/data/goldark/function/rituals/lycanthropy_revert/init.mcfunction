@@ -2,7 +2,7 @@
 ## * The advancement is only triggered if the Soul Lantern is the last block to be placed,
 ## * and the triggering player is above the Soul Lantern block.
 ## * 
-## * Last modified: December 11th, 2024 (AydenTFoxx)
+## * Last modified: December 14th, 2024 (AydenTFoxx)
 
 
 # Revoke trigger
@@ -41,7 +41,7 @@ setblock ~2 ~ ~ fire destroy
 setblock ~-2 ~ ~ fire destroy
 
 # Convert Soul-block below
-setblock ~ ~-1 ~ red_sand
+setblock ~ ~-1 ~ nether_wart_block
 
 
 # Display audiovisual feedback

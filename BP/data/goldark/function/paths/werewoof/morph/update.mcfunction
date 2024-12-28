@@ -1,7 +1,7 @@
 ## * Runs the Wolf morph's behavior from transformed Werewooves.
 ## * The Wolf is hostile to all but bosses and other Woofs. It *can* be moved, but good luck there.
 ## * 
-## * Last modified: December 13th, 2024 (AydenTFoxx)
+## * Last modified: December 15th, 2024 (AydenTFoxx)
 
 
 ## # BEHAVIOR
@@ -9,8 +9,9 @@
 ## Wolf
 
 # Aggro on nearby mobs (with a cooldown)
-execute if entity @n[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..12] \
-        as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] \
+execute as @n[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..16] \
+        unless entity @s[gamemode=!survival, gamemode=!adventure] \
+        as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s \
         run function goldark:paths/werewoof/morph/aggro_on_nearest
 
 # Reduce cooldown when not attacking
@@ -18,9 +19,8 @@ execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] unles
         run scoreboard players remove @s[scores={ goldark.ability_timer=1.. }] goldark.ability_timer 1
 
 # Deal melee damage (Wolf is too unreliable in combat on its own)
-execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] \
-        as @e[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..1.5] \
-        run damage @s 4 mob_attack by @n[type=wolf, tag=goldark.dummy_morph.werewoof]
+execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s \
+        run damage @n[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..1.5] 4 mob_attack by @s
 
 # Raise from ground
 execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s \

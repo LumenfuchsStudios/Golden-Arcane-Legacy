@@ -1,0 +1,53 @@
+{
+    "criteria": {
+        "werewoof_numbness_agent": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#goldark:iron/any"
+                    }
+                ],
+                "player": {
+                    "effects": {
+                        "unluck": {}
+                    },
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#goldark:iron/any"
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.werewoof ] }"
+                }
+            }
+        },
+        "vempyre_numbness_agent": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "unluck": {}
+                },
+                "player": {
+                    "location": {
+                        "can_see_sky": true,
+                        "light": {
+                            "light": 15
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "werewoof_numbness_agent",
+            "vempyre_numbness_agent"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "goldark:potions/holy_numbness"
+        ]
+    }
+}

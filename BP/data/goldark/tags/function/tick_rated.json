@@ -1,6 +1,7 @@
 {
     "values": [
         "goldark:spells/_main",
-        "goldark:rituals/_main"
+        "goldark:rituals/_main",
+        "goldark:magic/_main"
     ]
 }

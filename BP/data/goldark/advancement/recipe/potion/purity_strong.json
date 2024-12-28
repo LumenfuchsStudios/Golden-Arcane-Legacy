@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "purity_agent": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "enchanted_golden_apple",
+                            "nether_star",
+                            "wither_rose"
+                        ]
+                    }
+                ],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "recipes": {
+                            "goldark:potions/purity": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:potions/purity_strong"
+        ]
+    }
+}

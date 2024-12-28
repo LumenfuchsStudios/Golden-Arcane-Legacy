@@ -11,6 +11,17 @@
         "#pressure_plates",
         "#rails",
         "#replaceable",
-        "#wool_carpets"
+        "#wool_carpets",
+        "#beds",
+        "#buttons",
+        "lever",
+        "torch",
+        "wall_torch",
+        "soul_torch",
+        "soul_wall_torch",
+        "redstone_torch",
+        "redstone_wire",
+        "repeater",
+        "comparator"
     ]
 }
