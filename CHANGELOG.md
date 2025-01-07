@@ -3,13 +3,65 @@
 > [!NOTE]
 > Page in Progress! Please be patient.
 
+## Version 0.5.0 / Unreleased
+
+### Codename: `Awakening`
+
+* [FEATURE] Added Vempyre path, an Arcane Path with a focus on active abilities for fighting foes far stronger than oneself.
+* [FEATURE] Added Heal ability to Vempyre, which heals 2 hearts and grants temporary Regeneration.
+* [FEATURE] Added Lunge ability to Vempyre, which bestows enhanced speed and jumping strength for a brief moment.
+* [FEATURE] Added Shroud ability to Vempyre, which cloaks the user in shadows and makes the next attack much stronger.
+* [FEATURE] Added sunlight weakness to Vempyre; Will burn in sunlight if exposed for more than a few seconds.
+  * Also triggers Holy Sickness up to level III, which causes endless fire at the Vempyre's position.
+* [FEATURE] Added Vempyre perk and helper functions for inflicting Vempyrism.
+* [ENHANCEMENT] Tweaked several of Holy Sickness' feedback features.
+* [ENHANCEMENT] Added (equipped) iron armor, Iron Golem and minecarts to Werewoof's sickness check.
+  * As with blocks, all of these trigger immediate burning damage and increase Holy Sickness' meter.
+* [ENHANCEMENT] Changed Werewoof's Wolf form climbing check to only move the Wolf upwards if the above block would not suffocate it.
+* [TECHNICAL] Added entity tags for living and undead humanoids.
+* [TECHNICAL] Added item tags for raw meat and "blood"-related items
+
+## Version 0.4.2 / 2024-12-11
+
+### Codename: `Hotfix: Lycanthrope-ish`
+
+* [FEATURE] Werewooves now take extra damage and a few seconds of Poison to any iron-related item used as weapon.
+* [FEATURE] Added Perks, toggleable features easily granted or taken by calling the same function a second time.
+  * Werewoof's attributes have been moved to the new Werewoof perk.
+  * Added jump strength to list of enhanced attributes, Werewooves can now jump roughly two blocks high.
+* [BUGFIX] Fixed Werewoof user's active effects not being given to Wolf form at transformation.
+* [ENHANCEMENT] Changed Werewoof's health requirement for transformation from 1.5 heart to 2 hearts.
+* [TECHNICAL] Added helper functions for de-transforming a Werewoof.
+* [TECHNICAL] Added Llama Spit to "projectiles" entity tag"
+* [TECHNICAL] Removed helper functions for managing Werewoof entities in a radius, now all functions are strictly self-inflicted.
+* [TECHNICAL] Changed Iron and Gold ores to be derived-type rather than pure-type in their respective block and item tags.
+
 ## Version 0.4.1 / 2024-12-11
 
-### Codename: `...`
+### Codename: `Lycan Heart`
 
+* [BUGFIX] Fixed Werewoof's Wolf form's aggro cooldown triggering on the player.
+* [BUGFIX] Fixed Werewoof's Wolf form not respecting the user's rotation on transformation.
 * [FEATURE] Added advancements for the Werewoof path.
-* [FEATURE] Added Holy Numbness effect, which alleviates Holy Sickness in most occasions.
-* ...
+* [FEATURE] Added passive attributes for the Werewoof path, which are disabled while Holy Sickness is active.
+* [FEATURE] Added Holy Numbness effect, which alleviates Holy Sickness to a certain extent.
+* [FEATURE] Added Lycanthropy ritual, which converts the nearest entity into a Werewoof.
+* [FEATURE] Added Lycanthroopy Reversal ritual, which cures the nearest Werewoof.
+* [ENHANCEMENT] Added cooldown for Werewoof's transformation ability.
+* [ENHANCEMENT] Added requirement of 1.5 heart (3 HP) for Werewoof's transformation.
+* [ENHANCEMENT] Added auto-transforming feature for non-player Werewooves during Full Moons.
+* [ENHANCEMENT] Changed Holy Sickness I to now inflict Bad Luck while active.
+* [ENHANCEMENT] Changed Werewoof's sickness check to no longer apply Holy Sickness on Creative game mode.
+* [ENHANCEMENT] Changed Werewoof's sickness check to also detect blocks one block above the entity.
+* [TECHNICAL] Added new block tags for magic catalysts and skulls.
+* [TECHNICAL] Added new block tags for gold-related items.
+* [TECHNICAL] Added new item tag for magic catalysts.
+* [TECHNICAL] Changed gold-related item tags to better match iron's.
+* [TECHNICAL] Changed "magic immune" entity tag to include projectiles.
+* [TECHNICAL] Changed "tameable" entity tag to include Donkeys and Mules.
+* [TECHNICAL] Changed Golden Arcane's tick rate system:
+  * Added "tick always" function tag for functions run on every tick;
+  * Added "tick rated" function tag for functions which retain the old behavior of being rated by the Golden Arcane tick rate.
 
 ## Version 0.4.0 / 2024-12-08
 
@@ -75,6 +127,7 @@
 * [TECHNICAL] Added item tags for iron-related items, in the following variants:
   * Heavy (9+), Medium (8-3), Low (2-1): based on how much iron an item has in its recipe;
   * Pure (only iron in its recipe), Other (Low and Medium tags), Any (all other tags).
+* [TECHNICAL] Added item tags for gold-related items in the same model as above.
 
 ## Version 0.3.0-a / 2024-11-24
 
