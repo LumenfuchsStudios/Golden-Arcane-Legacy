@@ -14,6 +14,7 @@
         "#wool_carpets",
         "#beds",
         "#buttons",
+        "#ice",
         "lever",
         "torch",
         "wall_torch",
@@ -22,6 +23,10 @@
         "redstone_torch",
         "redstone_wire",
         "repeater",
-        "comparator"
+        "comparator",
+        "azalea",
+        "moss_carpet",
+        "pale_moss_carpet",
+        "pale_hanging_moss"
     ]
 }

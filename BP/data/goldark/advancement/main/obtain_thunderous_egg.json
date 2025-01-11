@@ -13,7 +13,7 @@
         "hidden": true
     },
     "criteria": {
-        "requirement": {
+        "get_thunderous_egg": {
             "trigger": "inventory_changed",
             "conditions": {
                 "items": [
@@ -31,7 +31,7 @@
         }
     },
     "rewards": {
-        "experience": 20,
+        "experience": 8,
         "recipes": [
             "goldark:spells/thunderous_egg"
         ]

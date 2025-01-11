@@ -1,7 +1,9 @@
 ## * Module Manager: SPELLS
 ## * Single-use magics which produce unique effects upon the world.
 ## * 
-## * Last modified: December 3rd, 2024 (AydenTFoxx)
+## * Last modified: December 31st, 2024 (AydenTFoxx)
+
+# Happy New Year! :D
 
 
 ## JUDGEMENT (spells/judgement)
@@ -14,11 +16,12 @@ execute as @e[type=marker, tag=goldark.dummy_spell.judgement] at @s if loaded ~ 
 ## THUNDER EGG (spells/thunder_egg)
 
 # Detect held Thunder Egg
-execute as @a if items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg: 1b }] run tag @s add goldark.temp.held_thunder_egg
-execute as @a if items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg_strong: 1b }] run tag @s add goldark.temp.held_thunder_egg_strong
+execute as @a[tag=!goldark.temp.held_thunder_egg] if items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg: 1b }] run tag @s add goldark.temp.held_thunder_egg
+execute as @a[tag=!goldark.temp.held_thunder_egg_strong] if items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg_strong: 1b }] run tag @s add goldark.temp.held_thunder_egg_strong
 
 # Remove non-Thunder egg score
 scoreboard players reset @a[scores={ goldark.used_item.egg=1.. }, tag=!goldark.temp.held_thunder_egg, tag=!goldark.temp.held_thunder_egg_strong] goldark.used_item.egg
+
 
 # Transform thrown egg
 execute as @a[scores={ goldark.used_item.egg=1 }, tag=goldark.temp.held_thunder_egg] run scoreboard players add @s goldark.used_item.egg 1
@@ -27,8 +30,8 @@ execute as @a[scores={ goldark.used_item.egg=1.. }, tag=goldark.temp.held_thunde
 execute as @a[scores={ goldark.used_item.egg=1.. }] at @s if loaded ~ ~ ~ positioned ~ ~1 ~ run function goldark:spells/thunder_egg/init_projectile
 
 # Remove Egg tag
-execute as @a unless items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg: 1b }] run tag @s remove goldark.temp.held_thunder_egg
-execute as @a unless items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg_strong: 1b }] run tag @s remove goldark.temp.held_thunder_egg_strong
+execute as @a[tag=goldark.temp.held_thunder_egg] unless items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg: 1b }] run tag @s remove goldark.temp.held_thunder_egg
+execute as @a[tag=goldark.temp.held_thunder_egg_strong] unless items entity @s weapon.* egg[custom_data~{ goldark.items.thunder_egg_strong: 1b }] run tag @s remove goldark.temp.held_thunder_egg_strong
 
 
 # Tick Dummies

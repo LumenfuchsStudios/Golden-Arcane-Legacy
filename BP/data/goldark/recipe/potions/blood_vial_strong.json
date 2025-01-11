@@ -1,0 +1,37 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		"potion",
+		"#goldark:bloody",
+		[ "fermented_spider_eye", "redstone" ],
+		[ "wither_rose", "crimson_fungus", "warped_fungus" ],
+		"ghast_tear",
+		[ "gold_ingot", "glowstone_dust" ]
+	],
+	"result": {
+		"id": "potion",
+		"components": {
+			"enchantment_glint_override": true,
+			"rarity": "uncommon",
+			"lore": [ "{ \"text\": \"* Thou shalt regret this.\", \"color\": \"dark_red\", \"italic\": false }" ],
+			"potion_contents": {
+				"custom_color": 5966346,
+				"custom_effects": [
+					{
+						"id": "darkness",
+						"ambient": true,
+						"amplifier": 1,
+						"duration": 200
+					},
+					{
+						"id": "unluck",
+						"ambient": true,
+						"amplifier": 1,
+						"duration": 1
+					}
+				],
+				"custom_name": "blood"
+			}
+		}
+	}
+}

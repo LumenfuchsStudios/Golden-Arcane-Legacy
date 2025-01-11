@@ -11,7 +11,7 @@ execute if score #goldark_time_day goldark.dummy matches 23600.. run return run 
 
 
 # Tick timer
-scoreboard players add @s goldark.ability_clock 1
+scoreboard players operation @s goldark.ability_clock += #goldark_tick_rate goldark.dummy
 
 # Rotate self
 tp @s ~ ~ ~ ~10 ~

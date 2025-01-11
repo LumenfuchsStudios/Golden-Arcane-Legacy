@@ -1,6 +1,6 @@
-## * Removes all effects plus the user's Arcane Path.
+## * Removes all effects and temporarily nullifies the user's Arcane Path.
 ## * 
-## * Last modified: December 23rd, 2024 (AydenTFoxx)
+## * Last modified: January 2nd, 2025 (AydenTFoxx)
 
 
 # Revoke trigger
@@ -15,3 +15,9 @@ effect clear @s
 
 # Grant Nausea instead
 effect give @s nausea 8 0 true
+
+
+# Add Purity
+scoreboard players set @s goldark.effect_timer.holy_numbness 800
+
+tag @s add goldark.effects.purity

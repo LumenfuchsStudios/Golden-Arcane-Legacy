@@ -1,0 +1,52 @@
+{
+	"parent": "goldark:main/root",
+	"display": {
+		"icon": {
+			"id": "soul_lantern",
+			"components": {
+				"enchantment_glint_override": true
+			}
+		},
+		"title": "Tainted Soul",
+		"description": "The Gods oversee your actions.",
+		"hidden": true
+	},
+	"criteria": {
+		"is_werewoof": {
+			"trigger": "slept_in_bed",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"goldark:paths/werewoof/root": true
+						}
+					}
+				}
+			}
+		},
+		"is_vempyre": {
+			"trigger": "slept_in_bed",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"goldark:paths/vempyre/root": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"is_werewoof",
+			"is_vempyre"
+		]
+	],
+	"rewards": {
+		"experience": 6,
+		"function": "goldark:effects/holy_sickness/overlay"
+	}
+}

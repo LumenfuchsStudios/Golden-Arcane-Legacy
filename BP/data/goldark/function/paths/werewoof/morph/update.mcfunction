@@ -9,7 +9,7 @@
 ## Wolf
 
 # Aggro on nearby mobs (with a cooldown)
-execute as @n[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..16] \
+execute as @n[type=!#goldark:magic_immune, type=!#goldark:projectile, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..16] \
         unless entity @s[gamemode=!survival, gamemode=!adventure] \
         as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s \
         run function goldark:paths/werewoof/morph/aggro_on_nearest
@@ -20,7 +20,7 @@ execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] unles
 
 # Deal melee damage (Wolf is too unreliable in combat on its own)
 execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s \
-        run damage @n[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..1.5] 4 mob_attack by @s
+        run damage @n[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.paths.werewoof, tag=!goldark.path_transformed, distance=..1] 4 mob_attack by @s
 
 # Raise from ground
 execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s \
@@ -31,7 +31,7 @@ execute as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s
 ## Input (Player)
 
 # Move forward
-execute if entity @s[predicate=goldark:player_input/forward] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s if predicate goldark:entity/is_on_ground run tp @s ^ ^ ^1 facing ^ ^ ^8
+execute if entity @s[predicate=goldark:player_input/forward] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s if predicate goldark:entity/is_on_ground if block ^ ^ ^1 #goldark:breathable run tp @s ^ ^ ^1 facing ^ ^ ^8
 
 # Rotate Wolf
 execute if entity @s[predicate=goldark:player_input/left] as @n[type=wolf, tag=goldark.dummy_morph.werewoof, distance=..1.5] at @s if predicate goldark:entity/is_on_ground run tp @s ~ ~ ~ facing ^4 ^ ^4

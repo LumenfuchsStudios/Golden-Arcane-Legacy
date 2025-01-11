@@ -12,6 +12,8 @@ effect give @s slowness 2 0
 
 # Reset attribute
 attribute @s movement_efficiency modifier remove goldark:vempyre/lunge_movement
+attribute @s water_movement_efficiency modifier remove goldark:vempyre/lunge_water_movement
+
 attribute @s step_height modifier remove goldark:vempyre/lunge_step
 
 

@@ -1,5 +1,5 @@
 {
-    "parent": "goldark:paths/vempyre/root_v",
+    "parent": "goldark:paths/vempyre/root",
     "display": {
         "icon": {
             "id": "potion"

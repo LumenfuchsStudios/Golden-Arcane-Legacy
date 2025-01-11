@@ -1,10 +1,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        "#small_flowers",
-        "#small_flowers",
-        "#small_flowers",
-        "gold_nugget"
+        "#bee_food",
+        "#bee_food",
+        "#bee_food",
+        [ "moss_block", "gold_nugget" ]
     ],
     "result": {
         "id": "bone_meal",

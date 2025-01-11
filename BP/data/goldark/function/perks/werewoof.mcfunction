@@ -9,7 +9,7 @@
 attribute @s[tag=!goldark.perks.werewoof] armor_toughness modifier add goldark:werewoof/armor_toughness 4 add_value
 attribute @s[tag=!goldark.perks.werewoof] attack_damage modifier add goldark:werewoof/attack_damage 2 add_value
 
-attribute @s[tag=!goldark.perks.werewoof] jump_strength modifier add goldark:werewoof/jump_strength 0.15 add_value
+attribute @s[tag=!goldark.perks.werewoof] jump_strength modifier add goldark:werewoof/jump_strength 0.125 add_value
 attribute @s[tag=!goldark.perks.werewoof] safe_fall_distance modifier add goldark:werewoof/safe_fall_distance 3 add_value
 attribute @s[tag=!goldark.perks.werewoof] mining_efficiency modifier add goldark:werewoof/mining_efficiency 1.5 add_multiplied_total
 

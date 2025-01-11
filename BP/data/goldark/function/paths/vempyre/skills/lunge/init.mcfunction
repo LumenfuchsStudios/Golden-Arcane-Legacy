@@ -20,7 +20,9 @@ effect give @a[distance=..12] darkness 4 0 true
 
 
 # Add attribute
-attribute @s movement_efficiency modifier add goldark:vempyre/lunge_movement 2.0 add_multiplied_base
+attribute @s movement_efficiency modifier add goldark:vempyre/lunge_movement 2.0 add_value
+attribute @s water_movement_efficiency modifier add goldark:vempyre/lunge_water_movement 1.5 add_value
+
 attribute @s step_height modifier add goldark:vempyre/lunge_step 2.0 add_multiplied_total
 
 

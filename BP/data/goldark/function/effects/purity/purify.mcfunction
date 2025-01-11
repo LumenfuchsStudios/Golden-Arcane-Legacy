@@ -20,9 +20,6 @@ scoreboard players set @s goldark.effect_timer.holy_sickness 0
 effect give @s darkness 12 1 true
 effect give @s nausea 12 1 true
 
-# Apply Holy Numbness
-scoreboard players set @s goldark.effect_timer.holy_numbness 1111
-
 
 # Display audiovisual feedback
 execute unless entity @s[tag=!goldark.paths.vempyre, tag=!goldark.paths.werewoof] run playsound entity.ghast.hurt player @s ~ ~ ~ 1 1.2

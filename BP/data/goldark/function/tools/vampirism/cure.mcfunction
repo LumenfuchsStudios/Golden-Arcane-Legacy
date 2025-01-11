@@ -1,6 +1,6 @@
 ## * Cures Vampirism from the calling entity.
 ## * 
-## * Last modified: December 24th, 2024 (AydenTFoxx)
+## * Last modified: December 29th, 2024 (AydenTFoxx)
 
 
 # You be no Pyre, exit.
@@ -17,7 +17,7 @@ effect give @s glowing 7 0 false
 
 
 # Revoke Vempyre advancements
-advancement revoke @s[type=player] from goldark:paths/vempyre/root_v
+advancement revoke @s[type=player] from goldark:paths/vempyre/root
 
 # Remove Vempyre perk
 execute if entity @s[tag=goldark.perks.vempyre] run function goldark:perks/vempyre

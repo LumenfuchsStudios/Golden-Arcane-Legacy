@@ -13,7 +13,7 @@
         "show_toast": true
     },
     "criteria": {
-        "requirement": {
+        "killed_with_bloodlust": {
             "trigger": "entity_killed_player",
             "conditions": {
                 "killing_blow": {

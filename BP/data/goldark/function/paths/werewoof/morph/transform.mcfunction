@@ -7,7 +7,7 @@
 # Summon Wolf morph
 summon wolf ~ ~ ~ { \
     Age: 999999, AngerTime: 100, PersistenceRequired: 1b, Tags: [ "goldark.dummy_morph.werewoof", "goldark.paths.werewoof", "goldark.path_transformed" ], \
-    active_effects: [ { id: regeneration, amplifier: 2, duration: -1, show_particles: false }, { id: resistance, amplifier: 2, duration: -1, show_particles: false } ], \
+    active_effects: [ { id: regeneration, amplifier: 1, duration: -1, show_particles: false }, { id: resistance, amplifier: 2, duration: -1, show_particles: false } ], \
     attributes: [ { id: "minecraft:armor", base: 8.0d}, {id: "minecraft:armor_toughness", base: 4.0d}, {id: "minecraft:attack_damage", base: 8.0d}, {id: "minecraft:attack_knockback", base: 1.0d}, {id: "minecraft:knockback_resistance", base: 0.5d},  {id: "minecraft:max_health", base: 20.0d}, {id: "minecraft:movement_speed", base: 0.4d}, {id: "minecraft:scale", base: 1.5d} ], \
     Health: 20.0f }
 

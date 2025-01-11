@@ -18,7 +18,7 @@ particle end_rod ~ ~0.5 ~ .1 .1 .1 0.05 2
 
 
 # Tick Clock
-scoreboard players add @s goldark.ability_clock 1
+scoreboard players operation @s goldark.ability_clock += #goldark_tick_rate goldark.dummy
 
 # Play audio
 execute if score @s goldark.ability_clock matches 50..80 if predicate goldark:misc/random_10 run playsound block.portal.ambient block @a[distance=..16] ~ ~ ~ 0.8 1.3

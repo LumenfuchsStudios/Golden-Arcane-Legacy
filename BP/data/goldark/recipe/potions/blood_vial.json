@@ -1,0 +1,30 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		"potion",
+		"#goldark:bloody",
+		[ "fermented_spider_eye", "redstone" ],
+		"#goldark:magic_catalyst"
+	],
+	"result": {
+		"id": "potion",
+		"components": {
+			"potion_contents": {
+				"custom_color": 5966346,
+				"custom_effects": [
+					{
+						"id": "darkness",
+						"ambient": true,
+						"duration": 400
+					},
+					{
+						"id": "unluck",
+						"ambient": true,
+						"duration": 1
+					}
+				],
+				"custom_name": "blood"
+			}
+		}
+	}
+}

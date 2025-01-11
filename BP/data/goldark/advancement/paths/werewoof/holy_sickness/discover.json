@@ -1,5 +1,5 @@
 {
-    "parent": "goldark:paths/werewoof/root_w",
+    "parent": "goldark:paths/werewoof/root",
     "display": {
         "icon": {
             "id": "iron_nugget"

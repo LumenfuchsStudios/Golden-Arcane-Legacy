@@ -1,6 +1,6 @@
 ## * Converts the calling entity into a Vempyre.
 ## * 
-## * Last modified: December 25th, 2024 (AydenTFoxx)
+## * Last modified: December 29th, 2024 (AydenTFoxx)
 
 # Happy Holidays :O
 
@@ -18,7 +18,7 @@ particle minecraft:soul_fire_flame ~ ~0.5 ~ .1 .2 .1 0.05 20 force
 playsound entity.ghast.hurt hostile @a[distance=..256] ~ ~ ~ 0.8 0 0.2
 
 # Grant root advancement "Path: Vempyre"
-advancement grant @s[type=player] only goldark:paths/vempyre/root_v
+advancement grant @s[type=player] only goldark:paths/vempyre/root
 
 # Add tag, now is Pyre
 tag @s add goldark.paths.vempyre

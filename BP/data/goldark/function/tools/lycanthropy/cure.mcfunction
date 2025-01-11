@@ -1,6 +1,6 @@
 ## * Cures Lycanthropy from the calling entity.
 ## * 
-## * Last modified: December 24th, 2024 (AydenTFoxx)
+## * Last modified: December 29th, 2024 (AydenTFoxx)
 
 
 # You be no Woof, exit.
@@ -20,7 +20,7 @@ effect give @s glowing 7 0 false
 
 
 # Revoke Werewoof advancements
-advancement revoke @s[type=player] from goldark:paths/werewoof/root_w
+advancement revoke @s[type=player] from goldark:paths/werewoof/root
 
 # Remove Werewoof perk
 execute if entity @s[tag=goldark.perks.werewoof] run function goldark:perks/werewoof

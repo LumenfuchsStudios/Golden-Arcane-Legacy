@@ -10,7 +10,7 @@
         "hidden": false
     },
     "criteria": {
-        "requirement": {
+        "get_thunder_egg": {
             "trigger": "inventory_changed",
             "conditions": {
                 "items": [
@@ -27,7 +27,7 @@
         }
     },
     "rewards": {
-        "experience": 10,
+        "experience": 4,
         "recipes": [
             "goldark:spells/thunder_egg"
         ]
