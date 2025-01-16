@@ -40,7 +40,7 @@ Legend:
   * Added jump strength to list of enhanced attributes, Werewooves can now jump roughly two blocks high.
 * 🔺 Changed Werewoof's health requirement for transformation from 1.5 heart to 2 hearts.
 * 🔧 Added helper functions for de-transforming a Werewoof.
-* 🔧 Added Llama Spit to "projectiles" entity tag"
+* 🔧 Added Llama Spit to "projectiles" entity tag.
 * 🔧 Removed helper functions for managing Werewoof entities in a radius, now all functions are strictly self-inflicted.
 * 🔧 Changed Iron and Gold ores to be derived-type rather than pure-type in their respective block and item tags.
 
