@@ -1,6 +1,6 @@
 ## * Erases the touched entity from existence; Works funky with Slimes and Magma Cubes.
 ## * 
-## * Last modified: December 11th, 2024 (AydenTFoxx)
+## * Last modified: January 15th, 2024 (AydenTFoxx)
 
 
 # Revoke trigger
@@ -8,6 +8,10 @@ advancement revoke @s only goldark:internal/use_item/remover_stick
 
 # Tag victim (assumed nearest hurt entity)
 tag @n[nbt={ HurtTime: 10s }, distance=1..12] add goldark.temp.remove_by_stick
+
+# If victim is one of a select few "strong" mobs, a stronger function is called instead.
+execute if entity @n[type=#goldark:magic_immune, tag=goldark.temp.remove_by_stick, distance=1..12] run return run function goldark:spells/remover_stick_overkill
+execute if entity @n[type=interaction, tag=lumenfuchs.entity.dummy, tag=lumenfuchs.dummy.is_hurt, distance=1..12] run return 0
 
 
 # Display audiovisual feedback

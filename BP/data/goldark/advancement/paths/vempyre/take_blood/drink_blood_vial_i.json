@@ -1,23 +1,13 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "effects_changed",
+            "trigger": "consume_item",
             "conditions": {
-                "effects": {
-                    "darkness": {
-                        "amplifier": 0,
-                        "ambient": true,
-                        "duration": {
-                            "min": 20
-                        }
-                    },
-                    "unluck": {
-                        "ambient": true,
-                        "duration": 1
+                "item": {
+                    "items": "potion",
+                    "components": {
+                        "custom_data": { "goldark.items.blood_vial": true }
                     }
-                },
-                "player": {
-                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
                 }
             }
         }

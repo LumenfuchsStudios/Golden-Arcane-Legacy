@@ -1,16 +1,16 @@
 ## * Runs Vempyre-specific code and behaviors.
 ## * 
-## * Last modified: December 17th, 2024 (AydenTFoxx)
+## * Last modified: January 21st, 2024 (AydenTFoxx)
 
 
 ## PERKS
 
 # Vempyre
 execute unless score @s goldark.effect_timer.holy_sickness matches 200.. \
-        if entity @s[tag=!goldark.perks.vempyre] run function goldark:perks/vempyre
+        if entity @s[tag=!goldark.perks.vempyre, tag=!goldark.effects.purity, scores={ goldark.health_check=1.. }] run function goldark:perks/vempyre
 
 execute if score @s goldark.effect_timer.holy_sickness matches 200.. \
-        if entity @s[tag=goldark.perks.vempyre] run function goldark:perks/vempyre
+        if entity @s[tag=goldark.perks.vempyre, tag=!goldark.effects.purity, scores={ goldark.health_check=1.. }] run function goldark:perks/vempyre
 
 
 ## BEHAVIOR

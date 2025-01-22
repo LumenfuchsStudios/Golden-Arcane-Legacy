@@ -1,19 +1,19 @@
-## * Gives the user a Blood Vial from an injured victim.
+## * Gives the user a blood vial of an injured victim.
 ## * 
-## * Last modified: December 25th, 2024 (AydenTFoxx)
-
-# Happy Holidays! ^^
+## * Last modified: January 13th, 2025 (AydenTFoxx)
 
 
 # Revoke trigger
 advancement revoke @s only goldark:paths/vempyre/take_blood/hit_with_bottle
 
+
 # Ignore if player has the Purity effect
 execute if entity @s[tag=goldark.effects.purity] run return fail
 
 # Ignore if target is Undead or non-humanoid, or randomly with a certain rate
-execute unless entity @n[type=!#undead, type=!#goldark:humanoid/living, tag=!goldark.paths.vempyre, nbt={ HurtTime: 10s }, distance=..4] \
-        unless predicate goldark:misc/random_33 run return fail
+execute unless entity @n[type=#goldark:humanoid/living, tag=!goldark.paths.vempyre, nbt={ HurtTime: 10s }, distance=..4] run return fail
+
+execute if predicate goldark:misc/random_33 run return -1
 
 
 # Remove empty bottle
@@ -24,6 +24,7 @@ summon item ~ ~ ~ { \
     Item: { \
         id: "potion", \
         components: { \
+            "custom_data": { goldark.items.blood_vial: true }, \
             "potion_contents": { \
                 "custom_color": 5966346, \
                 "custom_name": "blood", \

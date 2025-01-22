@@ -13,9 +13,6 @@ function goldark:effects/consume_milk
 # Remove all status effects
 effect clear @s
 
-# Grant Nausea instead
-effect give @s nausea 8 0 true
-
 
 # Add Purity
 scoreboard players set @s goldark.effect_timer.holy_numbness 800

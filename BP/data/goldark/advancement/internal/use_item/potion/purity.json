@@ -1,26 +1,14 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "effects_changed",
+            "trigger": "consume_item",
             "conditions": {
-                "effects": {
-                    "darkness": {
-                        "amplifier": 0,
-                        "ambient": true,
-                        "duration": {
-                            "min": 20
+                "item": {
+                    "items": "potion",
+                    "components": {
+                        "custom_data": {
+                            "goldark.potions.purity": true
                         }
-                    },
-                    "glowing": {
-                        "amplifier": 0,
-                        "ambient": true,
-                        "duration": {
-                            "min": 20
-                        }
-                    },
-                    "luck": {
-                        "ambient": true,
-                        "duration": 1
                     }
                 }
             }

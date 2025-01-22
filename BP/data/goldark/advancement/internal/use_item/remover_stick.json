@@ -11,7 +11,10 @@
                 "player": {
                     "equipment": {
                         "mainhand": {
-                            "items": "debug_stick",
+                            "items": [
+                                "debug_stick",
+                                "stick"
+                            ],
                             "components": {
                                 "custom_data": {
                                     "goldark.items.remover_stick": true

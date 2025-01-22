@@ -13,7 +13,10 @@
 		"components": {
 			"enchantment_glint_override": true,
 			"rarity": "uncommon",
-			"lore": [ "{ \"text\": \"* Thou shalt regret this.\", \"color\": \"dark_red\", \"italic\": false }" ],
+			"lore": [ "{ \"text\": \"* You shall regret this.\", \"color\": \"dark_red\", \"italic\": false }" ],
+			"custom_data": {
+				"goldark.items.blood_vial_strong": true
+			},
 			"potion_contents": {
 				"custom_color": 5966346,
 				"custom_effects": [
@@ -21,13 +24,13 @@
 						"id": "darkness",
 						"ambient": true,
 						"amplifier": 1,
-						"duration": 200
+						"duration": 400
 					},
 					{
 						"id": "unluck",
 						"ambient": true,
 						"amplifier": 1,
-						"duration": 1
+						"duration": 80
 					}
 				],
 				"custom_name": "blood"

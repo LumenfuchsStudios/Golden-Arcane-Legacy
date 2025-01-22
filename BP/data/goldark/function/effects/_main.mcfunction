@@ -22,7 +22,7 @@ execute as @e[type=!#goldark:magic_immune, scores={ goldark.effect_timer.holy_si
 execute as @e[type=!#goldark:magic_immune, scores={ goldark.effect_timer.holy_numbness=1.. }] at @s if loaded ~ ~ ~ run function goldark:effects/holy_numbness/tick
 
 # Reset score
-scoreboard players reset @s[scores={ goldark.effect_timer.holy_numbness=..0 }] goldark.effect_timer.holy_numbness
+scoreboard players reset @a[scores={ goldark.effect_timer.holy_numbness=..0 }] goldark.effect_timer.holy_numbness
 
 
 ## Purity (Neutral)

@@ -1,16 +1,16 @@
 ## * Runs Werewoof-unique code & behaviors.
 ## * 
-## * Last modified: December 17th, 2024 (AydenTFoxx)
+## * Last modified: January 13th, 2024 (AydenTFoxx)
 
 
 ## PERKS
 
 # Werewoof
 execute unless score @s goldark.effect_timer.holy_sickness matches 100.. \
-        if entity @s[tag=!goldark.perks.werewoof] run function goldark:perks/werewoof
+        if entity @s[tag=!goldark.perks.werewoof, tag=!goldark.effects.purity, scores={ goldark.health_check=1.. }] run function goldark:perks/werewoof
 
 execute if score @s goldark.effect_timer.holy_sickness matches 100.. \
-        if entity @s[tag=goldark.perks.werewoof] run function goldark:perks/werewoof
+        if entity @s[tag=goldark.perks.werewoof, tag=!goldark.effects.purity, scores={ goldark.health_check=1.. }] run function goldark:perks/werewoof
 
 
 ## BEHAVIOR

@@ -54,7 +54,7 @@ Legend:
 * ⭐ Added passive attributes for the Werewoof path, which are disabled while Holy Sickness is active.
 * ⭐ Added Holy Numbness effect, which alleviates Holy Sickness to a certain extent.
 * ⭐ Added Lycanthropy ritual, which converts the nearest entity into a Werewoof.
-* ⭐ Added Lycanthroopy Reversal ritual, which cures the nearest Werewoof.
+* ⭐ Added Lycanthropy Reversal ritual, which cures the nearest Werewoof.
 * 🔺 Added cooldown for Werewoof's transformation ability.
 * 🔺 Added requirement of 1.5 heart (3 HP) for Werewoof's transformation.
 * 🔺 Added auto-transforming feature for non-player Werewooves during Full Moons.
@@ -86,7 +86,7 @@ Legend:
 * ⭐ Added hidden advancement for surviving Holy Sickness to its very end.
 * ⭐ Added new mechanic for turning eggs collected from a chicken into Thunder and Thunderous Eggs.
 * 🔺 Changed Holy Sickness' audio feedback to be less deafening and/or more unique amongst each other.
-* 🔺 Changed Holy Sickness' visual feedback to better accomodate recent updates.
+* 🔺 Changed Holy Sickness' visual feedback to better accommodate recent updates.
 * 🔺 Changed Holy Sickness III's Poison duration from `30` to `12` seconds.
 * 🔺 Changed Holy Sickness V's final explosion to summon a TNT if the player is not on ground.
   * Also removed summoned snowball as it had no effect in the fireball's behavior as previously intended.
@@ -111,7 +111,7 @@ Legend:
 * 🔧 Removed helper function for toggling the Werewoof path, as more specific and flexible functions with the same purpose were also added in the same update.
 * 🔧 Added team for transformed entities, with disabled collision detection to avoid interaction with other mobs.
 * 🔧 Added predicate for whether an entity is on ground.
-* 🔧 Added block tags for iron-related blocks mirroring their item-type counterpars.
+* 🔧 Added block tags for iron-related blocks mirroring their item-type counterparts.
 * 🔧 Replaced item tags for Low, Medium, and Other iron-related items with the generic "Based", for items whose recipe include iron and a non-iron ingredient.
 
 ## Version 0.3.0-b / 2024-12-02
@@ -150,7 +150,7 @@ Legend:
   * Sneaking while casting summons Evoker Fangs in a circle pattern of sorts around the caster instead.
 * ⭐ Added new charm spell: Lightning Bolt, which conjures a lightning in front of the caster, or at its position if not a player.
   * Sneaking while casting conjures lightning in a large, cone-shaped area in front of the caster, in addition to the behavior above.
-* ⭐ Added Dimensional Rift spell, which allows interdimensional travel between vanilla and Golden Arcane dimensions.
+* ⭐ Added Dimensional Rift spell, which allows inter-dimensional travel between vanilla and Golden Arcane dimensions.
 * ⭐ Added Rift Threader, a tool for managing a Dimensional Rift's destination. It can also be used for linking two Rifts to each other, though that is yet a buggy and experimental feature.
 * ⭐ Added two new structures with a naturally-spawned Dimensional Rift at its center, in two variants: Heavens (linked to the Overworld dimension) and Overworld (linked to the Heavens dimension).
 * 🔧 Added new system for registering and calling/"casting" spells.

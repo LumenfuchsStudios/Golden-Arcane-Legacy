@@ -7,6 +7,7 @@
 
 
 give @s potion[ \
+        custom_data={ goldark.potions.purity: true }, \
         rarity="uncommon", \
         potion_contents={ \
             custom_color: 16185295, \

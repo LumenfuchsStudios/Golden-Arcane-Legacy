@@ -19,12 +19,15 @@ execute unless entity @n[type=!#undead, type=!#frog_food, tag=!goldark.paths.vem
 tag @n[type=!#undead, type=!#frog_food, tag=!goldark.paths.vempyre, nbt={ HurtTime: 10s }, distance=..6] add goldark.temp.take_blood
 
 # Add score to player
-execute at @n[type=!#undead, type=!#frog_food, tag=goldark.temp.take_blood, distance=..6] run scoreboard players add @s goldark.ability_clock 3
+execute at @n[type=!#undead, type=!#frog_food, tag=goldark.temp.take_blood, distance=..6] \
+        run scoreboard players add @s goldark.ability_clock 3
 
 # Add extra if victim was humanoid
 execute at @n[type=!#undead, type=!#frog_food, tag=goldark.temp.take_blood, distance=..6] \
         if entity @s[advancements={ goldark:paths/vempyre/take_blood/entity_humanoid=true }] run scoreboard players add @s goldark.ability_clock 4
 
+# Give Saturation
+execute at @n[type=!#undead, type=!#frog_food, tag=goldark.temp.take_blood, distance=..6] run effect give @s saturation 1 0 true
 
 # Display audiovisual feedback
 execute at @n[type=!#undead, type=!#frog_food, tag=goldark.temp.take_blood, distance=..6] run particle dust_color_transition{ from_color: 5374723, to_color: 2031873, scale: 0.7 } ~ ~1 ~ 0.2 0.4 0.2 1.0 10 force

@@ -7,7 +7,7 @@
 
 
 give @s potion[ \
-        custom_data={ goldark.potions.purity: true }, \
+        custom_data={ goldark.potions.purity_strong: true }, \
         lore=[ '{ "text": "* \\"A sip is final.\\"", "color": "red", "italic": false }' ], \
         rarity="rare", \
         potion_contents={ \

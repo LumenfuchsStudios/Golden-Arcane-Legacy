@@ -1,8 +1,6 @@
 ## * "Purifies" the user, removing any Arcane Paths and effects active.
 ## * 
-## * Last modified: December 25th, 2024 (AydenTFoxx)
-
-# Happy Holidays -w-
+## * Last modified: January 13th, 2025 (AydenTFoxx)
 
 
 # Revoke trigger
@@ -22,7 +20,7 @@ effect give @s nausea 12 1 true
 
 
 # Display audiovisual feedback
-execute unless entity @s[tag=!goldark.paths.vempyre, tag=!goldark.paths.werewoof] run playsound entity.ghast.hurt player @s ~ ~ ~ 1 1.2
+execute unless entity @s[tag=!goldark.paths.vempyre, tag=!goldark.paths.werewoof] run playsound block.portal.travel player @s ~ ~ ~ 1 1.33
 execute unless entity @s[tag=!goldark.paths.vempyre, tag=!goldark.paths.werewoof] run particle large_smoke ~ ~1 ~ .1 .2 .1 0.05 20 normal @s
 
 # Remove Arcane Paths

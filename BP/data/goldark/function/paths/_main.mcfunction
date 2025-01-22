@@ -15,6 +15,11 @@ execute if score #goldark_time_day goldark.dummy matches 0 store result score #g
 execute if score #goldark_time_day goldark.dummy matches 0 run scoreboard players operation #goldark_moon_phase goldark.dummy %= #goldark_moon_check goldark.dummy
 
 
+# Remove Perks while Purity is active
+execute as @a[tag=goldark.effects.purity, tag=goldark.perks.werewoof] run function goldark:perks/werewoof
+execute as @a[tag=goldark.effects.purity, tag=goldark.perks.vempyre] run function goldark:perks/vempyre
+
+
 ## WEREWOOF
 
 # Run Werewoof behavior & traits
@@ -26,18 +31,11 @@ execute if score #goldark_moon_phase goldark.dummy matches 0 if score #goldark_t
         as @a at @s as @n[type=!#goldark:magic_immune, type=!player, tag=!goldark.paths.werewoof, sort=random, distance=..256] at @s \
         if loaded ~ ~ ~ run function goldark:tools/lycanthropy/convert
 
-# Prevent player-less Wolf morphs
-execute as @e[type=wolf, tag=goldark.dummy_morph.werewoof] at @s if loaded ~ ~ ~ unless entity @n[type=!#goldark:magic_immune, tag=goldark.paths.werewoof, tag=goldark.path_transformed, tag=!goldark.dummy_morph.werewoof, tag=!goldark.effects.purity, distance=..2] run kill @s
+# Prevent mob-less Wolf morphs
+execute as @e[type=wolf, tag=goldark.dummy_morph.werewoof] at @s if loaded ~ ~ ~ unless entity @n[type=!#goldark:magic_immune, tag=goldark.paths.werewoof, tag=goldark.path_transformed, tag=!goldark.dummy_morph.werewoof, tag=!goldark.effects.purity, distance=..4] run kill @s
 
 
 ## VEMPYRE
 
 # Run Vempyre behavior & traits
 execute as @a[tag=goldark.paths.vempyre, tag=!goldark.effects.purity] at @s if loaded ~ ~ ~ run function goldark:paths/vempyre/update
-
-
-## OTHER/ANY
-
-# Remove Perks while Purity is active
-execute as @a[tag=goldark.effects.purity, tag=goldark.perks.werewoof] run function goldark:perks/werewoof
-execute as @a[tag=goldark.effects.purity, tag=goldark.perks.vempyre] run function goldark:perks/vempyre
