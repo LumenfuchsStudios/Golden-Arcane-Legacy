@@ -213,46 +213,6 @@
             "condition": "location_check",
             "predicate": {
                 "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": 1,
-            "offsetZ": 1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": 1,
-            "offsetZ": -1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": -1,
-            "offsetZ": 1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": -1,
-            "offsetZ": -1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
                     "blocks": "#soul_speed_blocks"
                 }
             },

@@ -1,0 +1,71 @@
+{
+    "description": {
+        "text": "Iron Aspect"
+    },
+    "exclusive_set": "#exclusive_set/damage",
+    "supported_items": "#enchantable/durability",
+    "weight": 5,
+    "max_level": 2,
+    "min_cost": {
+        "base": 8,
+        "per_level_above_first": 4
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first": 4
+    },
+    "anvil_cost": 5,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "damage": [
+            {
+                "effect": {
+                    "type": "multiply",
+                    "factor": {
+                        "type": "linear",
+                        "base": 0.2,
+                        "per_level_above_first": 0.2
+                    }
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{ Tags: [ goldark.paths.werewoof ] }"
+                    }
+                }
+            }
+        ],
+        "item_damage": [
+            {
+                "effect": {
+                    "type": "remove_binomial",
+                    "chance": {
+                        "type": "linear",
+                        "base": 0.3,
+                        "per_level_above_first": 0.2
+                    }
+                }
+            }
+        ],
+        "post_attack": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "goldark:paths/werewoof/hurt_player_by_iron"
+                },
+                "enchanted": "attacker",
+                "affected": "victim",
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{ Tags: [ goldark.paths.werewoof ] }"
+                    }
+                }
+            }
+        ]
+    }
+}

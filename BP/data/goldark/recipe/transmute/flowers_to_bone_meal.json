@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "#bee_food",
+        "#bee_food",
+        "#bee_food",
+        [ "moss_block", "gold_nugget" ]
+    ],
+    "result": {
+        "id": "bone_meal",
+        "count": 2
+    }
+}

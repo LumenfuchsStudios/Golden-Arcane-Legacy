@@ -4,22 +4,42 @@
             "id": "redstone"
         },
         "title": {
-            "text": "Path: Vempyre"
+            "text": "The Vempyre"
         },
         "description": "A lust for blood and a taste for fashion",
         "frame": "task",
         "background": "minecraft:textures/block/nether_bricks.png",
         "announce_to_chat": false,
-        "show_toast": false
+        "show_toast": true
     },
     "criteria": {
-        "requirement": {
-            "trigger": "slept_in_bed",
+        "killed_with_bloodlust": {
+            "trigger": "entity_killed_player",
             "conditions": {
+                "killing_blow": {
+                    "is_direct": true
+                },
                 "player": {
-                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                    "effects": {
+                        "darkness": {
+                            "amplifier": 1,
+                            "ambient": true,
+                            "duration": {
+                                "min": 20
+                            }
+                        },
+                        "unluck": {
+                            "amplifier": {
+                                "min": 1
+                            },
+                            "ambient": true
+                        }
+                    }
                 }
             }
         }
+    },
+    "rewards": {
+        "function": "goldark:tools/vampirism/convert"
     }
 }

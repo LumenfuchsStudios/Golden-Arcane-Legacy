@@ -1,0 +1,48 @@
+{
+    "keys": {
+        "o": "minecraft:obsidian",
+        "m": "minecraft:glowstone",
+        "g": "minecraft:gold_block",
+        "a": "minecraft:candle[candles=4,lit=true]",
+        "s": "minecraft:soul_soil",
+        "i": "minecraft:iron_block",
+        "l": "minecraft:soul_lantern"
+    },
+    "layers": [
+        [
+            "  g  ",
+            "     ",
+            "g s g",
+            "     ",
+            "  g  "
+        ],
+        [
+            "o a o",
+            "     ",
+            "a i a",
+            "     ",
+            "o a o"
+        ],
+        [
+            "o   o",
+            "     ",
+            "  l  ",
+            "     ",
+            "o   o"
+        ],
+        [
+            "o   o",
+            "     ",
+            "     ",
+            "     ",
+            "o   o"
+        ],
+        [
+            "m   m",
+            "     ",
+            "     ",
+            "     ",
+            "m   m"
+        ]
+    ]
+}

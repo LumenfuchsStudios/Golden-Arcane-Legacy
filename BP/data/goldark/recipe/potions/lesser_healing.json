@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "potion",
+        [ "brown_mushroom", "sugar" ],
+        "#goldark:healing",
+        "gold_nugget"
+    ],
+    "result": {
+        "id": "potion",
+        "components": {
+            "potion_contents": {
+                "custom_color": 16532065,
+                "custom_name": "lesser_healing",
+                "custom_effects": [
+                    {
+                        "id": "regeneration",
+                        "amplifier": 0,
+                        "duration": 400
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -11,6 +11,24 @@
         "#pressure_plates",
         "#rails",
         "#replaceable",
-        "#wool_carpets"
+        "#wool_carpets",
+        "#beds",
+        "#buttons",
+        "#ice",
+        "lever",
+        "torch",
+        "wall_torch",
+        "soul_torch",
+        "soul_wall_torch",
+        "redstone_torch",
+        "redstone_wire",
+        "repeater",
+        "comparator",
+        "azalea",
+        "moss_carpet",
+        "pale_moss_carpet",
+        "pale_hanging_moss",
+        "tripwire",
+        "tripwire_hook"
     ]
 }

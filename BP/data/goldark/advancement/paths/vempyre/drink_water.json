@@ -1,0 +1,27 @@
+{
+    "parent": "goldark:paths/vempyre/root",
+    "display": {
+        "icon": {
+            "id": "potion"
+        },
+        "title": "Hydrated",
+        "description": "Drink water to avoid getting sunburnt",
+        "frame": "task"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "potion"
+                },
+                "player": {
+                    "nbt": "{ Tags: [ goldark.paths.vempyre, goldark.holy_sickness.active_sunlight ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 4
+    }
+}

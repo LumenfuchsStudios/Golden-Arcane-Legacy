@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "milk_bucket"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:effects/consume_milk"
+    }
+}

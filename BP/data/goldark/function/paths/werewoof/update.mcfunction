@@ -1,16 +1,16 @@
 ## * Runs Werewoof-unique code & behaviors.
 ## * 
-## * Last modified: December 11th, 2024 (AydenTFoxx)
+## * Last modified: January 13th, 2024 (AydenTFoxx)
 
 
 ## PERKS
 
 # Werewoof
 execute unless score @s goldark.effect_timer.holy_sickness matches 100.. \
-        if entity @s[tag=!goldark.perks.werewoof] run function goldark:perks/werewoof
+        if entity @s[tag=!goldark.perks.werewoof, tag=!goldark.effects.purity, scores={ goldark.health_check=1.. }] run function goldark:perks/werewoof
 
 execute if score @s goldark.effect_timer.holy_sickness matches 100.. \
-        if entity @s[tag=goldark.perks.werewoof] run function goldark:perks/werewoof
+        if entity @s[tag=goldark.perks.werewoof, tag=!goldark.effects.purity, scores={ goldark.health_check=1.. }] run function goldark:perks/werewoof
 
 
 ## BEHAVIOR
@@ -19,7 +19,7 @@ execute if score @s goldark.effect_timer.holy_sickness matches 100.. \
 execute unless entity @s[tag=goldark.perks.holy_immune] run function goldark:paths/werewoof/sickness
 
 # Transform into Wolf
-execute if predicate goldark:player_input/sprint if predicate goldark:player_input/backward \
+execute if predicate goldark:player_input/sprint if predicate goldark:player_input/backward if predicate goldark:entity/is_on_ground \
         unless entity @s[tag=goldark.path_transformed] unless score @s goldark.health_check matches ..3 \
         unless score @s goldark.effect_timer.holy_sickness matches 1.. unless score @s goldark.ability_timer matches 1.. \
         run function goldark:paths/werewoof/morph/transform
@@ -30,9 +30,9 @@ execute if entity @s[type=!player] if score #goldark_moon_phase goldark.dummy ma
         unless score @s goldark.effect_timer.holy_sickness matches 1.. \
         run function goldark:paths/werewoof/morph/transform
 
-# De-transform from Wolf (After Full Moon, non-player)
-execute if entity @s[type=!player] if score #goldark_moon_phase goldark.dummy matches 1 if score #goldark_time_day goldark.dummy matches 23010 \
-        if entity @s[tag=goldark.path_transformed] \
+# De-transform from Wolf (Sunrise, non-player)
+execute if score #goldark_time_day goldark.dummy matches 0 \
+        if entity @s[type=!player, tag=goldark.path_transformed] \
         run function goldark:paths/werewoof/morph/revert
 
 # Reduce cooldown (Player)

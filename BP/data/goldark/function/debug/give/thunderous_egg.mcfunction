@@ -9,7 +9,6 @@ give @s egg[ \
             lore=[ "{ \"text\": \"Contains an unstable, furious storm trapped within.\", \"color\": \"gray\", \"italic\": false }", "{ \"text\": \"This will prove to be a terrible idea.\" }" ], \
             rarity="rare", \
             custom_data={ \
-                "goldark.items.thunder_egg": true, \
                 "goldark.items.thunder_egg_strong": true \
             } \
         ]

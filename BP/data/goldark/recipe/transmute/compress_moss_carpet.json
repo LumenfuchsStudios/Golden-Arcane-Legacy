@@ -1,0 +1,13 @@
+{
+	"type": "crafting_shaped",
+	"key": {
+		"m": "moss_carpet"
+	},
+	"pattern": [
+		"mm",
+		"mm"
+	],
+	"result": {
+		"id": "moss_block"
+	}
+}

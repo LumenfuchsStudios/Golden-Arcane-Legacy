@@ -10,10 +10,15 @@ particle cloud ~ ~1 ~ .1 .2 .1 0.1 10
 # Apply Slowness
 effect give @s slowness 2 0
 
-
-
 # Reset attribute
-attribute @s movement_efficiency base reset
+attribute @s movement_efficiency modifier remove goldark:vempyre/lunge_movement
+attribute @s water_movement_efficiency modifier remove goldark:vempyre/lunge_water_movement
+
+attribute @s step_height modifier remove goldark:vempyre/lunge_step
+
 
 # Remove tag
 tag @s remove goldark.vempyre.skill_lunge
+
+# Display blood meter
+function goldark:paths/vempyre/display_blood

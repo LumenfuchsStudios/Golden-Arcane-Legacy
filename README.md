@@ -9,7 +9,6 @@ From ancient deities to reality-tearing rituals, forbidden knowledge and odd art
 ## About
 
 > "Upon the legendary creation of the Universe, four Divine Forces were conceived. Of those, *Auryos*, God of Gold, bears the closest link to mankind. By its blessings upon the world, scholars are able to channel mystical energies into their will, thus conjuring supernatural change to their reality."
->   -- Aurum Arcanum, Golden Light
 
 TO WRITE. Sorry.
 

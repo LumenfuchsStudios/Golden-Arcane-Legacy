@@ -1,10 +1,10 @@
 {
     "values": [
-        "#goldark:raw_meat",
+        "#goldark:misc/raw_meat",
         "beetroot",
         "beetroot_soup",
         "sweet_berries",
-        "melon",
+        "melon_slice",
         "apple"
     ]
 }

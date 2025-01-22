@@ -261,50 +261,6 @@
             "condition": "location_check",
             "predicate": {
                 "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": 1,
-            "offsetY": -1,
-            "offsetZ": 1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": 1,
-            "offsetY": -1,
-            "offsetZ": -1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": -1,
-            "offsetY": -1,
-            "offsetZ": 1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": "#goldark:skulls"
-                }
-            },
-            "offsetX": -1,
-            "offsetY": -1,
-            "offsetZ": -1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
                     "blocks": "#soul_speed_blocks"
                 }
             },
@@ -326,6 +282,13 @@
                     "blocks": "soul_lantern"
                 },
                 "can_see_sky": true
+            }
+        },
+        {
+            "condition": "time_check",
+            "value": {
+                "min": 12600,
+                "max": 23400
             }
         }
     ]

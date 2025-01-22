@@ -2,7 +2,7 @@
     "type": "crafting_shaped",
     "key": {
         "g": "gold_nugget",
-        "I": "#goldark:iron/pure",
+        "I": "iron_ingot",
         "Q": "quartz"
     },
     "pattern": [

@@ -1,14 +1,19 @@
 ## * Finishes the Lycanthropy Rite, converting the nearest player into a Werewoof.
 ## * 
-## * Last modified: December 10th, 2024 (AydenTFoxx)
+## * Last modified: December 14th, 2024 (AydenTFoxx)
 
 
 # Display audiovisual feedback
-execute if entity @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] run playsound block.end_portal.spawn block @a[distance=..16] ~ ~ ~ 1 0.8 0.5
-execute if entity @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] run particle explosion_emitter ~ ~1 ~ 1.0 1.0 1.0 1.0 2
+playsound block.end_portal.spawn block @a[distance=..16] ~ ~ ~ 1 0.8 0.5
+particle explosion_emitter ~ ~1 ~ 1.0 1.0 1.0 1.0 2
 
 # Convert target
-execute as @p[tag=!goldark.paths.werewoof, tag=!goldark.path_transformed] at @s run function goldark:tools/lycanthropy/convert_self
+execute unless entity @n[type=item, nbt={ Item: { components: { "minecraft:custom_data": { goldark.items.soul_link: true } } } }, distance=..8] \
+        as @p at @s run function goldark:tools/lycanthropy/convert
+
+execute if entity @n[type=item, nbt={ Item: { components: { "minecraft:custom_data": { goldark.items.soul_link: true } } } }, distance=..8] \
+        run function goldark:rituals/lycanthropy/convert_target with entity @n[type=item, nbt={ Item: { components: { "minecraft:custom_data": { goldark.items.soul_link: true } } } }] Item.components.minecraft:custom_data.goldark.soul_link
+
 
 # Break center blocks
 setblock ~ ~ ~ air destroy

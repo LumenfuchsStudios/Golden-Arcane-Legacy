@@ -2,7 +2,7 @@
     "type": "crafting_shapeless",
     "ingredients": [
         "#goldark:thunder_token",
-        "#goldark:gold/pure",
+        "gold_nugget",
         "egg"
     ],
     "result": {

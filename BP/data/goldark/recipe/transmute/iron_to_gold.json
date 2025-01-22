@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "g": "gold_nugget",
+        "I": "iron_ingot"
+    },
+    "pattern": [
+        "ggg",
+        "gIg",
+        "ggg"
+    ],
+    "result": {
+        "id": "gold_ingot"
+    }
+}

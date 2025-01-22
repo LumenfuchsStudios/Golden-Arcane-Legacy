@@ -14,17 +14,14 @@
         "announce_to_chat": false
     },
     "criteria": {
-        "requirement": {
-            "trigger": "minecraft:slept_in_bed",
+        "get_pure_gold_item": {
+            "trigger": "inventory_changed",
             "conditions": {
-                "player": {
-                    "type_specific": {
-                        "type": "player",
-                        "recipes": {
-                            "gold_block": true
-                        }
+                "items": [
+                    {
+                        "items": "#goldark:gold/pure"
                     }
-                }
+                ]
             }
         }
     },

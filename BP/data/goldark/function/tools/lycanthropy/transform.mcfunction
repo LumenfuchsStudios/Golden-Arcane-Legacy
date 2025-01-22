@@ -1,3 +1,8 @@
+## * Transforms the calling entity into their Wolf form.
+## * 
+## * Last modified: December 24th, 2024 (AydenTFoxx)
+
+
 # You be no Woof, exit.
 execute unless entity @s[tag=goldark.paths.werewoof] run return run tellraw @s { "text": "You are not a Werewoof.", "color": "red" }
 

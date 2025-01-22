@@ -1,6 +1,6 @@
 ## * Grants Holy Sickness to non-immune entities within the aura.
 ## * 
-## * Last modified: December 7th, 2024 (AydenTFoxx)
+## * Last modified: December 24th, 2024 (AydenTFoxx)
 
 
 ## AUDIO-VISUAL
@@ -18,7 +18,7 @@ particle end_rod ~ ~0.5 ~ .1 .1 .1 0.05 2
 
 
 # Tick Clock
-scoreboard players add @s goldark.ability_clock 1
+scoreboard players operation @s goldark.ability_clock += #goldark_tick_rate goldark.dummy
 
 # Play audio
 execute if score @s goldark.ability_clock matches 50..80 if predicate goldark:misc/random_10 run playsound block.portal.ambient block @a[distance=..16] ~ ~ ~ 0.8 1.3
@@ -30,15 +30,15 @@ scoreboard players set @s[scores={ goldark.ability_clock=100.. }] goldark.abilit
 ## BEHAVIOR
 
 # Add Holy Sickness tag
-tag @e[type=!#goldark:magic_immune, tag=!goldark.perks.holy_immune, tag=!goldark.holy_sickness.active, distance=..3] add goldark.holy_sickness.active_judgement
-tag @e[type=!#goldark:magic_immune, tag=!goldark.perks.holy_immune, tag=!goldark.holy_sickness.active, distance=..3] add goldark.holy_sickness.active
+execute as @e[type=!#goldark:magic_immune, tag=!goldark.perks.holy_immune, tag=!goldark.holy_sickness.active, tag=!goldark.effects.purity, distance=..3] run tag @s add goldark.holy_sickness.active_judgement
+execute as @e[type=!#goldark:magic_immune, tag=!goldark.perks.holy_immune, tag=!goldark.holy_sickness.active, tag=!goldark.effects.purity, distance=..3] run tag @s add goldark.holy_sickness.active
 
 # Add Holy Sickness score
-scoreboard players add @e[type=!#goldark:magic_immune, tag=!goldark.perks.holy_immune, distance=..3] goldark.effect_timer.holy_sickness 4
+scoreboard players add @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active, scores={ goldark.effect_timer.holy_sickness=..3333 }, distance=..3] goldark.effect_timer.holy_sickness 4
 
-# Add MORE Holy Sickness score to Undead
-scoreboard players set @e[type=#undead, tag=!goldark.perks.holy_immune, scores={ goldark.effect_timer.holy_sickness=..1000 }, distance=..3] goldark.effect_timer.holy_sickness 1200
-scoreboard players add @e[type=#undead, tag=!goldark.perks.holy_immune, distance=..3] goldark.effect_timer.holy_sickness 8
+# Add MORE Holy Sickness score to hostiles
+scoreboard players set @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active, predicate=goldark:entity/is_hostile, scores={ goldark.effect_timer.holy_sickness=..1000 }, distance=..3] goldark.effect_timer.holy_sickness 1200
+scoreboard players add @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active, predicate=goldark:entity/is_hostile, scores={ goldark.effect_timer.holy_sickness=..3333 }, distance=..3] goldark.effect_timer.holy_sickness 8
 
 # Display particles on targeted mobs
 execute at @e[type=!#goldark:magic_immune, tag=goldark.holy_sickness.active, distance=..3] run particle portal ~ ~1 ~ .1 .2 .1 0.5 3
