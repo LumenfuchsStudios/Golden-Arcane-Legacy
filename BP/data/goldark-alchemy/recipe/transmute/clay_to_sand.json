@@ -1,0 +1,6 @@
+{
+    "type": "crafting_transmute",
+    "input": "clay",
+    "material": "moss_block",
+    "result": "sand"
+}

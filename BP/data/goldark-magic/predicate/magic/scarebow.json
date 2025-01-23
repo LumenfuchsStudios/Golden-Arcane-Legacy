@@ -1,0 +1,137 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "carved_pumpkin"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "target"
+                }
+            },
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#wooden_fences"
+                }
+            },
+            "offsetY": -2
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "all_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetX": 1,
+                            "offsetY": -1
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetX": -1,
+                            "offsetY": -1
+                        }
+                    ]
+                },
+                {
+                    "condition": "all_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetY": -1,
+                            "offsetZ": 1
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetY": -1,
+                            "offsetZ": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "all_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetX": 1
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetX": -1
+                        }
+                    ]
+                },
+                {
+                    "condition": "all_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetZ": 1
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetZ": -1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "criteria": {
+        "placed_scarebow": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "reference",
+                        "name": "goldark-magic:magic/scarebow"
+                    }
+                ]
+            }
+        },
+        "sheared_scarebow": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "reference",
+                        "name": "goldark-magic:magic/scarebow"
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "shears"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "placed_scarebow",
+            "sheared_scarebow"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark-magic:magic/scarebow/trigger"
+    }
+}

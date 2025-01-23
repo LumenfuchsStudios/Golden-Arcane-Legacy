@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "healing_agent": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#goldark-alchemy:healing"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark-alchemy:potions/lesser_healing"
+        ]
+    }
+}

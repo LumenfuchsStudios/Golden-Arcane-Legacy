@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "harming_agent": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#goldark-alchemy:harming"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark-alchemy:potions/lesser_harming"
+        ]
+    }
+}

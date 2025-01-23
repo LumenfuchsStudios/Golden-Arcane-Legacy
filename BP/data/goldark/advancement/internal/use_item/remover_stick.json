@@ -27,7 +27,7 @@
         }
     },
     "rewards": {
-        "function": "goldark:spells/remover_stick",
+        "function": "goldark:tools/remover_stick/on_use",
         "experience": 1
     }
 }

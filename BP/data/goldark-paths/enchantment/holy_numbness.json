@@ -1,0 +1,52 @@
+{
+    "description": {
+        "text": "Holy Numbness",
+        "color": "blue"
+    },
+    "exclusive_set": "#exclusive_set/armor",
+    "supported_items": "#goldark:iron/equipment",
+    "weight": 2,
+    "max_level": 1,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 10,
+    "slots": [
+        "any"
+    ],
+    "effects": {
+        "item_damage": [
+            {
+                "effect": {
+                    "type": "multiply",
+                    "factor": 1.2
+                }
+            }
+        ],
+        "tick": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "goldark-paths:effects/holy_numbness/enchantment"
+                },
+                "requirements": {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "goldark.effect_timer.holy_sickness": {
+                            "min": 1
+                        },
+                        "goldark.effect_timer.holy_numbness": {
+                            "max": 10
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

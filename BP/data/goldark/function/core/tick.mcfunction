@@ -1,9 +1,6 @@
 ## * Runs each sub-section of Golden Arcane at a specified Tick Rate (#goldark_tick_rate)
-## *
-## *? Note: May hit the function recursion cap when running with several entities!
-## *?       If functions stop working unexplainably, try adding the below functions to #minecraft:tick instead.
 ## * 
-## * Last modified: December 8th, 2024 (AydenTFoxx)
+## * Last modified: December 27th, 2024 (AydenTFoxx)
 
 
 ## ALWAYS RUN

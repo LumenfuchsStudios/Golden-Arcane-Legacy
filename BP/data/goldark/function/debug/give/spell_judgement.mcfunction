@@ -1,13 +1,14 @@
-## * Gives the caller a Judgement spell Item (in-game: "Divine Magic: Judgement").
-## * Please make sure to be immune to Holy Sickness before attempting to use this.
+## * Gives the caller a Judgement spell Item (in-game: "Spell: Judgement").
+## * You must have the Holy Immunity perk in order to use this item.
 ## * 
-## * Last modified: December 7th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 give @s gold_nugget[ \
             enchantment_glint_override=true, \
-            custom_name="[{ \"text\": \"Divine Magic: \", \"color\": \"yellow\", \"italic\": false }, { \"text\": \"Judgement\", \"color\": \"aqua\" }]", \
-            lore=[ "{ \"text\": \"Conjures an aura of divine smite.\", \"color\": \"gray\", \"italic\": false }" ], \
+            rarity="uncommon", \
+            item_name="[{ \"text\": \"Spell: Judgement\" }]", \
+            lore=[ "{ \"text\": \"[Artifact]\", \"color\": \"blue\", \"italic\": false }", "{ \"text\": \"A shard of divine smite.\", \"color\": \"gray\", \"italic\": false }" ], \
             consumable={ \
                 animation: "bow", \
                 consume_seconds: 1.6, \
@@ -18,4 +19,4 @@ give @s gold_nugget[ \
                 ] \
             }, \
             custom_data={ "goldark.spells.judgement": true } \
-        ]
+        ] 12

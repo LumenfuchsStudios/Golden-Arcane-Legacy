@@ -1,0 +1,236 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": -1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": -1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": -1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": -1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "crying_obsidian"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:gold/heavy"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:gold/heavy"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 2,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:gold/heavy"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": 2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:gold/heavy"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": 2,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetX": 2,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetX": -2,
+            "offsetY": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetY": -1,
+            "offsetZ": 2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetY": -1,
+            "offsetZ": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#soul_speed_blocks"
+                }
+            },
+            "offsetY": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "soul_lantern"
+                },
+                "can_see_sky": true
+            },
+            "offsetY": -1
+        }
+    ]
+}

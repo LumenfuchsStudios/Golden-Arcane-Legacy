@@ -1,0 +1,42 @@
+{
+    "display": {
+        "icon": {
+            "id": "bone"
+        },
+        "title": {
+            "text": "The Werewoof"
+        },
+        "description": "Half Were, half woof, full-time goober",
+        "frame": "task",
+        "background": "minecraft:textures/block/light_gray_wool.png",
+        "announce_to_chat": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "killed_by_werewoof": {
+            "trigger": "entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "wolf",
+                    "nbt": "{ Tags: [ goldark.paths.werewoof ] }",
+                    "periodic_tick": 240
+                },
+                "killing_blow": {
+                    "is_direct": true
+                }
+            }
+        },
+        "lycanthropy_ritual": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "killed_by_werewoof",
+            "lycanthropy_ritual"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark-paths:tools/lycanthropy/convert"
+    }
+}

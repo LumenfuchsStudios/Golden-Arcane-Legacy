@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "lingering_modifier": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "potion",
+                            "splash_potion"
+                        ]
+                    },
+                    {
+                        "items": [
+                            "dragon_breath"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark-alchemy:transmute/potion_to_lingering",
+            "goldark-alchemy:transmute/splash_to_lingering"
+        ]
+    }
+}

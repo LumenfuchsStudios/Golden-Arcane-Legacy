@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "purity_agent": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#small_flowers"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark-alchemy:transmute/flowers_to_bone_meal"
+        ]
+    }
+}
