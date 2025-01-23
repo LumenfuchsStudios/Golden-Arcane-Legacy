@@ -1,10 +1,10 @@
 ## * Updates a scarecrow entity's behavior.
 ## * 
-## * Last modified: December 20th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Remove scarecrow if Hay Bale is destroyed
-execute unless block ~ ~-1 ~ hay_block run function goldark:magic/scarecrow/destroy
+execute unless block ~ ~-1 ~ hay_block run function goldark-magic:magic/scarecrow/destroy
 
 # Convert to Jack o' Lantern if torch is present
 execute if block ~ ~ ~ #goldark:luminous unless entity @s[tag=goldark.scarecrow.jack_o_lantern] run data modify entity @s item.id set value "minecraft:jack_o_lantern"
@@ -29,4 +29,4 @@ execute if score @s goldark.dummy matches 4 run tp @s ~ ~ ~ 180.0 0.0
 
 # Otherwise, target hostile mobs nearby
 execute if entity @n[type=!#goldark:magic_immune, predicate=goldark:entity/is_hostile, distance=..20] \
-        run function goldark:magic/scarecrow/target_mob
+        run function goldark-magic:magic/scarecrow/target_mob

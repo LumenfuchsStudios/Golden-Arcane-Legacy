@@ -20,7 +20,7 @@
     },
     "rewards": {
         "recipes": [
-            "goldark:potions/purity"
+            "goldark-paths:potions/purity"
         ]
     }
 }

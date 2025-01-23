@@ -1,10 +1,23 @@
-## * Creates a linking item to the user's soul, usable for remote magics of all sorts.
+## * Creates a linking item to the user's soul, usable for all sorts of long-ranged magics.
 ## * 
-## * Last modified: December 17th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Create item
-summon item ~ ~ ~ { Item: { id: quartz, components: { custom_name: '{ "text": "Soul Shard", "italic": false }', lore: [ '{ "text": "Bears a link to another\'s Soul.", "color": "gray", "italic": false }' ], enchantment_glint_override: true, rarity: "uncommon", custom_data: { goldark.items.soul_link: true, goldark: { soul_link: { uses: 256 } } } } }, Tags: [ goldark.temp.init_soul_link ], Motion: [ 0.0, 0.5, 0.0 ] }
+summon item ~ ~ ~ { \
+        Item: { \
+                id: quartz, \
+                components: {  \
+                        item_name: '{ "text": "Soul Shard" }', \
+                        lore: [ '{ "text": "Bears a link to another\'s Soul.", "color": "gray", "italic": false }' ], \
+                        enchantment_glint_override: true, \
+                        rarity: "uncommon", \
+                        custom_data: { goldark.items.soul_link: true, goldark: { soul_link: { uses: 256 } } } \
+                } \
+        }, \
+        Tags: [ goldark.temp.init_soul_link ], \
+        Motion: [ 0.0, 0.5, 0.0 ] \
+}
 
 
 # Set GUID
@@ -19,7 +32,7 @@ execute store result entity @n[type=item, tag=goldark.temp.init_soul_link, dista
         run scoreboard players get @s goldark.guid
 
 # Set tooltip
-execute as @n[type=item, tag=goldark.temp.init_soul_link, distance=0] run function goldark:spells/soul_link/set_lore with entity @s Item.components.minecraft:custom_data.goldark.soul_link
+execute as @n[type=item, tag=goldark.temp.init_soul_link, distance=0] run function goldark-magic:spells/soul_link/set_lore with entity @s Item.components.minecraft:custom_data.goldark.soul_link
 
 
 # Display audiovisual feedback

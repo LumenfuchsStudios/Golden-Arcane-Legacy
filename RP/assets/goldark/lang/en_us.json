@@ -2,27 +2,38 @@
     "item.minecraft.potion.effect.lesser_healing": "Potion of Lesser Healing",
     "item.minecraft.potion.effect.lesser_harming": "Potion of Lesser Harming",
     "item.minecraft.potion.effect.holy_numbness": "Potion of Holy Protection",
-    "item.minecraft.potion.effect.purity": "Potion of Purity",
     
     "item.minecraft.splash_potion.effect.lesser_healing": "Splash Potion of Lesser Healing",
     "item.minecraft.splash_potion.effect.lesser_harming": "Splash Potion of Lesser Harming",
     "item.minecraft.splash_potion.effect.holy_numbness": "Splash Potion of Holy Protection",
-    "item.minecraft.splash_potion.effect.purity": "Splash Potion of Purity",
-
+    
     "item.minecraft.lingering_potion.effect.lesser_healing": "Lingering Potion of Lesser Healing",
     "item.minecraft.lingering_potion.effect.lesser_harming": "Lingering Potion of Lesser Harming",
     "item.minecraft.lingering_potion.effect.holy_numbness": "Lingering Potion of Holy Protection",
-    "item.minecraft.lingering_potion.effect.purity": "Lingering Potion of Purity",
-
+    
     "item.minecraft.tipped_arrow.effect.lesser_healing": "Arrow of Lesser Healing",
     "item.minecraft.tipped_arrow.effect.lesser_harming": "Arrow of Lesser Harming",
     "item.minecraft.tipped_arrow.effect.holy_numbness": "Arrow of Holy Numbness",
-    "item.minecraft.tipped_arrow.effect.purity": "Arrow of Purity",
-
+    
     "item.minecraft.potion.effect.blood": "Vial of Blood",
     "item.minecraft.splash_potion.effect.blood": "Splash Vial of Blood",
     "item.minecraft.lingering_potion.effect.blood": "Lingering Mist of Blood",
     "item.minecraft.tipped_arrow.effect.blood": "Arrow of Blood",
+
+    "item.minecraft.potion.effect.bloodlust": "Vial of Bloodlust",
+    "item.minecraft.splash_potion.effect.bloodlust": "Splash Vial of Bloodlust",
+    "item.minecraft.lingering_potion.effect.bloodlust": "Lingering Mist of Bloodlust",
+    "item.minecraft.tipped_arrow.effect.bloodlust": "Arrow of Bloodlust",
+
+    "item.minecraft.potion.effect.purity": "Potion of Purity",
+    "item.minecraft.splash_potion.effect.purity": "Splash Potion of Purity",
+    "item.minecraft.lingering_potion.effect.purity": "Lingering Potion of Purity",
+    "item.minecraft.tipped_arrow.effect.purity": "Arrow of Purity",
+
+    "item.minecraft.potion.effect.purity_strong": "Potion of Purification",
+    "item.minecraft.splash_potion.effect.purity_strong": "Splash Potion of Purification",
+    "item.minecraft.lingering_potion.effect.purity_strong": "Lingering Potion of Purification",
+    "item.minecraft.tipped_arrow.effect.purity_strong": "Arrow of Purification",
 
     "effect.goldark.bloodlust": "Bloodlust",
     "effect.goldark.purity": "Purity"

@@ -1,6 +1,6 @@
 ## * Teleports a Soul Link item and the nearest player to its stored target.
 ## * 
-## * Last modified: December 17th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 ## ? MACRO Arguments:
 # ? target: The GUID of the entity to be affected.
@@ -24,4 +24,4 @@ $tp @s @n[type=!#goldark:magic_immune, scores={ goldark.guid=$(target) }, distan
 
 
 # Reduce durability
-function goldark:spells/soul_link/tools/reduce_durability
+function goldark-magic:spells/soul_link/tools/reduce_durability

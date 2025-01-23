@@ -4,7 +4,7 @@
 
 
 # Revoke trigger
-advancement revoke @s only goldark:internal/use_item/potion/purity_strong
+advancement revoke @s only goldark-paths:internal/use_item/potion/purity_strong
 
 
 # Revoke Holy Sickness
@@ -24,5 +24,5 @@ execute unless entity @s[tag=!goldark.paths.vempyre, tag=!goldark.paths.werewoof
 execute unless entity @s[tag=!goldark.paths.vempyre, tag=!goldark.paths.werewoof] run particle large_smoke ~ ~1 ~ .1 .2 .1 0.05 20 normal @s
 
 # Remove Arcane Paths
-execute if entity @s[tag=goldark.paths.werewoof] run function goldark:tools/lycanthropy/cure
-execute if entity @s[tag=goldark.paths.vempyre] run function goldark:tools/vampirism/cure
+execute if entity @s[tag=goldark.paths.werewoof] run function goldark-paths:tools/lycanthropy/cure
+execute if entity @s[tag=goldark.paths.vempyre] run function goldark-paths:tools/vempyrism/cure

@@ -50,7 +50,7 @@
     "rewards": {
 		"function": "goldark:tools/cave_noise",
         "recipes": [
-            "goldark:potions/blood_vial"
+            "goldark-paths:potions/blood_vial"
         ]
     }
 }

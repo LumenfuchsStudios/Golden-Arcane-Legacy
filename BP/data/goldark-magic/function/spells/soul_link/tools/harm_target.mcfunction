@@ -1,6 +1,6 @@
 ## * Harms the targeted mob by a Soul Link if it falls on harmful blocks.
 ## * 
-## * Last modified: December 17th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 ## ? MACRO Arguments:
 # ? target: The GUID of the entity to be affected.
@@ -43,11 +43,11 @@ $execute if block ~ ~ ~ cactus run damage @n[type=!#goldark:magic_immune, scores
 ## OTHER/ANY
 
 # Consume durability
-execute if block ~ ~ ~ #goldark:misc/dangerous unless block ~ ~ ~ #goldark:misc/water run function goldark:spells/soul_link/tools/reduce_durability
+execute if block ~ ~ ~ #goldark:misc/dangerous unless block ~ ~ ~ #goldark:misc/water run function goldark-magic:spells/soul_link/tools/reduce_durability
 
 execute if block ~ ~ ~ #goldark:misc/water if score @s goldark.ambient_clock matches 0 \
         if predicate goldark:misc/random_33 \
-        run function goldark:spells/soul_link/tools/reduce_durability
+        run function goldark-magic:spells/soul_link/tools/reduce_durability
 
 execute if block ~ ~-1 ~ magma_block if predicate goldark:misc/random_50 \
-        run function goldark:spells/soul_link/tools/reduce_durability
+        run function goldark-magic:spells/soul_link/tools/reduce_durability

@@ -19,7 +19,7 @@
 					"type_specific": {
 						"type": "player",
 						"advancements": {
-							"goldark:paths/werewoof/root": true
+							"goldark-paths:paths/werewoof/root": true
 						}
 					}
 				}
@@ -32,7 +32,7 @@
 					"type_specific": {
 						"type": "player",
 						"advancements": {
-							"goldark:paths/vempyre/root": true
+							"goldark-paths:paths/vempyre/root": true
 						}
 					}
 				}
@@ -47,6 +47,6 @@
 	],
 	"rewards": {
 		"experience": 6,
-		"function": "goldark:effects/holy_sickness/overlay"
+		"function": "goldark-paths:effects/holy_sickness/overlay"
 	}
 }

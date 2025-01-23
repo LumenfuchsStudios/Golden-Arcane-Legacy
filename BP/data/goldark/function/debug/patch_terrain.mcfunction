@@ -1,4 +1,4 @@
-## * Fixes holes caused by creepers and similarly unhappy events.
+## * Fixes holes caused by creepers and other unhappy events.
 ## * 
 ## * Last modified: January 23rd, 2025
 

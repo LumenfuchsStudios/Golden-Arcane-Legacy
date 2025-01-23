@@ -4,7 +4,7 @@
 
 
 # Revoke trigger
-advancement revoke @s only goldark:internal/use_item/potion/purity
+advancement revoke @s only goldark-paths:internal/use_item/potion/purity
 
 
 # Revoke custom effects

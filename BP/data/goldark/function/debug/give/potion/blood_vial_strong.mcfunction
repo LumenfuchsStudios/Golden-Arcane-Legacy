@@ -1,6 +1,6 @@
-## * Gives the user a strong Vial of Blood with default effects.
+## * Gives the user a Vial of Bloodlust (strong Vial of Blood) with default effects.
 ## * 
-## * Last modified: January 13th, 2025 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 give @s potion[ \
@@ -10,7 +10,7 @@ give @s potion[ \
     custom_data={ goldark.items.blood_vial_strong: true }, \
     potion_contents={ \
         custom_color: 5966346, \
-        custom_name: "blood", \
+        custom_name: "bloodlust", \
         custom_effects: [ \
             { id: "darkness", amplifier: 1, ambient: true, duration: 400 }, \
             { id: "unluck", amplifier: 1, ambient: true, duration: 80 } \

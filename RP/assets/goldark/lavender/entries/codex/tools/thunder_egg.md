@@ -19,7 +19,7 @@ discharge at their hit location.
 
 Thunder Eggs also have a rarer, much stronger
 variant: *Thunderous Eggs*. When broken, they
-release a powerful, short-lived storm which 
+release a powerful, short-lived storm which
 hunts down nearby creatures, fulminating them
 on the spot and raising them to the skies
 for a painful demise -- be it fire or gravity.
@@ -30,14 +30,14 @@ for a painful demise -- be it fire or gravity.
 
 ;;;;;
 
-<recipe;goldark:spells/thunder_egg>
+<recipe;goldark-magic:spells/thunder_egg>
 
 > Also obtainable by collecting an Egg
 > near a chicken.
 
 ;;;;;
 
-<recipe;goldark:spells/thunderous_egg>
+<recipe;goldark-magic:spells/thunderous_egg>
 
 > Also obtainable like Thunder Eggs, but
 > at a rarer chance. Drop a Thunder Egg

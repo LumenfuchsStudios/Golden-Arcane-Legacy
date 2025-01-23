@@ -1,10 +1,10 @@
 ## * Summons a small, slow traveling projectile which casts a Judgement aura on impact.
 ## * 
-## * Last modified: December 11th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Revoke trigger advancement
-advancement revoke @s only goldark:internal/use_item/spell_judgement
+advancement revoke @s only goldark-magic:internal/use_item/spell_judgement
 
 # The unholy shalt not trespass
 execute unless entity @s[tag=goldark.perks.holy_immune] run playsound ambient.nether_wastes.mood player @s ~ ~ ~ 1 0.7

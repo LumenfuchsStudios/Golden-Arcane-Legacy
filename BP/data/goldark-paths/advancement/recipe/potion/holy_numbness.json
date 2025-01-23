@@ -47,7 +47,7 @@
     ],
     "rewards": {
         "recipes": [
-            "goldark:potions/holy_numbness"
+            "goldark-paths:potions/holy_numbness"
         ]
     }
 }

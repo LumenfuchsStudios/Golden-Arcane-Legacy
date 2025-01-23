@@ -1,7 +1,7 @@
 ## * Summons a funky Zombie which disappears after some time passes.
 ## * There is a very blatant reference here and I'm both amazed and terrified by whomever notices it.
 ## * 
-## * Last modified: January 11th, 2025 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Hey.
@@ -25,4 +25,4 @@ playsound ambient.nether_wastes.mood hostile @a[distance=..32] ~ ~ ~ 1.0 0.2 0.1
 
 # Spawn reinforcement
 execute unless data storage goldark:settings { gamerules: { recursive_spawning: false } } \
-		if predicate goldark:misc/random_10 run function goldark:magic/shadow/summon
+		if predicate goldark:misc/random_10 run function goldark-magic:magic/shadow/summon

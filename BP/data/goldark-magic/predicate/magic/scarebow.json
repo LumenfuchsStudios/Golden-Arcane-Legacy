@@ -81,57 +81,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "condition": "any_of",
-            "terms": [
-                {
-                    "condition": "all_of",
-                    "terms": [
-                        {
-                            "condition": "location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": "#wooden_fences"
-                                }
-                            },
-                            "offsetX": 1
-                        },
-                        {
-                            "condition": "location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": "#wooden_fences"
-                                }
-                            },
-                            "offsetX": -1
-                        }
-                    ]
-                },
-                {
-                    "condition": "all_of",
-                    "terms": [
-                        {
-                            "condition": "location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": "#wooden_fences"
-                                }
-                            },
-                            "offsetZ": 1
-                        },
-                        {
-                            "condition": "location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": "#wooden_fences"
-                                }
-                            },
-                            "offsetZ": -1
-                        }
-                    ]
-                }
-            ]
         }
     ]
 }

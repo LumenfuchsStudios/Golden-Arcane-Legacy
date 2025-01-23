@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark-alchemy:transmute/potion_to_splash"
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark-alchemy:convert_potion_to_splash"
+    }
+}

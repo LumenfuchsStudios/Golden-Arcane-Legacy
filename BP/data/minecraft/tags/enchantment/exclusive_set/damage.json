@@ -1,5 +1,8 @@
 {
     "values": [
-        "goldark:vempyric"
+        {
+            "id": "goldark-paths:vempyric",
+            "required": false
+        }
     ]
 }

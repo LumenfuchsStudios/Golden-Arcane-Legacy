@@ -1,6 +1,6 @@
 ## * Applies a Soul Link's motion (as an item) to its targeted entity
 ## * 
-## * Last modified: December 14th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 ## ? MACRO Arguments:
 # ? target: The GUID of the entity to be affected.
@@ -21,4 +21,4 @@ $execute if score @s goldark.used_item.egg matches -2 run effect give @n[type=pl
 
 # Reduce durability
 execute unless score @s goldark.used_item.egg matches -1 \
-        if predicate goldark:misc/random_25 run function goldark:spells/soul_link/tools/reduce_durability
+        if predicate goldark:misc/random_25 run function goldark-magic:spells/soul_link/tools/reduce_durability

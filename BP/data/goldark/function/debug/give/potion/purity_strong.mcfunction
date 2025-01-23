@@ -1,9 +1,6 @@
-## * Gives the user a Purity potion.
+## * Gives the user a strong Purity potion.
 ## * 
-## * Last modified: December 27th, 2024 (AydenTFoxx)
-
-# Merry Christmas!
-# Happy Holidays :)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 give @s potion[ \
@@ -12,7 +9,7 @@ give @s potion[ \
         rarity="rare", \
         potion_contents={ \
             custom_color: 16185295, \
-            custom_name: "purity", \
+            custom_name: "purity_strong", \
             custom_effects: [ \
                 { \
                     id: "darkness", \

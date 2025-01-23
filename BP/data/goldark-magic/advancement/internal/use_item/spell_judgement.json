@@ -17,6 +17,6 @@
         }
     },
     "rewards": {
-        "function": "goldark:spells/judgement/summon_trigger"
+        "function": "goldark-magic:spells/judgement/summon_trigger"
     }
 }

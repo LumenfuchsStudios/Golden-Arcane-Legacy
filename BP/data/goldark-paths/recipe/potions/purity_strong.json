@@ -18,7 +18,7 @@
             "rarity": "rare",
             "potion_contents": {
                 "custom_color": 16185295,
-                "custom_name": "purity",
+                "custom_name": "purity_strong",
                 "custom_effects": [
                     {
                         "id": "darkness",

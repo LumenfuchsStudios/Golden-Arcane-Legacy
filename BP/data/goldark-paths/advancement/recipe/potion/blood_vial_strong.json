@@ -46,7 +46,7 @@
     "rewards": {
         "function": "goldark:tools/cave_noise",
         "recipes": [
-            "goldark:potions/blood_vial_strong"
+            "goldark-paths:potions/blood_vial_strong"
         ]
     }
 }

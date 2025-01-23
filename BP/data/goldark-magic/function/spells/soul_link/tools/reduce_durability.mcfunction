@@ -1,6 +1,6 @@
-## * Reduces one Soul Link item, as if "breaking" the crystal.
+## * Reduces the Soul Link's durability. If it reaches 0, the item "breaks" and is destroyed.
 ## * 
-## * Last modified: December 17th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Get item count

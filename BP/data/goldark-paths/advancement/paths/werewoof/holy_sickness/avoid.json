@@ -12,7 +12,7 @@
         "requirement": {
             "trigger": "recipe_crafted",
             "conditions": {
-                "recipe_id": "goldark:potions/holy_numbness",
+                "recipe_id": "goldark-paths:potions/holy_numbness",
                 "player": {
                     "nbt": "{ Tags: [ goldark.paths.werewoof ] }",
                     "type_specific": {

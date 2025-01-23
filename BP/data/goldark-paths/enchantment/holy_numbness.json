@@ -25,6 +25,13 @@
                 "effect": {
                     "type": "multiply",
                     "factor": 1.2
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{ Tags: [ goldark.paths.werewoof ] }"
+                    }
                 }
             }
         ],

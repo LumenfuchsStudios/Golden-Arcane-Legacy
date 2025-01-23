@@ -1,7 +1,7 @@
 ## * Runs the Storm Cloud's behavior, causing severe lag, loss of houses, and chaos everywhere.
 ## * (Storm not included; Kinda)
 ## * 
-## * Last modified: January 11th, 2025 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 ## VISUALS
@@ -57,9 +57,9 @@ execute if score @s goldark.ability_clock matches 90..95 if predicate goldark:mi
 execute if score @s goldark.ability_clock matches 120..125 if predicate goldark:misc/random_25 run effect give @e[type=!#goldark:magic_immune, distance=6..14, limit=4, sort=random] levitation 1 5 true
 
 # Summon lightning
-execute if score @s goldark.ability_clock matches 1..10 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, type=!chicken, limit=2, distance=..14] at @s run function goldark:spells/thunder_egg/summon_thunder
-execute if score @s goldark.ability_clock matches 60..70 if predicate goldark:misc/random_25 as @n[type=!#goldark:magic_immune, type=!chicken, limit=4, distance=..14, sort=random] at @s run function goldark:spells/thunder_egg/summon_thunder
-execute if score @s goldark.ability_clock matches 100..110 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, type=!chicken, limit=2, distance=..14, sort=random] at @s run function goldark:spells/thunder_egg/summon_thunder
+execute if score @s goldark.ability_clock matches 1..10 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, type=!chicken, limit=2, distance=..14] at @s run function goldark-magic:spells/thunder_egg/summon_thunder
+execute if score @s goldark.ability_clock matches 60..70 if predicate goldark:misc/random_25 as @n[type=!#goldark:magic_immune, type=!chicken, limit=4, distance=..14, sort=random] at @s run function goldark-magic:spells/thunder_egg/summon_thunder
+execute if score @s goldark.ability_clock matches 100..110 if predicate goldark:misc/random_10 as @n[type=!#goldark:magic_immune, type=!chicken, limit=2, distance=..14, sort=random] at @s run function goldark-magic:spells/thunder_egg/summon_thunder
 
 # Reset Clock
 scoreboard players set @s[scores={ goldark.ability_clock=120.. }] goldark.ability_clock 0

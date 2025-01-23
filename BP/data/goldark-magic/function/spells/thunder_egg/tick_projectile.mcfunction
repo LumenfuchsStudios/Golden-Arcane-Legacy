@@ -1,8 +1,6 @@
 ## * Displays a particle trail and summons a thunderous event upon colliding with the floor.
 ## * 
-## * Last modified: December 25th, 2024 (AydenTFoxx)
-
-# Happy Holidays! owo
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 ## Any
@@ -28,7 +26,7 @@ execute if entity @s[tag=goldark.dummy_magic.thunder_egg_strong] \
         unless entity @n[type=egg, tag=goldark.dummy_magic.thunder_egg, distance=..3] \
         unless score @s goldark.dummy >= #goldark_storm_cloud_limit goldark.dummy \
         positioned ~ ~8 ~ \
-        run return run function goldark:spells/thunder_egg/init_storm
+        run return run function goldark-magic:spells/thunder_egg/init_storm
 
 # Fail Storm (too many Storm Clouds nearby)
 execute if entity @s[tag=goldark.dummy_magic.thunder_egg_strong, scores={ goldark.dummy=2.. }] \
@@ -40,4 +38,4 @@ execute if entity @s[tag=goldark.dummy_magic.thunder_egg_strong, scores={ goldar
 
 # Summon lightning
 execute unless entity @n[type=egg, tag=goldark.dummy_magic.thunder_egg, distance=..3] \
-        run function goldark:spells/thunder_egg/summon_thunder
+        run function goldark-magic:spells/thunder_egg/summon_thunder

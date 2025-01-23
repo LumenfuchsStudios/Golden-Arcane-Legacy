@@ -1,10 +1,10 @@
 ## * Converts vanilla and custom potions to Splash variants... for a price, of course.
 ## * 
-## * Last modified: December 21st, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Remove trigger
-advancement revoke @s only goldark:internal/craft_lingering_potion
+advancement revoke @s only goldark-alchemy:internal/craft_lingering_potion
 
 
 # Demand blood

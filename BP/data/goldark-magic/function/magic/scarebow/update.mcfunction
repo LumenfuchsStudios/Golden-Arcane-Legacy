@@ -1,10 +1,10 @@
 ## * Updates a scarebow entity's behavior.
 ## * 
-## * Last modified: December 21st, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Remove scarebow if Target block is destroyed
-execute unless block ~ ~-1 ~ target run function goldark:magic/scarebow/destroy
+execute unless block ~ ~-1 ~ target run function goldark-magic:magic/scarebow/destroy
 
 # Convert to Jack o' Lantern if torch is present
 execute if block ~ ~ ~ #goldark:luminous unless entity @s[tag=goldark.scarecrow.jack_o_lantern] run data modify entity @s item.id set value "minecraft:jack_o_lantern"
@@ -23,4 +23,4 @@ execute if score @s goldark.dummy matches 4 run tp @s ~ ~ ~ 180.0 0.0
 
 # Target projectiles nearby
 execute if entity @n[type=#goldark:projectile, distance=..16] \
-        run function goldark:magic/scarebow/target_projectile
+        run function goldark-magic:magic/scarebow/target_projectile

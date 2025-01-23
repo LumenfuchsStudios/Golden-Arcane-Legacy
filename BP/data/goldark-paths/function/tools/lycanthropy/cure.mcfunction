@@ -25,9 +25,6 @@ advancement revoke @s[type=player] from goldark-paths:paths/werewoof/root
 # Remove Werewoof perk
 execute if entity @s[tag=goldark.perks.werewoof] run function goldark-paths:perks/werewoof
 
-# Remove Vempyre perk, if present (to refresh attributes)
-execute if entity @s[tag=goldark.perks.vempyre] run function goldark-paths:perks/vempyre
-
 
 # Remove tag, no longer a woof
 tag @s remove goldark.paths.werewoof

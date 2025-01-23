@@ -1,7 +1,7 @@
 ## * Occasionally displays an audiovisual cue to the user's location.
 ## * Also ends the skill after some time has passed with no attack being made.
 ## * 
-## * Last modified: December 12th, 2024 (AydenTFoxx)
+## * Last modified: January 23rd, 2025 (AydenTFoxx)
 
 
 # Display audiovisual feedback
