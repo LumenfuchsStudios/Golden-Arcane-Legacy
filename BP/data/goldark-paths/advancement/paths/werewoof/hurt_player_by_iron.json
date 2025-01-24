@@ -22,6 +22,6 @@
         }
     },
     "rewards": {
-        "function": "goldark-paths:paths/werewoof/hurt_player_by_iron"
+        "function": "goldark-paths:paths/werewoof/triggers/hurt_player_by_iron"
     }
 }

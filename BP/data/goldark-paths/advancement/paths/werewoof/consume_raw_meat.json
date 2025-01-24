@@ -13,6 +13,6 @@
 		}
 	},
 	"rewards": {
-		"function": "goldark-paths:paths/werewoof/consume_meat"
+		"function": "goldark-paths:paths/werewoof/triggers/consume_meat"
 	}
 }
