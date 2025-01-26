@@ -1,0 +1,28 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#cauldrons"
+                },
+                "can_see_sky": true,
+                "light": {
+                    "light": {
+                        "min": 7
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetY": -1
+        }
+    ]
+}

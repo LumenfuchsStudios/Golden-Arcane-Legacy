@@ -33,7 +33,7 @@
     "rewards": {
         "experience": 8,
         "recipes": [
-            "goldark-magic:spells/thunderous_egg"
+            "goldark.magic:spells/thunderous_egg"
         ]
     }
 }

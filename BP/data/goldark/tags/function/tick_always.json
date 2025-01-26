@@ -1,11 +1,15 @@
 {
     "values": [
         {
-            "id": "goldark-paths:effects/_main",
+            "id": "goldark.paths:effects/_main",
             "required": false
         },
         {
-            "id": "goldark-paths:paths/_main",
+            "id": "goldark.paths:paths/_main",
+            "required": false
+        },
+        {
+            "id": "goldark.magic:spellcraft/_main",
             "required": false
         }
     ]

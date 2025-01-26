@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "default": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "white_dye"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark.spells.essence_white": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.magic:spellcraft/essences/white/init"
+    }
+}

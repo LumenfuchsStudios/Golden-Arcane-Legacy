@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "#goldark:thunder_token",
+        "gold_nugget",
+        "egg"
+    ],
+    "result": {
+        "id": "egg",
+        "components": {
+            "item_name": "{ \"text\": \"Thunder Egg\" }",
+            "lore": [ "{ \"text\": \"Contains a volatile electrical discharge. Beware!\", \"color\": \"gray\", \"italic\": false }" ],
+            "rarity": "uncommon",
+            "custom_data": {
+                "goldark.items.thunder_egg": true
+            }
+        }
+    },
+    "category": "misc"
+}

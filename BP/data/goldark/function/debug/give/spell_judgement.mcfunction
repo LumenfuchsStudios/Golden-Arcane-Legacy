@@ -6,7 +6,7 @@
 
 give @s gold_nugget[ \
             enchantment_glint_override=true, \
-            rarity="uncommon", \
+            rarity="rare", \
             item_name="[{ \"text\": \"Spell: Judgement\" }]", \
             lore=[ "{ \"text\": \"Conjures an aura of divine smite.\", \"color\": \"gray\", \"italic\": false }" ], \
             consumable={ \

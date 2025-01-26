@@ -11,7 +11,13 @@ Legend:
 > 🔺 Enhancement  
 > 🔧 Technical
 
-## Version 0.5.0 / Unreleased
+## Version x.y.z / Unreleased
+
+### Codename: ``
+
+* 🔧 Reorganized datapack into multiple namespaces; `goldark` is now used almost exclusively for shared behavior and datapack management;
+
+## Version 0.5.0 / 2025-01-22
 
 ### Codename: `Awakening`
 

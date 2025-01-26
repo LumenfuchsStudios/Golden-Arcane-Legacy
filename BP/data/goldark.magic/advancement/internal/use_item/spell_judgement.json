@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "default": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "gold_nugget"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark.spells.judgement": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.magic:spells/judgement/summon_trigger"
+    }
+}

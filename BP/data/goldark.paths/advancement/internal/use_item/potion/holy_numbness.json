@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": [ "potion" ],
+                    "components": {
+                        "custom_data": {
+                            "goldark.potions.holy_numbness": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.paths:effects/holy_numbness/give"
+    }
+}

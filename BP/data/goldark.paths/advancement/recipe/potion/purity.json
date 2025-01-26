@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "purity_agent": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "milk_bucket"
+                    },
+                    {
+                        "items": [
+                            "golden_apple",
+                            "golden_carrot",
+                            "glistering_melon_slice"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark.paths:potions/purity"
+        ]
+    }
+}

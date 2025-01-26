@@ -30,14 +30,14 @@ for a painful demise -- be it fire or gravity.
 
 ;;;;;
 
-<recipe;goldark-magic:spells/thunder_egg>
+<recipe;goldark.magic:spells/thunder_egg>
 
 > Also obtainable by collecting an Egg
 > near a chicken.
 
 ;;;;;
 
-<recipe;goldark-magic:spells/thunderous_egg>
+<recipe;goldark.magic:spells/thunderous_egg>
 
 > Also obtainable like Thunder Eggs, but
 > at a rarer chance. Drop a Thunder Egg

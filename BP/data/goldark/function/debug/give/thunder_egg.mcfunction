@@ -1,10 +1,10 @@
 ## * Gives the caller a Thunder Egg, nature's electrical-charged oddity.
 ## * 
-## * Last modified: December 4th, 2024 (AydenTFoxx)
+## * Last modified: January 25th, 2025 (AydenTFoxx)
 
 
 give @s egg[ \
-            custom_name="{ \"text\": \"Thunder Egg\", \"italic\": false }", \
+            item_name="{ \"text\": \"Thunder Egg\" }", \
             lore=[ "{ \"text\": \"Contains a volatile electrical discharge. Beware!\", \"color\": \"gray\", \"italic\": false }" ], \
             rarity="uncommon", \
             custom_data={ \

@@ -17,7 +17,7 @@ while the effect is active.
 
 ;;;;;
 
-<recipe;goldark-paths:potions/holy_numbness>
+<recipe;goldark.paths:potions/holy_numbness>
 
 > Keep an eye on the Absorption effect -- The Holy Numbness
 > applied will have roughly the same duration.

@@ -1,0 +1,32 @@
+{
+    "parent": "goldark:main/holy_sickness/discover",
+    "display": {
+        "icon": {
+            "id": "gold_nugget"
+        },
+        "title": "Proved by the Gods",
+        "description": "Attain Holy Sickness' ultimate form... and survive",
+        "frame": "challenge",
+        "hidden": true
+    },
+    "criteria": {
+        "survive_holy_sickness_v": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "regeneration": {},
+                    "resistance": {}
+                },
+                "player": {
+                    "nbt": "{ Tags: [ goldark.perks.holy_immune ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20,
+        "recipes": [
+            "goldark.magic:spells/judgement"
+        ]
+    }
+}

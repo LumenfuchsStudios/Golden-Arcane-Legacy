@@ -29,7 +29,7 @@
     "rewards": {
         "experience": 4,
         "recipes": [
-            "goldark-magic:spells/thunder_egg"
+            "goldark.magic:spells/thunder_egg"
         ]
     }
 }

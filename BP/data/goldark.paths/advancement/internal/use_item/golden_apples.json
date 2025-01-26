@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"consume_golden_apple": {
+			"trigger": "consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"golden_apple",
+						"enchanted_golden_apple"
+					]
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "goldark.paths:effects/holy_numbness/give"
+	}
+}

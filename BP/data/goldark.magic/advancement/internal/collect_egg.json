@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "thrown_item_picked_up_by_player",
+            "conditions": {
+                "item": {
+                    "items": "egg"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.magic:spells/thunder_egg/trade_egg"
+    }
+}

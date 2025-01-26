@@ -1,11 +1,11 @@
 {
     "values": [
         {
-            "id": "goldark-paths:holy_numbness",
+            "id": "goldark.paths:holy_numbness",
             "required": false
         },
         {
-            "id": "goldark-paths:iron_aspect",
+            "id": "goldark.paths:iron_aspect",
             "required": false
         }
     ]

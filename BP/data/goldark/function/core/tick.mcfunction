@@ -1,12 +1,9 @@
 ## * Runs each sub-section of Golden Arcane at a specified Tick Rate (#goldark_tick_rate)
 ## * 
-## * Last modified: December 27th, 2024 (AydenTFoxx)
+## * Last modified: January 25th, 2025 (AydenTFoxx)
 
 
 ## ALWAYS RUN
-
-# Run always-tick functions (run every Minecraft tick)
-function #goldark:tick_always
 
 # Trigger reload hook
 execute as @a[scores={ goldark.reload=1.. }] run function goldark:debug/reload_trigger

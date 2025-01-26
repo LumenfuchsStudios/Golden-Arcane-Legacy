@@ -6,7 +6,9 @@
         "#fences",
         "#fence_gates",
         "#doors",
+        "#ice",
         "dirt_path",
-        "iron_bars"
+        "iron_bars",
+        "end_rod"
     ]
 }

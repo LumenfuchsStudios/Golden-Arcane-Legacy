@@ -1,12 +1,15 @@
 ## * Creates scoreboards and value holders for usage by Golden Arcane's features.
 ## *
-## * Last modified: December 14th, 2024 (AydenTFoxx)
+## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
 ### OBJECTIVE DECLARATION
 
 ## [Import from load_effects] (goldark)
 function goldark:core/load_effects
+
+## [Import from load_levels] (goldark.paths)
+function goldark:core/load_levels
 
 
 ## Dummy (any)
@@ -23,36 +26,41 @@ scoreboard objectives add goldark.reload trigger
 # A periodic clock for passive/ambient effects in some locations, such as ABYSS' Darkness or Heavens' Regeneration.
 scoreboard objectives add goldark.ambient_clock dummy { "text": "Ambient Clock", "color": "dark_green" }
 
-## Ability Clock (goldark)
+## Ability Clock (any)
 # Adds a clock for running entities' abilities; Also doubles as a cooldown.
 scoreboard objectives add goldark.ability_clock dummy { "text": "Ability Clock", "color": "blue" }
 
-## Ability Timer (goldark)
+## Ability Timer (any)
 # Adds a timer for the duration of an entity's ability.
 scoreboard objectives add goldark.ability_timer dummy { "text": "Ability Timer", "color": "aqua" }
 
-## Globally Unique Identifier (goldark)
+## Globally Unique Identifier (goldark, goldark.paths)
 # An ever-incrementing counter which is used to give an Entity a globally-unique identifier (GUID)
 # for precise target selection anywhere in the world.
 scoreboard objectives add goldark.guid dummy { "text": "GUID", "color": "#7070AF", "bold": true }
 
 
-## Death Count (goldark)
+## Death Count (goldark.paths)
 # Stores the amount of times a player has died. Used for removing effects on death.
 scoreboard objectives add goldark.death_count deathCount { "text": "Death Count", "color": "dark_gray" }
 
-## Health Check (goldark)
+## Health Check (goldark.paths)
 # Stores an Entity's health. Used with Dummy to evaluate actions based on current/lost health.
 scoreboard objectives add goldark.health_check health { "text": "Health", "color": "red" }
 
-## Used Item: Egg (goldark)
+## Hunger Check (goldark.paths)
+# Stores a player's hunger level. Used for stamina-based abilities, e.g. Werewoof's double jump.
+scoreboard objectives add goldark.hunger_check food
+
+
+## Used Item: Egg (goldark.magic)
 # Triggers whenever an Egg is thrown; Used for triggering Thunder Egg's mechanic.
 scoreboard objectives add goldark.used_item.egg minecraft.used:egg { "text": "Used: Egg", "color": "gray" }
 
 
 ## Team: GoldArk_Morph
 # Used by transformed entities to prevent collision with their morph.
-team add goldark_morph { "text": "G.A. Morph", "color": "dark_aqua" }
+team add goldark_morph { "text": "GoldArk: Morph", "color": "dark_aqua" }
 team modify goldark_morph collisionRule never
 
 

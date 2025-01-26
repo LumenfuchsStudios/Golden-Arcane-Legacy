@@ -1,0 +1,30 @@
+{
+    "parent": "goldark:main/take_arcane_path",
+    "display": {
+        "icon": {
+            "id": "iron_nugget"
+        },
+        "title": "Sinful Within",
+        "description": "Your actions have consequences.",
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "get_holy_sickness_i": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "unluck": {}
+                },
+                "player": {
+                    "nbt": "{ Tags: [ goldark.holy_sickness.active ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark.paths:potions/holy_numbness"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "potion",
+                    "components": {
+                        "custom_data": { "goldark.items.blood_vial_strong": true }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.paths:paths/vempyre/take_blood/drink_vial"
+    }
+}

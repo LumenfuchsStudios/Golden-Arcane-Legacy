@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "taken": {
+                        "min": 1
+                    },
+                    "type": {
+                        "is_direct": true
+                    }
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "glass_bottle"
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.paths:paths/vempyre/hit_with_bottle"
+    }
+}

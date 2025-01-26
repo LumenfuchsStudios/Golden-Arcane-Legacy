@@ -1,15 +1,15 @@
 {
     "values": [
         {
-            "id": "goldark-magic:magic/_main",
+            "id": "goldark.magic:magic/_main",
             "required": false
         },
         {
-            "id": "goldark-magic:rituals/_main",
+            "id": "goldark.magic:rituals/_main",
             "required": false
         },
         {
-            "id": "goldark-magic:spells/_main",
+            "id": "goldark.magic:spells/_main",
             "required": false
         }
     ]

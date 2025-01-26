@@ -12,7 +12,7 @@ are nullified for the duration of the effect.
 
 ;;;;;
 
-<recipe;goldark-paths:potions/purity>
+<recipe;goldark.paths:potions/purity>
 
 > An alternate use is of removing Arcane Paths
 > when directly inflicted upon the creature's system.

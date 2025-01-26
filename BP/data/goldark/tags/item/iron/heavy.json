@@ -1,6 +1,7 @@
 {
     "values": [
         "iron_block",
+        "raw_iron_block",
         "anvil"
     ]
 }

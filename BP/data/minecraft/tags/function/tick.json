@@ -1,3 +1,6 @@
 {
-    "values": [ "goldark:core/tick" ]
+    "values": [
+        "#goldark:tick_always",
+        "goldark:core/tick"
+    ]
 }

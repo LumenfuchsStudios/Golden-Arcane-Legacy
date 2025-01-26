@@ -36,8 +36,8 @@ An in-game guide is currently being worked on using the [Lavender](https://modri
     * First ability is *Lunge*, triggered by CTRL+SHIFT+W. When enabled, the player is much faster and jumps way higher for a couple seconds; Attacks are less effective while Lunge is active, however.
     * Second ability is *Heal*, triggered by CTRL+SHIFT+S. When enabled, the player heals a few hearts over time.
     * Third ability is *Shroud*, triggered by CTRL+SHIFT+A+D. When enabled, the player goes invisible and is much slower, but the next attack is far stronger. Also has the ability to "warp" through solid blocks (CTRL+SHIFT+W), at the cost of the ability's duration.
-  * Lycanthropy (Werewoof) can be achieved with a special structure (available on the Lavender book "goldark:codex"), or with the command `/function goldark-paths:tools/lycanthropy/convert`
-  * Vempyrism (Vempyre) can be achieved by perishing under the Bloodlust effect (obtainable with a craftable Vial of Bloodlust (the stronger, enchanted variant of the Vial of Blood potion)), or with the command `/function goldark-paths:tools/vempyrism/convert`
+  * Lycanthropy (Werewoof) can be achieved with a special structure (available on the Lavender book "goldark:codex"), or with the command `/function goldark.paths:tools/lycanthropy/convert`
+  * Vempyrism (Vempyre) can be achieved by perishing under the Bloodlust effect (obtainable with a craftable Vial of Bloodlust (the stronger, enchanted variant of the Vial of Blood potion)), or with the command `/function goldark.paths:tools/vempyrism/convert`
 * 4 new custom effects (Holy Sickness, Holy Numbness, Purity, Bloodlust)
   * Holy Sickness is obtained when holding, touching or wearing an Iron-related item as a Werewoof, by standing under sunlight as a Vempyre, or by being within the AoE of a Judgement spell.
     * Has several levels, each with varying degrees of danger and destructiveness to the environment.
