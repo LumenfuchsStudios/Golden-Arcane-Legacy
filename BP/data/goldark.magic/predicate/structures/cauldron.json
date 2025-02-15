@@ -1,0 +1,36 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#cauldrons"
+                }
+            },
+            "offsetY": -2
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#goldark:magic_catalyst"
+                }
+            },
+            "offsetY": -3
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": [
+			            "quartz_block",
+			            "gold_block",
+			            "raw_gold_block"
+		            ]
+                }
+            },
+            "offsetY": -1
+        }
+    ]
+}

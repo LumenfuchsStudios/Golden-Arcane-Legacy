@@ -1,10 +1,10 @@
 ## * Heals and/or applies Regeneration to the user.
 ## * 
-## * Last modified: December 11th, 2024 (AydenTFoxx)
+## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
 # Update scores
-scoreboard players remove @s[scores={ goldark.ability_clock=20.. }] goldark.ability_clock 20
+scoreboard players remove @s[scores={ goldark.ability_clock=20.. }, gamemode=!creative, gamemode=!spectator] goldark.ability_clock 20
 scoreboard players add @s goldark.ability_timer 80
 
 # Grant healing
@@ -12,8 +12,10 @@ effect give @s[scores={ goldark.health_check=17.. }] regeneration 12 0 true
 effect give @s[scores={ goldark.health_check=..16 }] regeneration 4 1 true
 effect give @s instant_health 1 0 true
 
+effect give @s[scores={ goldark.path_level.vempyre=3.. }] instant_health 2 0 true
+
 # Apply Slowness
-effect give @s slowness 1 0
+effect give @s[scores={ goldark.path_level.vempyre=1 }] slowness 1 0
 
 
 # Display audiovisual feedback

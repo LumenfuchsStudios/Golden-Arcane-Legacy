@@ -8,10 +8,6 @@ execute unless block ~ ~-0.1 ~ #goldark:iron/any \
         unless block ~ ~ ~-0.34 #goldark:iron/any \
         unless block ~-0.34 ~ ~ #goldark:iron/any \
         unless block ~0.34 ~ ~ #goldark:iron/any \
-        unless block ~ ~1 ~0.34 #goldark:iron/any \
-        unless block ~ ~1 ~-0.34 #goldark:iron/any \
-        unless block ~-0.34 ~1 ~ #goldark:iron/any \
-        unless block ~0.34 ~1 ~ #goldark:iron/any \
         unless block ~ ~ ~ #goldark:iron/any \
         run return 0
 

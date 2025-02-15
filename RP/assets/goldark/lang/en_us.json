@@ -35,6 +35,11 @@
     "item.minecraft.lingering_potion.effect.purity_strong": "Lingering Potion of Purification",
     "item.minecraft.tipped_arrow.effect.purity_strong": "Arrow of Purification",
 
+    "item.minecraft.potion.effect.werepyrism": "Vial of Werepyrism",
+    "item.minecraft.splash_potion.effect.werepyrism": "Splash Vial of Werepyrism",
+    "item.minecraft.lingering_potion.effect.werepyrism": "Lingering Vial of Werepyrism",
+    "item.minecraft.tipped_arrow.effect.werepyrism": "Arrow of Werepyrism",
+
     "effect.goldark.bloodlust": "Bloodlust",
     "effect.goldark.purity": "Purity"
 }

@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "goldark.paths:paths/vempyre/hydrate"
+        "function": "goldark.paths:paths/vempyre/triggers/hydrate"
     }
 }

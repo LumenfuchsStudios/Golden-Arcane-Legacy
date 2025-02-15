@@ -55,6 +55,6 @@
         ]
     ],
     "rewards": {
-        "function": "goldark:tools/vampirism/convert"
+        "function": "goldark.paths:tools/vempyrism/convert"
     }
 }

@@ -11,7 +11,7 @@ summon item ~ ~ ~ { \
             enchantment_glint_override: true, \
             rarity: uncommon, \
             item_name: '{ "text": "Essence of Purity" }', \
-            lore: [ '{ "text": "\\"Purify thine enemies, purify thy soul.\\"", "color": "gray", "italic": false }' ], \
+            lore: [ '{ "text": "\\"Purify thy enemies, purify thy soul.\\"", "color": "gray", "italic": false }' ], \
             consumable: { animation: "bow", consume_seconds: 1.0, has_consume_particles: false, sound: "block.conduit.ambient.short" }, \
             custom_data: { "goldark.spells.essence_white": true } \
         } \

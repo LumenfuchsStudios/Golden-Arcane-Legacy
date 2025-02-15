@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "reference",
+                        "name": "goldark.magic:structures/cauldron"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.magic:spellcraft/cauldron/create"
+    }
+}

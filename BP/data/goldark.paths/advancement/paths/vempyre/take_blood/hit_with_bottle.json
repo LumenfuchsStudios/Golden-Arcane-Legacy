@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "goldark.paths:paths/vempyre/hit_with_bottle"
+        "function": "goldark.paths:paths/vempyre/triggers/hit_with_bottle"
     }
 }

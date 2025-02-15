@@ -1,10 +1,10 @@
 ## * Grants the user superhuman speeds, at the cost of their attacking strength.
 ## * 
-## * Last modified: December 12th, 2024 (AydenTFoxx)
+## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
 # Update scores
-scoreboard players remove @s[scores={ goldark.ability_clock=10.. }] goldark.ability_clock 10
+scoreboard players remove @s[scores={ goldark.ability_clock=10.. }, gamemode=!creative, gamemode=!spectator] goldark.ability_clock 10
 scoreboard players add @s goldark.ability_timer 80
 
 # Add tag
@@ -15,8 +15,9 @@ tag @s add goldark.vempyre.skill_lunge
 effect give @s speed 3 4 true
 effect give @s jump_boost 3 2 true
 
-effect give @s weakness 3 0
-effect give @a[distance=..12] darkness 4 0 true
+effect give @s[scores={ goldark.path_level.vempyre=1 }] weakness 3 0
+execute as @a[distance=..12] unless score @s goldark.path_level.vempyre matches 2.. \
+        run effect give @s darkness 4 0 true
 
 
 # Add attribute

@@ -1,6 +1,6 @@
 ## * Runs Werewoof-unique code & behaviors.
 ## * 
-## * Last modified: January 24th, 2025 (AydenTFoxx)
+## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
 ## PERKS
@@ -16,12 +16,20 @@ execute if score @s goldark.effect_timer.holy_sickness matches 100.. \
 ## BEHAVIOR
 
 # Evaluate metal sickness
-execute unless entity @s[tag=goldark.perks.holy_immune] run function goldark.paths:paths/werewoof/sickness
+execute if entity @s[tag=!goldark.perks.holy_immune, tag=!goldark.save_gamemode.creative, tag=!goldark.save_gamemode.spectator] unless entity @s[gamemode=creative] \
+        run function goldark.paths:paths/werewoof/sickness
+
+# Revoke Holy Sickness (Creative)
+tag @s[tag=goldark.holy_sickness.active, tag=goldark.holy_sickness.based, gamemode=creative] remove goldark.holy_sickness.based
+tag @s[tag=goldark.holy_sickness.active, tag=goldark.holy_sickness.pure, gamemode=creative] remove goldark.holy_sickness.pure
+tag @s[tag=goldark.holy_sickness.active, tag=goldark.holy_sickness.pure_block, gamemode=creative] remove goldark.holy_sickness.pure_block
+
+tag @s[tag=goldark.holy_sickness.active, gamemode=creative] remove goldark.holy_sickness.active
 
 
 # Transform into Wolf (Player)
 execute if predicate goldark:player_input/sprint if predicate goldark:player_input/backward if predicate goldark:entity/is_on_ground \
-        if entity @s[tag=!goldark.path_transformed, tag=!goldark.paths.vempyre] unless score @s goldark.health_check matches ..3 \
+        if entity @s[tag=!goldark.path_transformed] unless score @s goldark.health_check matches ..3 unless score @s goldark.path_level.vempyre matches 2.. \
         unless score @s goldark.effect_timer.holy_sickness matches 1.. unless score @s goldark.ability_timer matches 1.. \
         run function goldark.paths:paths/werewoof/morph/transform
 
@@ -42,4 +50,5 @@ scoreboard players remove @s[type=player, scores={ goldark.ability_timer=1.. }] 
 scoreboard players reset @s[scores={ goldark.ability_timer=0 }] goldark.ability_timer
 
 # Update Wolf form
-execute if entity @s[tag=goldark.path_transformed, tag=!goldark.dummy_morph.werewoof, tag=!goldark.paths.vempyre] run function goldark.paths:paths/werewoof/morph/update
+execute if entity @s[tag=goldark.path_transformed, tag=!goldark.dummy_morph.werewoof] unless score @s goldark.path_level.vempyre matches 2.. \
+        run function goldark.paths:paths/werewoof/morph/update

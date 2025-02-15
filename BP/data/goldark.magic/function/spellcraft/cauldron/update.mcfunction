@@ -1,6 +1,6 @@
 ## * Runs code pertaining to the modified cauldron block, a staple of magic creation in Golden Arcane.
 ## * 
-## * Last modified: January 25th, 2025 (AydenTFoxx)
+## * Last modified: February 13th, 2025 (AydenTFoxx)
 
 
 ## # VISUAL
@@ -22,7 +22,7 @@ scoreboard players reset @s[scores={ goldark.ambient_clock=240.. }] goldark.ambi
 ## # BEHAVIOR
 
 # Teleport players randomly
-execute as @p[distance=..0.3, predicate=goldark:entity/can_see_sky] at @s run function goldark.magic:spellcraft/cauldron/utils/roll_random_pos
+execute as @p[distance=..0.3, predicate=goldark:block/can_see_sky] at @s run function goldark.magic:spellcraft/cauldron/utils/roll_random_pos
 
 # Remove if Cauldron is broken
 execute unless block ~ ~ ~ #cauldrons run function goldark.magic:spellcraft/cauldron/remove
@@ -41,3 +41,45 @@ execute as @n[type=item, tag=!goldark.cauldron.ingredient, distance=..1] at @s i
 execute if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:glowstone_dust", count: 1 } }, distance=..1] \
         if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:lily_of_the_valley", count: 1 } }, distance=..1] \
         run function goldark.magic:spellcraft/essences/white/create
+
+
+# Create spells:
+
+# Soul Link
+execute if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:quartz", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:gold_ingot", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:soul_sand", count: 1 } }, distance=..1] \
+        run function goldark.magic:spellcraft/spells/soul_link
+
+# Thunder Egg
+execute if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:egg", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:copper_ingot", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:gold_nugget", count: 1 } }, distance=..1] \
+        run function goldark.magic:spellcraft/spells/thunder_egg
+
+# Thunderous Egg
+execute if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:egg", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:wither_rose", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:gold_ingot", count: 1 } }, distance=..1] \
+        run function goldark.magic:spellcraft/spells/thunderous_egg
+
+
+# Create (unobtainable) items:
+
+# Remover Stick
+execute if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:debug_stick", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:barrier", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:gold_ingot", count: 1 } }, distance=..1] \
+        run function goldark.magic:spellcraft/spells/extras/remover_stick
+
+# Pig I
+execute if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:pig_spawn_egg", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:tnt", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:glowstone_dust", count: 1 } }, distance=..1] \
+        run function goldark.magic:spellcraft/spells/extras/pigtest
+
+# Pig II
+execute if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:pig_spawn_egg", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:creeper_head", count: 1 } }, distance=..1] \
+        if entity @n[type=item, tag=goldark.cauldron.ingredient, nbt={ Item: { id: "minecraft:glowstone", count: 1 } }, distance=..1] \
+        run function goldark.magic:spellcraft/spells/extras/pigtest_missile

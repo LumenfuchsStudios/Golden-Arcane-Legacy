@@ -1,10 +1,10 @@
 ## * Inflicts extra harm upon a Werewoof being hit by an Iron weapon.
 ## * 
-## * Last modified: January 23rd, 2025 (AydenTFoxx)
+## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
 # Revoke trigger
-advancement revoke @s[type=player] only goldark.paths:paths/werewoof/hurt_player_by_iron
+advancement revoke @s[type=player] only goldark.paths:paths/werewoof/trigger/hurt_player_by_iron
 
 # Ignore if under the Purity effect
 execute if entity @s[tag=goldark.effects.purity] run return fail

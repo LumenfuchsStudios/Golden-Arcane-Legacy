@@ -22,7 +22,7 @@ scoreboard players add @s[advancements={ goldark.paths:paths/vempyre/take_blood/
 advancement revoke @s[advancements={ goldark.paths:paths/vempyre/take_blood/drink_blood_vial=true }] only goldark.paths:paths/vempyre/take_blood/drink_blood_vial
 
 # Add even more score if item was a strong Blood Vial
-scoreboard players add @s[advancements={ goldark.paths:paths/vempyre/take_blood/drink_blood_vial_strong=true }] goldark.ability_clock 14
+scoreboard players add @s[advancements={ goldark.paths:paths/vempyre/take_blood/drink_blood_vial_strong=true }] goldark.ability_clock 16
 advancement revoke @s[advancements={ goldark.paths:paths/vempyre/take_blood/drink_blood_vial_strong=true }] only goldark.paths:paths/vempyre/take_blood/drink_blood_vial_strong
 
 

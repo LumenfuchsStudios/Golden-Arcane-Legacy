@@ -6,15 +6,15 @@
 ## AUDIO-VISUAL
 
 # Rotate self
-tp @s ~ ~ ~ ~12 ~
+tp @s ~ ~ ~ ~8 ~
 
 # Display particles
-particle soul_fire_flame ^ ^0.5 ^5 .1 .1 .1 0.01 2
-particle soul_fire_flame ^ ^0.5 ^-5 .1 .1 .1 0.01 2
-particle soul_fire_flame ^5 ^0.5 ^ .1 .1 .1 0.01 2
-particle soul_fire_flame ^-5 ^0.5 ^ .1 .1 .1 0.01 2
+particle soul_fire_flame ^ ^0.5 ^5 .1 .1 .1 0.01 4
+particle soul_fire_flame ^ ^0.5 ^-5 .1 .1 .1 0.01 4
+particle soul_fire_flame ^5 ^0.5 ^ .1 .1 .1 0.01 4
+particle soul_fire_flame ^-5 ^0.5 ^ .1 .1 .1 0.01 4
 
-particle end_rod ~ ~0.5 ~ .1 .1 .1 0.1 2
+particle end_rod ~ ~0.5 ~ .1 .1 .1 0.1 1
 
 
 # Tick Clock
@@ -51,7 +51,7 @@ effect give @e[type=!#goldark:magic_immune, tag=goldark.perks.holy_immune, dista
 effect give @e[type=!#goldark:magic_immune, tag=goldark.perks.holy_immune, distance=..5] resistance 1 0 true
 
 # Display particles on blessed mobs
-execute positioned as @e[type=!#goldark:magic_immune, tag=goldark.perks.holy_immune, distance=..5] run particle flame ^ ^0.5 ^1 .1 .2 .1 0.05 1
+execute positioned as @e[type=!#goldark:magic_immune, tag=goldark.perks.holy_immune, distance=..5] run particle flame ^ ^0.5 ^0.8 .1 .2 .1 0.02 1
 
 
 ## END
@@ -61,10 +61,10 @@ scoreboard players add @s goldark.ability_timer 1
 
 
 # Play expiration audio
-execute if score @s goldark.ability_timer matches 970 run playsound block.portal.trigger block @a[distance=..16] ~ ~ ~ 0.8 1.2
+execute if score @s goldark.ability_timer matches 950 run playsound block.portal.trigger block @a[distance=..16] ~ ~ ~ 0.8 1.2
 
 # Display expiration particles
-execute if score @s goldark.ability_timer matches 980.. run particle enchant ~ ~ ~ .0 .0 .0 1 5
+execute if score @s goldark.ability_timer matches 980.. run particle enchant ~ ~1 ~ .0 .0 .0 1 5
 execute if score @s goldark.ability_timer matches 995.. run particle flash ~ ~ ~ .0 .0 .0 1 1
 
 # Play final audio

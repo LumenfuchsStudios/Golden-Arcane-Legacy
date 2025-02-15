@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "golden_motif": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+				"gold_block",
+				"quartz"
+			]
+                    },
+		    {
+			"items": "apple"
+		    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark.alchemy:enchanted_golden_apple",
+	    "goldark.alchemy:enchanted_golden_apple_alt"
+        ]
+    }
+}

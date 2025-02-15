@@ -40,8 +40,8 @@ execute as @s[tag=goldark.holy_sickness.active_judgement] unless entity @n[type=
 execute as @s[tag=goldark.holy_sickness.active_judgement] unless entity @n[type=#goldark:technical, tag=goldark.dummy_spell.judgement, distance=..3] run tag @s remove goldark.holy_sickness.active_judgement
 
 # Revoke effect (sunlight)
-execute as @s[tag=goldark.holy_sickness.active_sunlight] unless predicate goldark:entity/can_see_sky run tag @s remove goldark.holy_sickness.active
-execute as @s[tag=goldark.holy_sickness.active_sunlight] unless predicate goldark:entity/can_see_sky run tag @s remove goldark.holy_sickness.active_sunlight
+execute as @s[tag=goldark.holy_sickness.active_sunlight] unless predicate goldark:block/is_under_sunlight run tag @s remove goldark.holy_sickness.active
+execute as @s[tag=goldark.holy_sickness.active_sunlight] unless predicate goldark:block/is_under_sunlight run tag @s remove goldark.holy_sickness.active_sunlight
 
 execute as @s[tag=goldark.holy_sickness.active_sunlight] if score #goldark_time_day goldark.dummy matches 0..12600 run tag @s remove goldark.holy_sickness.active
 execute as @s[tag=goldark.holy_sickness.active_sunlight] if score #goldark_time_day goldark.dummy matches 0..12600 run tag @s remove goldark.holy_sickness.active_sunlight

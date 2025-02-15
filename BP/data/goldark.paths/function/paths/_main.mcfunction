@@ -24,10 +24,11 @@ execute as @a[tag=goldark.effects.purity, tag=goldark.perks.vempyre] run functio
 
 # Run Werewoof behavior & traits
 execute as @e[type=!#goldark:magic_immune, tag=goldark.paths.werewoof, tag=!goldark.effects.purity] at @s if loaded ~ ~ ~ run function goldark.paths:paths/werewoof/update
+execute as @e[type=!#goldark:magic_immune, tag=goldark.paths.werewoof, tag=!goldark.effects.purity, scores={ goldark.path_level.werewoof=2.. }] at @s if loaded ~ ~ ~ run function goldark.paths:paths/werewoof/update_ii
 
 # Convert random entities to Werewooves on Full Moons
 execute if score #goldark_moon_phase goldark.dummy matches 0 if score #goldark_time_day goldark.dummy matches 18000..22000 \
-        if predicate goldark:misc/random_1 if predicate goldark:misc/random_1 if predicate goldark:misc/random_1 \
+        if predicate goldark:misc/random_1 if predicate goldark:misc/random_5 if predicate goldark:misc/random_10 \
         as @a at @s as @n[type=!#goldark:magic_immune, type=!player, tag=!goldark.paths.werewoof, sort=random, distance=..256] at @s \
         if loaded ~ ~ ~ run function goldark.paths:tools/lycanthropy/convert
 
@@ -38,10 +39,10 @@ execute as @e[type=wolf, tag=goldark.dummy_morph.werewoof] at @s if loaded ~ ~ ~
 ## VEMPYRE
 
 # Run Vempyre behavior & traits
-execute as @a[tag=goldark.paths.vempyre, tag=!goldark.effects.purity] at @s if loaded ~ ~ ~ run function goldark.paths:paths/vempyre/update
+execute as @e[type=!#goldark:magic_immune, tag=goldark.paths.vempyre, tag=!goldark.effects.purity] at @s if loaded ~ ~ ~ run function goldark.paths:paths/vempyre/update
 
 # Prevent player-less Bat morphs
 execute as @e[type=bat, tag=goldark.dummy_morph.vempyre] at @s if loaded ~ ~ ~ unless entity @a[tag=goldark.paths.vempyre, tag=goldark.path_transformed, tag=!goldark.effects.purity, distance=..4] run kill @s
 
 # Update bat decoys
-execute as @e[type=bat, tag=goldark.vempyre.bat_decoy] at @s run function goldark.paths:paths/vempyre/morph/update_decoy
+execute as @e[type=bat, tag=goldark.vempyre.bat_decoy] at @s run function goldark.paths:paths/vempyre/decoy/update

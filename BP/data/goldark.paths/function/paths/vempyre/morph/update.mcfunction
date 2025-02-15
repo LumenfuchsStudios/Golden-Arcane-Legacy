@@ -1,7 +1,7 @@
 ## * Runs the Bat morph's behavior from transformed Vempyres.
 ## * The Bat is as unpredictable as one'd expect...
 ## * 
-## * Last modified: January 25th, 2025 (AydenTFoxx)
+## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
 ## # BEHAVIOR
@@ -10,7 +10,19 @@
 
 # Deal contact damage
 execute as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s \
-        run damage @n[type=!#goldark:magic_immune, type=!bat, tag=!goldark.paths.vempyre, tag=!goldark.path_transformed, distance=..1] 2 mob_attack by @s
+        run damage @n[type=!#goldark:magic_immune, type=!bat, tag=!goldark.paths.vempyre, tag=!goldark.path_transformed, distance=..1] 3 mob_attack by @s
+
+# Attack nearby mobs
+execute as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s \
+        at @n[type=!#goldark:magic_immune, type=!bat, tag=!goldark.paths.vempyre, tag=!goldark.path_transformed, distance=..2] run function goldark.paths:paths/vempyre/decoy/target_mob
+
+# Set on fire (Vempyrism III)
+execute if score @s goldark.path_level.vempyre matches 3.. run data modify entity @n[type=!#goldark:magic_immune, type=!bat, tag=!goldark.paths.vempyre, tag=!goldark.path_transformed, distance=..1] Fire set value 40s
+
+# Regain health
+execute as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s \
+        if entity @n[type=!#goldark:magic_immune, type=!bat, tag=!goldark.paths.vempyre, tag=!goldark.path_transformed, distance=..1] \
+        run effect give @s regeneration 2 1 true
 
 
 ## Input (Player)
@@ -19,8 +31,8 @@ execute as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s \
 execute if entity @s[predicate=goldark:player_input/forward] as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s if block ^ ^ ^1 #goldark:breathable run tp @s ^ ^ ^1
 
 # Rotate Bat
-execute if entity @s[predicate=goldark:player_input/left, predicate=!goldark:player_input/right] as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s run rotate @s facing ^2 ^ ^2
-execute if entity @s[predicate=goldark:player_input/right, predicate=!goldark:player_input/left] as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s run rotate @s facing ^-2 ^ ^2
+execute if entity @s[predicate=goldark:player_input/left, predicate=!goldark:player_input/right] as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s run rotate @s facing ^2 ^ ^4
+execute if entity @s[predicate=goldark:player_input/right, predicate=!goldark:player_input/left] as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s run rotate @s facing ^-2 ^ ^4
 execute if entity @s[predicate=goldark:player_input/backward] as @n[type=bat, tag=goldark.dummy_morph.vempyre, distance=..4] at @s run rotate @s facing ^ ^-1 ^4
 
 # Go up and down

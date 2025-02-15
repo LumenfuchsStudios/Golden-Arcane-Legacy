@@ -37,9 +37,28 @@
                     }
                 }
             }
+        },
+        "drink_debug_potion": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "potion",
+                    "components": {
+                        "custom_data": {
+                            "goldark.potions.werepyrism": true
+                        }
+                    }
+                }
+            }
         }
     },
+    "requirements": [
+        [
+            "killed_with_bloodlust",
+            "drink_debug_potion"
+        ]
+    ],
     "rewards": {
-        "function": "goldark:tools/vampirism/convert"
+        "function": "goldark.paths:tools/vempyrism/convert"
     }
 }

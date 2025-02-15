@@ -1,16 +1,24 @@
 ## * Grants perks inherent to the Vempyre arcane path.
 ## * 
-## * Last modified: January 24th, 2025 (AydenTFoxx)
+## * Last modified: February 11th, 2025 (AydenTFoxx)
 
 
 ## SET
 
 # Grant attributes
-attribute @s[tag=!goldark.perks.vempyre] attack_speed modifier add goldark:vempyre/attack_speed 3.0 add_value
-attribute @s[tag=!goldark.perks.vempyre] sneaking_speed modifier add goldark:vempyre/sneaking_speed 0.1 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=..2 }] attack_speed modifier add goldark:vempyre/attack_speed 3 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=3.. }] attack_speed modifier add goldark:vempyre/attack_speed 4 add_value
 
-attribute @s[tag=!goldark.perks.vempyre] burning_time modifier add goldark:vempyre/burning_time 1.5 add_value
-attribute @s[tag=!goldark.perks.vempyre] safe_fall_distance modifier add goldark:vempyre/safe_fall_distance 5.0 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=1 }] sneaking_speed modifier add goldark:vempyre/sneaking_speed 0.1 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=2 }] sneaking_speed modifier add goldark:vempyre/sneaking_speed 0.15 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=3.. }] sneaking_speed modifier add goldark:vempyre/sneaking_speed 0.2 add_value
+
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=1 }] burning_time modifier add goldark:vempyre/burning_time 1.5 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=2 }] burning_time modifier add goldark:vempyre/burning_time 2 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=3.. }] burning_time modifier add goldark:vempyre/burning_time 3 add_value
+
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=1 }] safe_fall_distance modifier add goldark:vempyre/safe_fall_distance 5 add_value
+attribute @s[tag=!goldark.perks.vempyre, scores={ goldark.path_level.vempyre=2.. }] safe_fall_distance modifier add goldark:vempyre/safe_fall_distance 8 add_value
 
 # Add tag
 execute if entity @s[tag=!goldark.perks.vempyre] run return run tag @s add goldark.perks.vempyre

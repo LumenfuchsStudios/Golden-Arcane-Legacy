@@ -1,6 +1,6 @@
 ## * Runs behavior for the decoy bats released on transformation.
 ## * 
-## * Last modified: January 25th, 2025 (AydenTFoxx)
+## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
 ## VISUAL
@@ -13,10 +13,7 @@ particle dust{ color: 3866881, scale: 0.5 } ~ ~0.5 ~ 0.1 0.1 0.1 0.1 2
 
 # Move towards nearest mob
 execute at @n[type=!#goldark:magic_immune, type=!bat, tag=!goldark.paths.vempyre, tag=!goldark.path_transformed, distance=..16] \
-        run function goldark.paths:paths/vempyre/morph/decoy_target_mob
-
-# Rotate towards target
-rotate @s facing entity @n[type=!#goldark:magic_immune, type=!bat, tag=!goldark.paths.vempyre, tag=!goldark.path_transformed, distance=..16]
+        run function goldark.paths:paths/vempyre/decoy/target_mob
 
 
 # Deal contact damage

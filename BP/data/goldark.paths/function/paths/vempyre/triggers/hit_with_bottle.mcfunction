@@ -38,5 +38,5 @@ summon item ~ ~ ~ { \
 data modify entity @n[type=item, tag=goldark.vempyre.item_blood_vial, distance=0] Item.components.minecraft:potion_contents.custom_effects set from entity @n[type=#goldark:humanoid/living, nbt={ HurtTime: 10s }, distance=..8] active_effects
 
 # Append Bloodlust & Unluck to final product
-data modify entity @n[type=item, tag=goldark.vempyre.item_blood_vial, distance=0] Item.components.minecraft:potion_contents.custom_effects append value { id: "darkness", ambient: true, duration: 400 }
-data modify entity @n[type=item, tag=goldark.vempyre.item_blood_vial, distance=0] Item.components.minecraft:potion_contents.custom_effects append value { id: "unluck", ambient: true, duration: 1 }
+data modify entity @n[type=item, tag=goldark.vempyre.item_blood_vial, distance=0] Item.components.minecraft:potion_contents.custom_effects append value { id: "darkness", ambient: true, duration: 120 }
+data modify entity @n[type=item, tag=goldark.vempyre.item_blood_vial, distance=0] Item.components.minecraft:potion_contents.custom_effects append value { id: "unluck", ambient: true, duration: 80 }

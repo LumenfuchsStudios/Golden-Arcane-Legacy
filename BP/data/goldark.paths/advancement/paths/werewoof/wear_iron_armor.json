@@ -1,0 +1,75 @@
+{
+    "parent": "goldark.paths:paths/werewoof/root",
+    "display": {
+        "icon": {
+            "id": "chainmail_chestplate"
+        },
+        "title": "Exposure Therapy",
+        "description": "Wear a piece of Iron or Chainmail armor. This might not be your best idea."
+    },
+    "criteria": {
+        "wear_iron_helmet": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "head": {
+                            "items": [ "iron_helmet", "chainmail_helmet" ]
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.werewoof, goldark.holy_sickness.active ] }"
+                }
+            }
+        },
+        "wear_iron_chestplate": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "chest": {
+                            "items": [ "iron_chestplate", "chainmail_chestplate" ]
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.werewoof, goldark.holy_sickness.active ] }"
+                }
+            }
+        },
+        "wear_iron_leggings": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "legs": {
+                            "items": [ "iron_leggings", "chainmail_leggings" ]
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.werewoof, goldark.holy_sickness.active ] }"
+                }
+            }
+        },
+        "wear_iron_boots": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "feet": {
+                            "items": [ "iron_boots", "chainmail_boots" ]
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.werewoof, goldark.holy_sickness.active ] }"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "wear_iron_helmet",
+            "wear_iron_chestplate",
+            "wear_iron_leggings",
+            "wear_iron_boots"
+        ]
+    ],
+    "rewards": {
+        "experience": 8
+    }
+}

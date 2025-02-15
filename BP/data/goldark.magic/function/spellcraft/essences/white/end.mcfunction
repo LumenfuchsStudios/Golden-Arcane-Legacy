@@ -10,7 +10,7 @@ execute as @e[type=!#goldark:magic_immune, tag=!goldark.perks.holy_immune, predi
 execute as @e[type=!#goldark:magic_immune, type=!#goldark:player_allies, tag=!goldark.perks.holy_immune, distance=..4] run damage @s 4 magic
 
 # Inflict Purity on nearby targets
-execute as @e[type=!#goldark:magic_immune, distance=..4] run function goldark.paths:effects/purity/give
+execute as @e[type=!#goldark:magic_immune, distance=..2] run function goldark.paths:effects/purity/give
 
 
 # Display audiovisual feedback

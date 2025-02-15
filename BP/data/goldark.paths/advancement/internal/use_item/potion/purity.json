@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "requirement": {
+        "drink_potion": {
             "trigger": "consume_item",
             "conditions": {
                 "item": {
@@ -12,8 +12,33 @@
                     }
                 }
             }
+        },
+        "raw_effect": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "darkness": {
+                        "ambient": true,
+                        "duration": {
+                            "min": 20
+                        }
+                    },
+                    "glowing": {
+                        "ambient": true,
+                        "duration": {
+                            "min": 20
+                        }
+                    }
+                }
+            }
         }
     },
+    "requirements": [
+        [
+            "drink_potion",
+            "raw_effect"
+        ]
+    ],
     "rewards": {
         "function": "goldark.paths:effects/purity/give"
     }

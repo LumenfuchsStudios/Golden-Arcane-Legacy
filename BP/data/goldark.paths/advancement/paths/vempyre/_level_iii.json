@@ -1,0 +1,61 @@
+{
+    "parent": "goldark.paths:paths/vempyre/_level_ii",
+    "display": {
+        "icon": {
+            "id": "redstone_torch"
+        },
+        "title": "True Bloodlust",
+        "description": "Your power grows stronger... But at what cost?",
+        "frame": "challenge",
+        "hidden": true
+    },
+    "criteria": {
+        "defeat_boss": {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": [
+                        "ender_dragon",
+                        "wither"
+                    ]
+                },
+                "killing_blow": {
+                    "is_direct": true
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "level": {
+                            "min": 20
+                        },
+                        "advancements": {
+                            "goldark.paths:paths/vempyre/_level_ii": true
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        },
+        "used_totem": {
+            "trigger": "minecraft:used_totem",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "level": {
+                            "min": 20
+                        },
+                        "advancements": {
+                            "goldark.paths:paths/vempyre/_level_ii": true
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 80,
+        "function": "goldark.paths:paths/vempyre/triggers/_evolve"
+    }
+}

@@ -1,6 +1,6 @@
 ## * Converts the calling entity into a Werewoof.
 ## * 
-## * Last modified: January 23rd, 2025 (AydenTFoxx)
+## * Last modified: January 28th, 2025 (AydenTFoxx)
 
 
 # You be Woof, exit.
@@ -13,6 +13,10 @@ playsound entity.wolf.growl hostile @a[distance=..256] ~ ~ ~ 1 0.5 0.2
 
 # Grant root advancement "Path: Werewoof"
 advancement grant @s[type=player, advancements={ goldark.paths:paths/werewoof/root=false }] only goldark.paths:paths/werewoof/root
+
+
+# Set Path Level
+scoreboard players set @s goldark.path_level.werewoof 1
 
 # Add tag, now is Woof
 tag @s add goldark.paths.werewoof

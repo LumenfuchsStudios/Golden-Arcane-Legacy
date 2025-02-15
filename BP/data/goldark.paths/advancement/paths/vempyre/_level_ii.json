@@ -1,0 +1,44 @@
+{
+    "parent": "goldark.paths:paths/vempyre/root",
+    "display": {
+        "icon": {
+            "id": "glowstone_dust"
+        },
+        "title": "Olden 'Pyre",
+        "description": "Your experience and achievements have strengthened your abilities.",
+        "frame": "goal",
+        "hidden": true
+    },
+    "criteria": {
+        "slay_strong_monster": {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": [
+                        "elder_guardian",
+                        "ravager",
+                        "warden",
+                        "wither",
+                        "ender_dragon"
+                    ]
+                },
+                "killing_blow": {
+                    "is_direct": true
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "level": {
+                            "min": 10
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20,
+        "function": "goldark.paths:paths/vempyre/triggers/_evolve"
+    }
+}

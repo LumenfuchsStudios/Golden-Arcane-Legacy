@@ -1,6 +1,0 @@
-{
-	"type": "crafting_transmute",
-	"input": "sand",
-	"material": "#coals",
-	"result": "clay"
-}

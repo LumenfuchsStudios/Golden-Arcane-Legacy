@@ -57,6 +57,10 @@ scoreboard objectives add goldark.hunger_check food
 # Triggers whenever an Egg is thrown; Used for triggering Thunder Egg's mechanic.
 scoreboard objectives add goldark.used_item.egg minecraft.used:egg { "text": "Used: Egg", "color": "gray" }
 
+## Used Item: Snowball (goldark.magic)
+# Triggers whenever a Snowball is thrown; Used for triggering the Pig Cannon.
+scoreboard objectives add goldark.used_item.snowball minecraft.used:snowball { "text": "Used: Snowball", "color": "gray" }
+
 
 ## Team: GoldArk_Morph
 # Used by transformed entities to prevent collision with their morph.

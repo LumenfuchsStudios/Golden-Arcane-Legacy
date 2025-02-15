@@ -5,6 +5,10 @@
 		"tall_grass",
 		"small_dripleaf",
 		"big_dripleaf",
-		"big_dripleaf_stem"
+		"big_dripleaf_stem",
+		"moss_block",
+		"moss_carpet",
+		{ "id": "pale_moss_block", "required": false },
+		{ "id": "pale_moss_carpet", "required": false }
 	]
 }

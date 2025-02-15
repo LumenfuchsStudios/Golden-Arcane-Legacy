@@ -1,7 +1,7 @@
 ## * Module Manager: SPELLS
 ## * Single-use magics which produce unique effects upon the world.
 ## * 
-## * Last modified: January 23rd, 2025 (AydenTFoxx)
+## * Last modified: February 15th, 2025 (AydenTFoxx)
 
 
 ## JUDGEMENT (spells/judgement)
@@ -41,3 +41,29 @@ execute as @e[type=#goldark:technical, tag=goldark.dummy_spell.thunder_egg] at @
 
 # Update item
 execute as @e[type=item, nbt={ Item: { components: { "minecraft:custom_data": { goldark.items.soul_link: true } } } }] at @s if loaded ~ ~ ~ run function goldark.magic:spells/soul_link/update
+
+
+## PIGTEST
+
+# Detect held Pig
+execute as @a[tag=!goldark.temp.held_pig] if items entity @s weapon.* snowball[custom_data~{ goldark.items.pig: 1b }] run tag @s add goldark.temp.held_pig
+execute as @a[tag=!goldark.temp.held_pig_strong] if items entity @s weapon.* snowball[custom_data~{ goldark.items.pig_strong: 1b }] run tag @s add goldark.temp.held_pig_strong
+
+# Remove non-Pig score
+scoreboard players reset @a[scores={ goldark.used_item.snowball=1.. }, tag=!goldark.temp.held_pig, tag=!goldark.temp.held_pig_strong] goldark.used_item.snowball
+
+
+# Transform thrown snowball
+execute as @a[scores={ goldark.used_item.snowball=1.. }, tag=goldark.temp.held_pig_strong] run scoreboard players add @s goldark.used_item.snowball 2
+
+execute as @a[scores={ goldark.used_item.snowball=1 }] at @s if loaded ~ ~ ~ positioned ~ ~1 ~ run function goldark.magic:spells/pigtest/init_projectile
+execute as @a[scores={ goldark.used_item.snowball=3.. }] at @s if loaded ~ ~ ~ positioned ~ ~1 ~ run function goldark.magic:spells/pigtest/init_missile
+
+
+# Remove Pig tag
+execute as @a[tag=goldark.temp.held_pig] unless items entity @s weapon.* snowball[custom_data~{ goldark.items.pig: 1b }] run tag @s remove goldark.temp.held_pig
+execute as @a[tag=goldark.temp.held_pig_strong] unless items entity @s weapon.* snowball[custom_data~{ goldark.items.pig_strong: 1b }] run tag @s remove goldark.temp.held_pig_strong
+
+# Tick Pigs
+execute as @e[type=#goldark:pig, tag=goldark.pig_spell.explosive] at @s if loaded ~ ~ ~ run function goldark.magic:spells/pigtest/tick_pig
+execute as @e[type=#goldark:pig, tag=goldark.pig_spell.satellite] at @s if loaded ~ ~ ~ run function goldark.magic:spells/pigtest/tick_missile

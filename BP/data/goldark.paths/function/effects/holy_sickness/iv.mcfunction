@@ -36,7 +36,7 @@ scoreboard players add @s goldark.dummy 1
 scoreboard players operation @s goldark.dummy %= @s goldark.effect_timer.holy_sickness
 
 # The voices can't stop the yap
-execute if score @s goldark.effect_timer.holy_sickness matches ..2750 if score @s goldark.dummy matches 123..999 run function goldark.paths:effects/holy_sickness/overlay
+execute if score @s goldark.effect_timer.holy_sickness matches ..2750 if score @s goldark.dummy matches 1..123 run function goldark.paths:effects/holy_sickness/overlay
 
 # This must end
 title @s[tag=goldark.holy_sickness.active, scores={ goldark.effect_timer.holy_sickness=..2500 }] actionbar { "text": "Everything is in pain; You must leave or you will be gone.", "color": "gold", "bold": true }

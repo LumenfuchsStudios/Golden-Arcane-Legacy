@@ -1,0 +1,17 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "goldark:block/can_see_sky"
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "light": {
+                    "light": 15
+                }
+            }
+        }
+    ]
+}

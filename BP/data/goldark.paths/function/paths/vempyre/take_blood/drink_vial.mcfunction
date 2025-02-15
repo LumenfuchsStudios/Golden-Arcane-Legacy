@@ -31,9 +31,6 @@ execute unless entity @s[tag=goldark.paths.vempyre, tag=!goldark.effects.purity]
 
 ## SUCCEED
 
-# Replace Darkness
-effect clear @s darkness
-
 # Give Saturation
 effect give @s saturation 4 0 true
 

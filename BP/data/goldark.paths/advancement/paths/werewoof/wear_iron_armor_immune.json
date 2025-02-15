@@ -1,0 +1,41 @@
+{
+    "parent": "goldark.paths:paths/werewoof/wear_iron_armor",
+    "display": {
+        "icon": {
+            "id": "iron_chestplate",
+            "components": {
+                "enchantment_glint_override": true
+            }
+        },
+        "title": "Cover Me with Fire",
+        "description": "Wear a full set of Iron Armor without taking any damage.",
+        "frame": "goal"
+    },
+    "criteria": {
+        "wear_iron_armor": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "head": {
+                            "items": "iron_helmet"
+                        },
+                        "chest": {
+                            "items": "iron_chestplate"
+                        },
+                        "legs": {
+                            "items": "iron_leggings"
+                        },
+                        "feet": {
+                            "items": "iron_boots"
+                        }
+                    },
+                    "nbt": "{ Tags: [ goldark.paths.werewoof, goldark.perks.holy_immune ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20
+    }
+}

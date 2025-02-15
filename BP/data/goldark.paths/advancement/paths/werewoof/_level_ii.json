@@ -1,0 +1,20 @@
+{
+    "parent": "goldark.paths:paths/werewoof/root",
+    "display": {
+        "icon": {
+            "id": "bone_meal"
+        },
+        "title": "Woofer 2: The Sequel",
+        "description": "Evolve Lycanthropy to the next level.",
+        "frame": "goal"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 20,
+        "function": "goldark.paths:paths/werewoof/triggers/_evolve"
+    }
+}

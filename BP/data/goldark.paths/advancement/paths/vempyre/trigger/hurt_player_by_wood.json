@@ -1,0 +1,34 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "taken": {
+                        "min": 1
+                    },
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": [
+                                    "wooden_axe",
+                                    "wooden_hoe",
+                                    "wooden_pickaxe",
+                                    "wooden_shovel",
+                                    "wooden_sword",
+                                    "stick"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "player": {
+                    "nbt": "{ Tags: [ goldark.paths.vempyre ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark.paths:paths/vempyre/triggers/hurt_player_by_wood"
+    }
+}

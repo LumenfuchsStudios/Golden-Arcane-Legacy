@@ -28,12 +28,26 @@
         },
         "lycanthropy_ritual": {
             "trigger": "impossible"
+        },
+        "drink_debug_potion": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "potion",
+                    "components": {
+                        "custom_data": {
+                            "goldark.potions.werepyrism": true
+                        }
+                    }
+                }
+            }
         }
     },
     "requirements": [
         [
             "killed_by_werewoof",
-            "lycanthropy_ritual"
+            "lycanthropy_ritual",
+            "drink_debug_potion"
         ]
     ],
     "rewards": {

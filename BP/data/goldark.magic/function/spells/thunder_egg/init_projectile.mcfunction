@@ -15,7 +15,7 @@ execute if score @s goldark.used_item.egg matches 3.. run tag @n[type=#goldark:t
 
 # Display audiovisual feedback
 playsound block.candle.extinguish player @s ~ ~ ~ 0.8 0.8
-particle white_smoke ~ ~0.5 ~ .1 .2 .1 0.05 8
+particle white_smoke ~ ~0.5 ~ .05 .1 .05 0.01 4
 
 # Reset trigger
 scoreboard players reset @s goldark.used_item.egg

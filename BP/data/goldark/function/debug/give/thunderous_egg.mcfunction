@@ -6,7 +6,7 @@
 give @s egg[ \
             enchantment_glint_override=true, \
             item_name="{ \"text\": \"Thunderous Egg\" }", \
-            lore=[ "{ \"text\": \"Contains an unstable, furious storm trapped within.\", \"color\": \"gray\", \"italic\": false }", "{ \"text\": \"This will prove to be a terrible idea.\" }" ], \
+            lore=[ "{ \"text\": \"Contains an unstable, furious storm trapped within.\", \"color\": \"gray\", \"italic\": false }", "{ \"text\": \"This will prove to be a terrible idea.\", \"italic\": false }" ], \
             rarity="rare", \
             custom_data={ \
                 "goldark.items.thunder_egg_strong": true \
