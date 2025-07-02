@@ -2,6 +2,11 @@
 
 # Golden Arcane
 
+> [!WARNING]
+> This version of Golden Arcane has been archived and is no longer being further developed; For the current, active repository of Golden Arcane, see [here](https:/github.com/LumenfuchsStudios/Golden-Arcane).
+>
+> This repository will be kept for reference purposes, and may be moved elsewhere at a later date.
+
 **Golden Arcane** is a *Minecraft: Java Edition* datapack exploring the concept of magic with a common motif: Gold.
 
 From ancient deities to reality-tearing rituals, forbidden knowledge and odd artifacts of olden times, the world is full of new magic everywhere for the keen-eyed to find.
